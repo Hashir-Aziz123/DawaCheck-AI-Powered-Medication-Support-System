@@ -1,0 +1,8 @@
+pytest
+pytest-asyncio
+sqlalchemy 
+asyncpg 
+python-dotenv
+bs4
+urllib3
+requests
