@@ -31,6 +31,7 @@ class Ingredient:
     drug_interactions: Optional[str] = None
     warnings: Optional[str] = None
     boxed_warning: Optional[str] = None
+    raw_fda_response: Optional[dict] = None
 
 
 @dataclass
@@ -45,3 +46,8 @@ class DrugResolution:
     spelling_variant_used: Optional[str] = None   # Problem 3: variant that DRAP matched on
     ingredients: list[Ingredient] = field(default_factory=list)
     error: Optional[str] = None
+    
+    # Generic-resolution specific fields (originally from batch script)
+    selection_reason: Optional[str] = None
+    composition_verified: Optional[bool] = None
+    composition_similarity_score: Optional[float] = None

@@ -1,0 +1,991 @@
+2026-09-08 12:22:23,825 [INFO] Loaded 96 generic(s) from E:\mediAid_langraph\data\neml_generics.json
+2026-09-08 12:22:23,825 [INFO] ─── Processing 'acetylsalicylic acid' ───
+2026-09-08 12:22:23,826 [INFO] [NEML] Resolving 'acetylsalicylic acid' | is_combination=False | lead_query='acetylsalicylic acid'
+2026-09-08 12:22:24,951 [INFO] [NEML] No DRAP results for generic 'acetylsalicylic acid'
+2026-09-08 12:22:24,952 [INFO] ─── Processing 'ibuprofen' ───
+2026-09-08 12:22:24,953 [INFO] [NEML] Resolving 'ibuprofen' | is_combination=False | lead_query='ibuprofen'
+2026-09-08 12:22:25,548 [INFO] [NEML] 'ibuprofen' → 56 DRAP candidate(s): ['Ibuprofen Suspension', 'Ibuprofen Oral Suspension ', 'IBUPROFEN 200MG TAB ', 'IBUPROFEN 400MG TAB ', 'IBUPROFEN 400MG TABLET']
+2026-09-08 12:22:25,549 [INFO] [BrandSelect] 'ibuprofen' → 'Ibuprofen Tablets ' | reason: tablet (of 56) | scores: status=1 form=2 sim=0.529
+2026-09-08 12:22:26,890 [INFO] ─── Processing 'paracetamol (acetaminophen)' ───
+2026-09-08 12:22:26,890 [INFO] [NEML] Resolving 'paracetamol (acetaminophen)' | is_combination=False | lead_query='paracetamol'
+2026-09-08 12:22:28,485 [INFO] [NEML] 'paracetamol (acetaminophen)' → 237 DRAP candidate(s): ['Paracetamol-666 Tablet', 'Paracetamol 120mg Oral Suspension', 'PARACETAMOL 120MG SUP', 'PARACETAMOL 500MG TAB ', 'PARACETAMOL COMPOUND TABLET']
+2026-09-08 12:22:28,486 [INFO] [BrandSelect] 'paracetamol' → 'Paracetamol Syrup' | reason: syrup (of 237) | scores: status=1 form=2 sim=0.647
+2026-09-08 12:22:29,901 [INFO] [Verify] OK: 'paracetamol (acetaminophen)' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:22:37,290 [INFO] ─── Processing 'codeine' ───
+2026-09-08 12:22:37,291 [INFO] [NEML] Resolving 'codeine' | is_combination=False | lead_query='codeine'
+2026-09-08 12:22:37,476 [INFO] [NEML] 'codeine' → 1 DRAP candidate(s): ['Codeine Plus Tablets']
+2026-09-08 12:22:39,134 [INFO] [Verify] OK: 'codeine' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:22:40,207 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CODEINE' -> 'codeine' (rxcui=2670)
+2026-09-08 12:22:42,732 [INFO] ─── Processing 'amitriptyline' ───
+2026-09-08 12:22:42,732 [INFO] [NEML] Resolving 'amitriptyline' | is_combination=False | lead_query='amitriptyline'
+2026-09-08 12:22:42,915 [INFO] [NEML] 'amitriptyline' → 9 DRAP candidate(s): ['Amitriptyline 25mg Tablet', 'AMITRIPTYLINE 25MG TAB ', 'AMITRIPTYLINE TAB ', 'AMITRIPTYLINE 75MG TAB ', 'AMITRIPTYLINE 25MG TAB ']
+2026-09-08 12:22:42,916 [INFO] [BrandSelect] 'amitriptyline' → 'Amitriptyline 25mg Tablet' | reason: tablet (of 9) | scores: status=1 form=2 sim=0.520
+2026-09-08 12:22:44,380 [INFO] [Verify] OK: 'amitriptyline' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:22:46,110 [INFO] ─── Processing 'diazepam' ───
+2026-09-08 12:22:46,110 [INFO] [NEML] Resolving 'diazepam' | is_combination=False | lead_query='diazepam'
+2026-09-08 12:22:46,437 [INFO] [NEML] 'diazepam' → 111 DRAP candidate(s): ['Diazepam Tablet 5mg', 'Diazepam Tablets 10mg', 'Diazepam-5mg Tablet                               ', 'Diazepam-2mg Tablets', 'DIAZEPAM 2MG TABLET']
+2026-09-08 12:22:46,438 [INFO] [BrandSelect] 'diazepam' → 'DIAZEPAM TABLET' | reason: tablet (of 111) | scores: status=1 form=2 sim=0.533
+2026-09-08 12:22:47,842 [WARNING] [Verify] MISMATCH: searched='diazepam' (cleaned='diazepam'), best_score=0.615 (threshold=0.80). Ingredients: ['DIAZEPAM 2MG,']
+2026-09-08 12:22:49,610 [INFO] ─── Processing 'loperamide' ───
+2026-09-08 12:22:49,610 [INFO] [NEML] Resolving 'loperamide' | is_combination=False | lead_query='loperamide'
+2026-09-08 12:22:49,867 [INFO] [NEML] 'loperamide' → 3 DRAP candidate(s): ['DIAVEX-LOPERAMIDE CAP ', 'STOPMOT CAP Each capsule contains:- LOPERAMIDE HCL', 'Novex Loperamide Capsule']
+2026-09-08 12:22:49,867 [INFO] [BrandSelect] 'loperamide' → 'Novex Loperamide Capsule' | reason: capsule (of 3) | scores: status=1 form=2 sim=0.417
+2026-09-08 12:22:51,413 [INFO] [Verify] OK: 'loperamide' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:22:53,214 [INFO] ─── Processing 'metoclopramide' ───
+2026-09-08 12:22:53,214 [INFO] [NEML] Resolving 'metoclopramide' | is_combination=False | lead_query='metoclopramide'
+2026-09-08 12:22:53,425 [INFO] [NEML] 'metoclopramide' → 15 DRAP candidate(s): ['Metoclopramide Tablets 10mg', 'Metoclopramide Syrup', 'METOCLOPRAMIDE TAB ', 'METOCLOPRAMIDE SYP', 'METOCLOPRAMIDE HCL INJECTION']
+2026-09-08 12:22:53,426 [INFO] [BrandSelect] 'metoclopramide' → 'Metoclopramide Syrup' | reason: syrup (of 15) | scores: status=1 form=2 sim=0.700
+2026-09-08 12:22:54,857 [WARNING] [Verify] MISMATCH: searched='metoclopramide' (cleaned='metoclopramide'), best_score=0.538 (threshold=0.80). Ingredients: ['Metoclopramide as Benzoate']
+2026-09-08 12:22:56,324 [INFO] ─── Processing 'ondansetron' ───
+2026-09-08 12:22:56,326 [INFO] [NEML] Resolving 'ondansetron' | is_combination=False | lead_query='ondansetron'
+2026-09-08 12:22:56,841 [INFO] [NEML] 'ondansetron' → 7 DRAP candidate(s): ['ONDANSETRON-SANDOZ 8MG/4ML SOLUTION FOR INJECTION.', 'Ondansetron Normon 8Mg Injection ', 'Ondansetron Injection 8mg/4ml', 'Ondansetron 8mg/4ml Injection', 'Ondansetron 8mg/4ml Injection']
+2026-09-08 12:22:56,842 [INFO] [BrandSelect] 'ondansetron' → 'ONDANSETRON-SANDOZ 8MG/4ML SOLUTION FOR INJECTION.' | reason: solution (of 7) | scores: status=1 form=2 sim=0.220
+2026-09-08 12:22:58,153 [INFO] [Verify] OK: 'ondansetron' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:22:59,435 [INFO] ─── Processing 'senna' ───
+2026-09-08 12:22:59,436 [INFO] [NEML] Resolving 'senna' | is_combination=False | lead_query='senna'
+2026-09-08 12:23:00,427 [INFO] [NEML] 'senna' → 2 DRAP candidate(s): ['Senna Tablet 50mg', 'Senna Tablet 100mg']
+2026-09-08 12:23:00,428 [INFO] [BrandSelect] 'senna' → 'Senna Tablet 50mg' | reason: tablet (of 2) | scores: status=1 form=2 sim=0.294
+2026-09-08 12:23:01,047 [WARNING] [Verify] MISMATCH: searched='senna' (cleaned='senna'), best_score=0.139 (threshold=0.80). Ingredients: ['Sildenafil Citrate eq. to Sildenafil']
+2026-09-08 12:23:01,579 [INFO] [RxNorm] exact search returned no RxCUI for 'SILDENAFIL CITRATE EQ. TO SILDENAFIL' — trying approximateTerm
+2026-09-08 12:23:02,989 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'SILDENAFIL CITRATE EQ. TO SILDENAFIL' -> 'sildenafil citrate' (rxcui=221161, score=20.42). Source data may contain a typo — review this mapping.
+2026-09-08 12:23:03,476 [INFO] ─── Processing 'fluoxetine' ───
+2026-09-08 12:23:03,477 [INFO] [NEML] Resolving 'fluoxetine' | is_combination=False | lead_query='fluoxetine'
+2026-09-08 12:23:03,735 [INFO] [NEML] 'fluoxetine' → 3 DRAP candidate(s): ['Flit Tablets Each Tablet Contains:- Fluoxetine Hcl', 'Fluoxetine Capsule', 'Fluoxetine capsule']
+2026-09-08 12:23:03,735 [INFO] [BrandSelect] 'fluoxetine' → 'Fluoxetine Capsule' | reason: capsule (of 3) | scores: status=1 form=2 sim=0.556
+2026-09-08 12:23:05,164 [WARNING] [Verify] MISMATCH: searched='fluoxetine' (cleaned='fluoxetine'), best_score=0.769 (threshold=0.80). Ingredients: ['Fluoxetine as Hydrochloride']
+2026-09-08 12:23:06,047 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'FLUOXETINE AS' -> 'fluoxetine hydrochloride' (rxcui=227224)
+2026-09-08 12:23:06,506 [INFO] ─── Processing 'haloperidol' ───
+2026-09-08 12:23:06,507 [INFO] [NEML] Resolving 'haloperidol' | is_combination=False | lead_query='haloperidol'
+2026-09-08 12:23:06,684 [INFO] [NEML] 'haloperidol' → 2 DRAP candidate(s): ['Halperon  Drops Each ml contains:- Haloperidolâ€¦.', 'Haloperidol Tablets']
+2026-09-08 12:23:06,685 [INFO] [BrandSelect] 'haloperidol' → 'Haloperidol Tablets' | reason: tablet (of 2) | scores: status=1 form=2 sim=0.579
+2026-09-08 12:23:08,100 [INFO] ─── Processing 'dexamethasone' ───
+2026-09-08 12:23:08,100 [INFO] [NEML] Resolving 'dexamethasone' | is_combination=False | lead_query='dexamethasone'
+2026-09-08 12:23:10,010 [INFO] [NEML] 'dexamethasone' → 62 DRAP candidate(s): ['Dexamethasone Injection', 'DEXAMETHASONE TABLET', 'DEXAMETHASONE TABLET', 'DEXAMETHASONE TAB ', 'DEXAMETHASONE TAB ']
+2026-09-08 12:23:10,011 [INFO] [BrandSelect] 'dexamethasone' → 'DEXAMETHASONE TABLET' | reason: tablet (of 62) | scores: status=1 form=2 sim=0.650
+2026-09-08 12:23:11,108 [WARNING] [Verify] MISMATCH: searched='dexamethasone' (cleaned='dexamethasone'), best_score=0.650 (threshold=0.80). Ingredients: ['DEXAMETHASONE 0.5MG,']
+2026-09-08 12:23:13,831 [INFO] ─── Processing 'epinephrine (adrenaline)' ───
+2026-09-08 12:23:13,831 [INFO] [NEML] Resolving 'epinephrine (adrenaline)' | is_combination=False | lead_query='epinephrine'
+2026-09-08 12:23:14,026 [INFO] [NEML] 'epinephrine (adrenaline)' → 6 DRAP candidate(s): ['RAPICAINE 2% EPINEPHRINE', 'LENTOCAINE 2% EPINEPHRINE', 'XILONIBSA 2% WITH EPINEPHRINE 1:80.000 SOLUTION FO', 'ARTICAINE 4% WITH EPINEPHRINE 1:100.000 INIBSA SOL', 'ARTICAINE 4% WITH EPINEPHRINE 1:200.000 INIBSA SOL']
+2026-09-08 12:23:14,027 [INFO] [BrandSelect] 'epinephrine' → 'XILONIBSA 2% WITH EPINEPHRINE 1:80.000 SOLUTION FO' | reason: solution (of 6) | scores: status=1 form=2 sim=0.220
+2026-09-08 12:23:15,450 [WARNING] [Verify] MISMATCH: searched='epinephrine (adrenaline)' (cleaned='epinephrine'), best_score=0.267 (threshold=0.80). Ingredients: ['LIDOCAINE (INN)']
+2026-09-08 12:23:15,963 [INFO] [RxNorm] exact search returned no RxCUI for 'LIDOCAINE (INN)' — trying approximateTerm
+2026-09-08 12:23:16,790 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'LIDOCAINE (INN)' -> 'lidocaine' (rxcui=6387, score=10.24). Source data may contain a typo — review this mapping.
+2026-09-08 12:23:17,714 [INFO] ─── Processing 'hydrocortisone' ───
+2026-09-08 12:23:17,715 [INFO] [NEML] Resolving 'hydrocortisone' | is_combination=False | lead_query='hydrocortisone'
+2026-09-08 12:23:18,040 [INFO] [NEML] 'hydrocortisone' → 30 DRAP candidate(s): ['Chloromycetin Hydrocortisone Ophthalmic Ointment', 'HYDROCORTISONE 1% (FOR EYE) DRP ', 'HYDROCORTISONE SODIUM SUCCINA. INJECTION', 'EURAX HYDROCORTISONE CRM', 'HYDROCORTISONE (FOR EYE) ONT']
+2026-09-08 12:23:18,041 [INFO] [BrandSelect] 'hydrocortisone' → 'HYDROCORTISONE ' | reason: first of 30 | scores: status=1 form=1 sim=1.000
+2026-09-08 12:23:19,365 [WARNING] [Verify] MISMATCH: searched='hydrocortisone' (cleaned='hydrocortisone'), best_score=0.350 (threshold=0.80). Ingredients: ['HYDROCORTISONE (SODIUM SUCCINATE) 100MG,']
+2026-09-08 12:23:19,809 [INFO] [RxNorm] exact search returned no RxCUI for 'HYDROCORTISONE (SODIUM SUCCINATE) 100MG,' — trying approximateTerm
+2026-09-08 12:23:20,969 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'HYDROCORTISONE (SODIUM SUCCINATE) 100MG,' -> 'hydrocortisone 100 MG Injection' (rxcui=238755, score=13.39). Source data may contain a typo — review this mapping.
+2026-09-08 12:23:21,414 [INFO] ─── Processing 'loratadine' ───
+2026-09-08 12:23:21,414 [INFO] [NEML] Resolving 'loratadine' | is_combination=False | lead_query='loratadine'
+2026-09-08 12:23:21,608 [INFO] [NEML] 'loratadine' → 5 DRAP candidate(s): ['Selectin Tablets Each tables contains:- Loratadine', 'Selectin Syrup Each 5ml contains:- Loratadineâ€¦â€', 'Alertine Tablets Each tablet contains:- Loratadine', 'Alertine Suspension Each 5ml contains:- Loratadine', 'Loratadine Lawari Tablet 10mg']
+2026-09-08 12:23:21,609 [INFO] [BrandSelect] 'loratadine' → 'Loratadine Lawari Tablet 10mg' | reason: tablet (of 5) | scores: status=1 form=2 sim=0.345
+2026-09-08 12:23:23,040 [INFO] [Verify] OK: 'loratadine' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:23:24,359 [INFO] ─── Processing 'prednisolone' ───
+2026-09-08 12:23:24,359 [INFO] [NEML] Resolving 'prednisolone' | is_combination=False | lead_query='prednisolone'
+2026-09-08 12:23:24,597 [INFO] [NEML] 'prednisolone' → 28 DRAP candidate(s): ['PREDNISOLONE 5MG TAB ', 'PREDNISOLONE TABLET', 'PREDNISOLONE 5MG TAB ', 'PREDNISOLONE 5MG TAB ', 'PREDNISOLONE STEAGLATE TAB ']
+2026-09-08 12:23:24,598 [INFO] [BrandSelect] 'prednisolone' → 'PREDNISOLONE TABLET' | reason: tablet (of 28) | scores: status=1 form=2 sim=0.632
+2026-09-08 12:23:26,036 [WARNING] [Verify] MISMATCH: searched='prednisolone' (cleaned='prednisolone'), best_score=0.706 (threshold=0.80). Ingredients: ['PREDNISOLONE 5MG,']
+2026-09-08 12:23:27,239 [INFO] ─── Processing 'carbamazepine' ───
+2026-09-08 12:23:27,239 [INFO] [NEML] Resolving 'carbamazepine' | is_combination=False | lead_query='carbamazepine'
+2026-09-08 12:23:27,557 [INFO] [NEML] 'carbamazepine' → 3 DRAP candidate(s): ['CARBAMAZEPINE TAB ', 'CARBAMAZEPINE TABLETS 200MG', 'Carbamazepine 200mg Tablet']
+2026-09-08 12:23:27,557 [INFO] [BrandSelect] 'carbamazepine' → 'Carbamazepine 200mg Tablet' | reason: tablet (of 3) | scores: status=1 form=2 sim=0.500
+2026-09-08 12:23:28,966 [INFO] [Verify] OK: 'carbamazepine' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:23:30,226 [INFO] ─── Processing 'lamotrigine' ───
+2026-09-08 12:23:30,227 [INFO] [NEML] Resolving 'lamotrigine' | is_combination=False | lead_query='lamotrigine'
+2026-09-08 12:23:30,718 [INFO] [NEML] 'lamotrigine' → 4 DRAP candidate(s): ['Lamotrigine Tablet 25mg', 'Lamotrigine Tablet 100mg', 'Lamotrigine Tablet 50mg', 'Lamotrigine 50mg Tablet']
+2026-09-08 12:23:30,719 [INFO] [BrandSelect] 'lamotrigine' → 'Lamotrigine Tablet 25mg' | reason: tablet (of 4) | scores: status=1 form=2 sim=0.478
+2026-09-08 12:23:31,981 [INFO] [Verify] OK: 'lamotrigine' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:23:34,399 [INFO] ─── Processing 'levetiracetam' ───
+2026-09-08 12:23:34,399 [INFO] [NEML] Resolving 'levetiracetam' | is_combination=False | lead_query='levetiracetam'
+2026-09-08 12:23:34,537 [INFO] [NEML] 'levetiracetam' → 1 DRAP candidate(s): ['Levetiracetam 500mg Tablet']
+2026-09-08 12:23:35,969 [INFO] [Verify] OK: 'levetiracetam' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:23:39,194 [INFO] ─── Processing 'lorazepam' ───
+2026-09-08 12:23:39,194 [INFO] [NEML] Resolving 'lorazepam' | is_combination=False | lead_query='lorazepam'
+2026-09-08 12:23:39,344 [INFO] [NEML] 'lorazepam' → 4 DRAP candidate(s): ['ORGALOPAM TAB Each tablet contains:- LORAZEPAM 1mg', 'ORGALOPAM TAB Each tablet contains:- LORAZEPAM 2mg', 'Lorazepam  1 mg Tablets', 'Lorazepam  2 mg Tablets']
+2026-09-08 12:23:39,344 [INFO] [BrandSelect] 'lorazepam' → 'Lorazepam  1 mg Tablets' | reason: tablet (of 4) | scores: status=1 form=2 sim=0.391
+2026-09-08 12:23:41,393 [INFO] [Verify] OK: 'lorazepam' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:23:43,040 [INFO] ─── Processing 'phenobarbital' ───
+2026-09-08 12:23:43,040 [INFO] [NEML] Resolving 'phenobarbital' | is_combination=False | lead_query='phenobarbital'
+2026-09-08 12:23:43,217 [INFO] [NEML] 'phenobarbital' → 4 DRAP candidate(s): ['Phenobarbital Injection 200mg/ml', 'PhenobarbitalTablet 30mg', 'Phenobarbital 200mg/ml Injection ', 'Phenobarbital Tablets 30mg']
+2026-09-08 12:23:43,218 [INFO] [BrandSelect] 'phenobarbital' → 'PhenobarbitalTablet 30mg' | reason: tablet (of 4) | scores: status=1 form=2 sim=0.542
+2026-09-08 12:23:44,610 [INFO] [Verify] OK: 'phenobarbital' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:23:45,855 [INFO] ─── Processing 'phenytoin' ───
+2026-09-08 12:23:45,855 [INFO] [NEML] Resolving 'phenytoin' | is_combination=False | lead_query='phenytoin'
+2026-09-08 12:23:46,199 [INFO] [NEML] 'phenytoin' → 4 DRAP candidate(s): ['EPILAMIL CAP Each capsule contains:- PHENYTOIN SOD', 'EPINAT TAB Each tablet contains:- PHENYTOIN SODIUM', 'PHENYTOIN COMPOUND TABLETS ', 'PHENYTOIN SODIUM CAPSULES 100MG']
+2026-09-08 12:23:46,200 [INFO] [BrandSelect] 'phenytoin' → 'PHENYTOIN COMPOUND TABLETS ' | reason: tablet (of 4) | scores: status=1 form=2 sim=0.346
+2026-09-08 12:23:47,721 [WARNING] [Verify] MISMATCH: searched='phenytoin' (cleaned='phenytoin'), best_score=0.273 (threshold=0.80). Ingredients: ['PHENYTOIN SOD 100MG, PHENOBABITAL']
+2026-09-08 12:23:48,164 [INFO] [RxNorm] exact search returned no RxCUI for 'PHENYTOIN SOD 100MG, PHENOBABITAL' — trying approximateTerm
+2026-09-08 12:23:49,096 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'PHENYTOIN SOD 100MG, PHENOBABITAL' -> 'phenobarbital 100 MG / phenytoin 100 MG Oral Tablet' (rxcui=252040, score=12.28). Source data may contain a typo — review this mapping.
+2026-09-08 12:23:49,481 [INFO] ─── Processing 'valproic acid (sodium valproate)' ───
+2026-09-08 12:23:49,481 [INFO] [NEML] Resolving 'valproic acid (sodium valproate)' | is_combination=False | lead_query='valproic acid'
+2026-09-08 12:23:49,670 [INFO] [NEML] No DRAP results for generic 'valproic acid (sodium valproate)'
+2026-09-08 12:23:49,674 [INFO] ─── Processing 'propranolol' ───
+2026-09-08 12:23:49,674 [INFO] [NEML] Resolving 'propranolol' | is_combination=False | lead_query='propranolol'
+2026-09-08 12:23:51,191 [INFO] [NEML] 'propranolol' → 12 DRAP candidate(s): ['Propranolol-10mg Tablet', 'Propranolol-40mg Tablets', 'PROPRANOLOL HCL 10MG TAB ', 'PROPRANOLOL HCL 40MG TAB ', 'PROPRANOLOL 10MG TAB ']
+2026-09-08 12:23:51,191 [INFO] [BrandSelect] 'propranolol' → 'PROPRANOLOL TABLETS' | reason: tablet (of 12) | scores: status=1 form=2 sim=0.579
+2026-09-08 12:23:52,537 [WARNING] [Verify] MISMATCH: searched='propranolol' (cleaned='propranolol'), best_score=0.071 (threshold=0.80). Ingredients: ['SODIUM ALPHA-OXYBENZYLPHOSPHINIC ACID 100MG, , METHYLTESTOSTERONE 5MG, , VITAMIN E 1.5MG, , YOHIMBI']
+2026-09-08 12:23:53,040 [INFO] [RxNorm] exact search returned no RxCUI for 'SODIUM ALPHA-OXYBENZYLPHOSPHINIC ACID 100MG, , METHYLTESTOSTERONE 5MG, , VITAMIN E 1.5MG, , YOHIMBI' — trying approximateTerm
+2026-09-08 12:23:54,026 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'SODIUM ALPHA-OXYBENZYLPHOSPHINIC ACID 100MG, , METHYLTESTOSTERONE 5MG, , VITAMIN E 1.5MG, , YOHIMBI' -> 'methyltestosterone 5 MG' (rxcui=316292, score=13.19). Source data may contain a typo — review this mapping.
+2026-09-08 12:23:54,444 [INFO] ─── Processing 'sumatriptan' ───
+2026-09-08 12:23:54,444 [INFO] [NEML] Resolving 'sumatriptan' | is_combination=False | lead_query='sumatriptan'
+2026-09-08 12:23:54,802 [INFO] [NEML] No DRAP results for generic 'sumatriptan'
+2026-09-08 12:23:54,806 [INFO] ─── Processing 'verapamil' ───
+2026-09-08 12:23:54,806 [INFO] [NEML] Resolving 'verapamil' | is_combination=False | lead_query='verapamil'
+2026-09-08 12:23:56,140 [INFO] [NEML] 'verapamil' → 7 DRAP candidate(s): ['Verapamil Hcl Injection', 'VERAPAMIL 40MG TAB ', 'GEANGIN-40 TAB Each tablet contains:- VERAPAMIL HC', 'GEANGIN-80 TAB Each tablet contains:- VERAPAMIL HC', 'VERAPAMIL TAB Each tablet contains:- VERAPAMIL HCL']
+2026-09-08 12:23:56,141 [INFO] [BrandSelect] 'verapamil' → 'GEANGIN-40 TAB Each tablet contains:- VERAPAMIL HC' | reason: tablet (of 7) | scores: status=1 form=2 sim=0.180
+2026-09-08 12:23:57,642 [WARNING] [Verify] MISMATCH: searched='verapamil' (cleaned='verapamil'), best_score=0.692 (threshold=0.80). Ingredients: ['VERAPAMIL HCL']
+2026-09-08 12:23:59,024 [INFO] ─── Processing 'amoxicillin' ───
+2026-09-08 12:23:59,024 [INFO] [NEML] Resolving 'amoxicillin' | is_combination=False | lead_query='amoxicillin'
+2026-09-08 12:23:59,198 [INFO] [NEML] 'amoxicillin' → 40 DRAP candidate(s): ['Amoxicillin 125mg/5ml Dry Suspension    ', 'Amoxicillin 250mg/5ml Dry Suspension    ', 'Amoxicillin 250mg Capsule   ', 'Amoxicillin 500mg Capsule   ', 'AMOXICILLIN CAPSULES 500MG']
+2026-09-08 12:23:59,198 [INFO] [BrandSelect] 'amoxicillin' → 'Amoxicillin 250mg Capsule   ' | reason: capsule (of 40) | scores: status=1 form=2 sim=0.440
+2026-09-08 12:24:01,336 [WARNING] [Verify] MISMATCH: searched='amoxicillin' (cleaned='amoxicillin'), best_score=0.440 (threshold=0.80). Ingredients: ['Amoxicillin(astrihydrate)']
+2026-09-08 12:24:01,743 [INFO] [RxNorm] exact search returned no RxCUI for 'AMOXICILLIN(ASTRIHYDRATE)' — trying approximateTerm
+2026-09-08 12:24:02,884 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'AMOXICILLIN(ASTRIHYDRATE)' -> 'amoxicillin trihydrate' (rxcui=133008, score=13.01). Source data may contain a typo — review this mapping.
+2026-09-08 12:24:03,282 [INFO] ─── Processing 'amoxicillin + clavulanic acid' ───
+2026-09-08 12:24:03,282 [INFO] [NEML] Resolving 'amoxicillin + clavulanic acid' | is_combination=True | lead_query='amoxicillin'
+2026-09-08 12:24:03,483 [INFO] [NEML] 'amoxicillin + clavulanic acid' → 40 DRAP candidate(s): ['Amoxicillin 125mg/5ml Dry Suspension    ', 'Amoxicillin 250mg/5ml Dry Suspension    ', 'Amoxicillin 250mg Capsule   ', 'Amoxicillin 500mg Capsule   ', 'AMOXICILLIN CAPSULES 500MG']
+2026-09-08 12:24:03,483 [INFO] [BrandSelect] 'amoxicillin' → 'Amoxicillin 250mg Capsule   ' | reason: capsule (of 40) | scores: status=1 form=2 sim=0.440
+2026-09-08 12:24:04,870 [WARNING] [Verify] COMBINATION MISMATCH: 'amoxicillin + clavulanic acid' — unmatched: ['amoxicillin', 'clavulanic acid']. scores=[('amoxicillin', '0.440'), ('clavulanic acid', '0.200')]. Ingredients: ['Amoxicillin(astrihydrate)']
+2026-09-08 12:24:05,210 [INFO] [RxNorm] exact search returned no RxCUI for 'AMOXICILLIN(ASTRIHYDRATE)' — trying approximateTerm
+2026-09-08 12:24:06,282 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'AMOXICILLIN(ASTRIHYDRATE)' -> 'amoxicillin trihydrate' (rxcui=133008, score=13.01). Source data may contain a typo — review this mapping.
+2026-09-08 12:24:06,738 [INFO] ─── Processing 'ampicillin' ───
+2026-09-08 12:24:06,738 [INFO] [NEML] Resolving 'ampicillin' | is_combination=False | lead_query='ampicillin'
+2026-09-08 12:24:06,985 [INFO] [NEML] 'ampicillin' → 157 DRAP candidate(s): ['AMPICILLIN 250MG CAP ', 'AMPICILLIN 125MG (DRY) SYP', 'AMPICILLIN  CAPSULES 250MG', 'AMPICILLIN INJECTION', 'AMPICILLIN  CAPSULES 250MG']
+2026-09-08 12:24:06,987 [INFO] [BrandSelect] 'ampicillin' → 'AMPICILLIN SYRUP' | reason: syrup (of 157) | scores: status=1 form=2 sim=0.625
+2026-09-08 12:24:08,294 [WARNING] [Verify] MISMATCH: searched='ampicillin' (cleaned='ampicillin'), best_score=0.357 (threshold=0.80). Ingredients: ['AMPICILLIN TRIHYDRATE 125MG,']
+2026-09-08 12:24:09,582 [INFO] ─── Processing 'cefalexin' ───
+2026-09-08 12:24:09,582 [INFO] [NEML] Resolving 'cefalexin' | is_combination=False | lead_query='cefalexin'
+2026-09-08 12:24:09,933 [INFO] [NEML] 'cefalexin' → 1 DRAP candidate(s): ['Cefalexine 15% Suspension Injectable ']
+2026-09-08 12:24:11,360 [INFO] [Verify] OK: 'cefalexin' → best_score=0.900 (threshold=0.80)
+2026-09-08 12:24:12,426 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CEFALEXINE' -> 'cephalexin' (rxcui=2231)
+2026-09-08 12:24:12,843 [INFO] ─── Processing 'cefixime' ───
+2026-09-08 12:24:12,843 [INFO] [NEML] Resolving 'cefixime' | is_combination=False | lead_query='cefixime'
+2026-09-08 12:24:13,349 [INFO] [NEML] 'cefixime' → 7 DRAP candidate(s): ['CEFAPAN 100MG CAP Each capsule contains:- CEFIXIME', 'Cefixime Trihydrate 100mg/5ml Suspension', 'Reta-Cefixime 100mg/5ml Suspension', 'Accefixime ', 'Accefixime ']
+2026-09-08 12:24:13,349 [INFO] [BrandSelect] 'cefixime' → 'Accefixime 400mg Tablet' | reason: tablet (of 7) | scores: status=1 form=2 sim=0.348
+2026-09-08 12:24:14,442 [WARNING] [Verify] MISMATCH: searched='cefixime' (cleaned='cefixime'), best_score=0.333 (threshold=0.80). Ingredients: ['Cefixime (as trihydrate)']
+2026-09-08 12:24:14,829 [INFO] [RxNorm] exact search returned no RxCUI for 'CEFIXIME (AS TRIHYDRATE)' — trying approximateTerm
+2026-09-08 12:24:15,772 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'CEFIXIME (AS TRIHYDRATE)' -> 'None' (rxcui=1810871, score=15.35). Source data may contain a typo — review this mapping.
+2026-09-08 12:24:16,198 [INFO] ─── Processing 'ciprofloxacin' ───
+2026-09-08 12:24:16,199 [INFO] [NEML] Resolving 'ciprofloxacin' | is_combination=False | lead_query='ciprofloxacin'
+2026-09-08 12:24:16,469 [INFO] [NEML] 'ciprofloxacin' → 14 DRAP candidate(s): ['CIPROFLOXACIN TAB Each tablet contains:- CIPROFLOX', 'CIPROFLOXACIN 250mg TAB Each tablet contains:- CIP', 'Ocuciprox Eye Drops Contains:- Ciprofloxacin Hclâ€', 'Ciprofloxacin 100mg/50ml Injection ', 'Ciprofloxacin 200mg/100ml Injection']
+2026-09-08 12:24:16,470 [INFO] [BrandSelect] 'ciprofloxacin' → 'Ciprofloxacin 250mg Tablet' | reason: tablet (of 14) | scores: status=1 form=2 sim=0.500
+2026-09-08 12:24:17,784 [WARNING] [Verify] MISMATCH: searched='ciprofloxacin' (cleaned='ciprofloxacin'), best_score=0.591 (threshold=0.80). Ingredients: ['Ciprofloxacin (as HCl)']
+2026-09-08 12:24:18,967 [INFO] ─── Processing 'clarithromycin' ───
+2026-09-08 12:24:18,968 [INFO] [NEML] Resolving 'clarithromycin' | is_combination=False | lead_query='clarithromycin'
+2026-09-08 12:24:19,325 [INFO] [NEML] 'clarithromycin' → 21 DRAP candidate(s): ['Helimox  Contains:- Clarithromycin   500mg Tablet ', 'Claramed  Syrup Each 5ml contains:- Clarithromycin', 'Clarithromycin 250mg Tablet', 'Clarithromycin 500mg Tablet', 'Clarithromycin Semos Tablet 250mg']
+2026-09-08 12:24:19,326 [INFO] [BrandSelect] 'clarithromycin' → 'Clarithromycin 250mg Tablet' | reason: tablet (of 21) | scores: status=1 form=2 sim=0.519
+2026-09-08 12:24:20,722 [INFO] [Verify] OK: 'clarithromycin' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:24:24,028 [INFO] ─── Processing 'doxycycline' ───
+2026-09-08 12:24:24,028 [INFO] [NEML] Resolving 'doxycycline' | is_combination=False | lead_query='doxycycline'
+2026-09-08 12:24:24,257 [INFO] [NEML] 'doxycycline' → 26 DRAP candidate(s): ['DOXYCYCLINE INJECTION 100MG', 'DOXYCYCLINE HYCLATE CAP Each capsule contains:- DO', 'DOXYKON CAP Each capsule contains:- DOXYCYCLINE HY', 'Doxycycline Capsules 100mg', 'APDOXY CAP Each capsule contains:- DOXYCYCLINE HYC']
+2026-09-08 12:24:24,257 [INFO] [BrandSelect] 'doxycycline' → 'Doxycycline Capsule' | reason: capsule (of 26) | scores: status=1 form=2 sim=0.579
+2026-09-08 12:24:25,726 [INFO] [Verify] OK: 'doxycycline' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:24:27,543 [INFO] ─── Processing 'erythromycin' ───
+2026-09-08 12:24:27,543 [INFO] [NEML] Resolving 'erythromycin' | is_combination=False | lead_query='erythromycin'
+2026-09-08 12:24:27,780 [INFO] [NEML] 'erythromycin' → 32 DRAP candidate(s): ['Erythromycin Tablet 500mg', 'ERYTHROMYCIN 250MG TAB ', 'ERYTHROMYCIN TABLET', 'ERYTHROMYCIN TABLET', 'Erythromycin 250mg Tablet']
+2026-09-08 12:24:27,781 [INFO] [BrandSelect] 'erythromycin' → 'ERYTHROMYCIN TABLET' | reason: tablet (of 32) | scores: status=1 form=2 sim=0.632
+2026-09-08 12:24:29,170 [WARNING] [Verify] MISMATCH: searched='erythromycin' (cleaned='erythromycin'), best_score=0.429 (threshold=0.80). Ingredients: ['ERYTHROMYCIN STEARATE 250MG,']
+2026-09-08 12:24:30,367 [INFO] ─── Processing 'azithromycin' ───
+2026-09-08 12:24:30,367 [INFO] [NEML] Resolving 'azithromycin' | is_combination=False | lead_query='azithromycin'
+2026-09-08 12:24:30,806 [INFO] [NEML] 'azithromycin' → 11 DRAP candidate(s): ['Azorox Suspension Each 5ml contains:- Azithromycin', 'Plazo Suspension Each 5Ml Contains:- Azithromycin ', 'Azithromycin Lawari Capsule 250mg', 'Azithromycin Lawari 250mg Tablet', 'Azithromycin Lawari 500mg Tablet']
+2026-09-08 12:24:30,806 [INFO] [BrandSelect] 'azithromycin' → ' Azithromycin 500mg Tablet' | reason: tablet (of 11) | scores: status=1 form=2 sim=0.480
+2026-09-08 12:24:32,797 [INFO] [Verify] OK: 'azithromycin' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:24:33,639 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'AZITHROMYCIN' -> 'azithromycin' (rxcui=18631)
+2026-09-08 12:24:35,296 [INFO] ─── Processing 'metronidazole' ───
+2026-09-08 12:24:35,296 [INFO] [NEML] Resolving 'metronidazole' | is_combination=False | lead_query='metronidazole'
+2026-09-08 12:24:35,517 [INFO] [NEML] 'metronidazole' → 43 DRAP candidate(s): ['Metronidazole Tablets 200mg', 'Metronidazole Tablets 400mg', 'Metronidazole Suspension', 'METRONIDAZOLE TABLET', 'METRONIDAZOLE ']
+2026-09-08 12:24:35,518 [INFO] [BrandSelect] 'metronidazole' → 'METRONIDAZOLE TABLET' | reason: tablet (of 43) | scores: status=1 form=2 sim=0.650
+2026-09-08 12:24:36,976 [WARNING] [Verify] MISMATCH: searched='metronidazole' (cleaned='metronidazole'), best_score=0.650 (threshold=0.80). Ingredients: ['METRONIDAZOLE 250MG,']
+2026-09-08 12:24:38,764 [INFO] ─── Processing 'nitrofurantoin' ───
+2026-09-08 12:24:38,765 [INFO] [NEML] Resolving 'nitrofurantoin' | is_combination=False | lead_query='nitrofurantoin'
+2026-09-08 12:24:39,057 [INFO] [NEML] 'nitrofurantoin' → 2 DRAP candidate(s): ['Nitrofurantoin tablet 100mg', 'Nitrofurantoin Tablet']
+2026-09-08 12:24:39,057 [INFO] [BrandSelect] 'nitrofurantoin' → 'Nitrofurantoin Tablet' | reason: tablet (of 2) | scores: status=1 form=2 sim=0.667
+2026-09-08 12:24:40,305 [INFO] [Verify] OK: 'nitrofurantoin' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:24:42,017 [INFO] ─── Processing 'sulfamethoxazole + trimethoprim' ───
+2026-09-08 12:24:42,017 [INFO] [NEML] Resolving 'sulfamethoxazole + trimethoprim' | is_combination=True | lead_query='sulfamethoxazole'
+2026-09-08 12:24:42,325 [INFO] [NEML] No DRAP results for generic 'sulfamethoxazole + trimethoprim'
+2026-09-08 12:24:42,328 [INFO] ─── Processing 'clindamycin' ───
+2026-09-08 12:24:42,329 [INFO] [NEML] Resolving 'clindamycin' | is_combination=False | lead_query='clindamycin'
+2026-09-08 12:24:43,923 [INFO] [NEML] 'clindamycin' → 8 DRAP candidate(s): ['CLINDAMYCIN INJ', 'CLINDAMYCIN 900MG INJ', 'KLOCID CAP Each capsule contains:- CLINDAMYCIN HCL', 'CLINDAMYCIN HYDROCHLORIDE CAP Each capsule contain', 'Clindamycin 150mg Cap']
+2026-09-08 12:24:43,923 [INFO] [BrandSelect] 'clindamycin' → 'KLOCID CAP Each capsule contains:- CLINDAMYCIN HCL' | reason: capsule (of 8) | scores: status=1 form=2 sim=0.220
+2026-09-08 12:24:45,112 [WARNING] [Verify] MISMATCH: searched='clindamycin' (cleaned='clindamycin'), best_score=0.733 (threshold=0.80). Ingredients: ['CLINDAMYCIN HCL']
+2026-09-08 12:24:46,477 [INFO] ─── Processing 'cloxacillin' ───
+2026-09-08 12:24:46,477 [INFO] [NEML] Resolving 'cloxacillin' | is_combination=False | lead_query='cloxacillin'
+2026-09-08 12:24:46,688 [INFO] [NEML] 'cloxacillin' → 22 DRAP candidate(s): ['CLOXACILLIN INJECTION 250MG', 'CLOXACILLIN INJECTION 250MG', 'CLOXACILLIN INJECTION 500MG', 'CLOXACILLIN INJECTION 250MG', 'CLOXACILLIN INJECTION 500MG']
+2026-09-08 12:24:46,688 [INFO] [BrandSelect] 'cloxacillin' → 'FLUCLOXACILLIN CAPSULES 250MG' | reason: capsule (of 22) | scores: status=1 form=2 sim=0.379
+2026-09-08 12:24:48,146 [WARNING] [Verify] MISMATCH: searched='cloxacillin' (cleaned='cloxacillin'), best_score=0.458 (threshold=0.80). Ingredients: ['FLUCLOXACILLIN SODIUM BP']
+2026-09-08 12:24:48,645 [INFO] [RxNorm] exact search returned no RxCUI for 'FLUCLOXACILLIN SODIUM BP' — trying approximateTerm
+2026-09-08 12:24:49,456 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'FLUCLOXACILLIN SODIUM BP' -> 'floxacillin sodium' (rxcui=235750, score=13.41). Source data may contain a typo — review this mapping.
+2026-09-08 12:24:49,977 [INFO] ─── Processing 'fluconazole' ───
+2026-09-08 12:24:49,978 [INFO] [NEML] Resolving 'fluconazole' | is_combination=False | lead_query='fluconazole'
+2026-09-08 12:24:50,414 [INFO] [NEML] 'fluconazole' → 9 DRAP candidate(s): ['Fluzon Suspension Each 5Ml Contains:- Fluconazoleâ', 'Fluconazole Lawari Capsule 150mg', 'Fluziwell 200mg/100ml Infusion<br>[Fluconazole with Sodium Chloride 0.9%]', ' Conash Infusion l00mg/50ml (IV)<br>[Fluconazole in Sodium Chloride 0.9%}', ' Conash lnfusion 200mg/100ml (IV) <br>[Fluconazole in Sodium Chloride 0.9%]']
+2026-09-08 12:24:50,415 [INFO] [BrandSelect] 'fluconazole' → 'Fluconazole Salveo Capsule' | reason: capsule (of 9) | scores: status=1 form=2 sim=0.423
+2026-09-08 12:24:51,608 [INFO] [Verify] OK: 'fluconazole' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:24:53,609 [INFO] ─── Processing 'clotrimazole' ───
+2026-09-08 12:24:53,609 [INFO] [NEML] Resolving 'clotrimazole' | is_combination=False | lead_query='clotrimazole'
+2026-09-08 12:24:53,922 [INFO] [NEML] 'clotrimazole' → 7 DRAP candidate(s): ['Canesten Clotrimazole Cream', 'Vaginex-1 Cream Each tube contains:- Clotrimazole.', 'Imazole Cream Each 1Gm Contains:- Clotrimazole â€¦', 'Clotrimazole Cream', 'Clotrimazole Cream']
+2026-09-08 12:24:53,923 [INFO] [BrandSelect] 'clotrimazole' → 'Clotrimazole Solution 1%w/v' | reason: solution (of 7) | scores: status=1 form=2 sim=0.444
+2026-09-08 12:24:55,222 [INFO] [Verify] OK: 'clotrimazole' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:24:56,453 [INFO] ─── Processing 'terbinafine' ───
+2026-09-08 12:24:56,454 [INFO] [NEML] Resolving 'terbinafine' | is_combination=False | lead_query='terbinafine'
+2026-09-08 12:24:56,815 [INFO] [NEML] 'terbinafine' → 5 DRAP candidate(s): ['Terbinafine Tablet 250 mg', 'Terbinafine Cutaneous Solution 1%', ' Terbinafine Tablet  125mg', '  Terbinafine Tablet 25Omg', 'Terbinafine Cream 1%']
+2026-09-08 12:24:56,815 [INFO] [BrandSelect] 'terbinafine' → '  Terbinafine Tablet 25Omg' | reason: tablet (of 5) | scores: status=1 form=2 sim=0.458
+2026-09-08 12:24:58,275 [WARNING] [Verify] MISMATCH: searched='terbinafine' (cleaned='terbinafine'), best_score=0.367 (threshold=0.80). Ingredients: ['Terbinafine (as Hydrochloride)']
+2026-09-08 12:24:59,857 [INFO] ─── Processing 'nystatin' ───
+2026-09-08 12:24:59,857 [INFO] [NEML] Resolving 'nystatin' | is_combination=False | lead_query='nystatin'
+2026-09-08 12:25:00,063 [INFO] [NEML] 'nystatin' → 8 DRAP candidate(s): ['Nystatin 500000IU Oral Tablet', 'O-NYSTAL ORAL TAB Each tablet contains:- NYSTATIN ', 'Nystatin Tablets Each tablet contains;- Nystatin U', 'Nystatin Oral Drops Each ml contains;- Nystatin US', 'Nystatin Oral Drops']
+2026-09-08 12:25:00,064 [INFO] [BrandSelect] 'nystatin' → 'Nystatin Oral Drops' | reason: oral (of 8) | scores: status=1 form=2 sim=0.421
+2026-09-08 12:25:01,454 [INFO] [Verify] OK: 'nystatin' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:03,040 [INFO] ─── Processing 'aciclovir' ───
+2026-09-08 12:25:03,040 [INFO] [NEML] Resolving 'aciclovir' | is_combination=False | lead_query='aciclovir'
+2026-09-08 12:25:03,237 [INFO] [NEML] 'aciclovir' → 1 DRAP candidate(s): ['ACICLOVIR TABLETS']
+2026-09-08 12:25:04,706 [INFO] [Verify] OK: 'aciclovir' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:05,916 [INFO] ─── Processing 'chloroquine' ───
+2026-09-08 12:25:05,916 [INFO] [NEML] Resolving 'chloroquine' | is_combination=False | lead_query='chloroquine'
+2026-09-08 12:25:06,209 [INFO] [NEML] 'chloroquine' → 186 DRAP candidate(s): ['CHLOROQUINE INJECTION', 'CHLOROQUINE SULPHATE-TASTELESS TAB ', 'Chloroquine Phospate 250mg Tablet', 'CHLOROQUINE PHOSPHATE 250MG TAB ', 'CHLOROQUINE PHOSPHATE 250MG TAB ']
+2026-09-08 12:25:06,210 [INFO] [BrandSelect] 'chloroquine' → 'Chloroquine Syrup' | reason: syrup (of 186) | scores: status=1 form=2 sim=0.647
+2026-09-08 12:25:07,615 [INFO] [Verify] OK: 'chloroquine' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:08,412 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CHLOROQUINE' -> 'chloroquine' (rxcui=2393)
+2026-09-08 12:25:08,803 [INFO] ─── Processing 'ferrous salt' ───
+2026-09-08 12:25:08,803 [INFO] [NEML] Resolving 'ferrous salt' | is_combination=False | lead_query='ferrous salt'
+2026-09-08 12:25:09,182 [INFO] [NEML] No DRAP results for generic 'ferrous salt'
+2026-09-08 12:25:09,187 [INFO] ─── Processing 'folic acid' ───
+2026-09-08 12:25:09,187 [INFO] [NEML] Resolving 'folic acid' | is_combination=False | lead_query='folic acid'
+2026-09-08 12:25:10,685 [INFO] [NEML] 'folic acid' → 36 DRAP candidate(s): ['Folic Acid Tablets 5mg', 'Folic Acid 5mg Tablet   ', 'Iro-P (Iron-III and Folic Acid) Tablet', 'FOLIC ACID INJECTION', 'Folic Acid Tablet']
+2026-09-08 12:25:10,686 [INFO] [BrandSelect] 'folic acid' → 'Folic Acid Tablet' | reason: tablet (of 36) | scores: status=1 form=2 sim=0.588
+2026-09-08 12:25:12,274 [INFO] [Verify] OK: 'folic acid' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:13,563 [INFO] ─── Processing 'hydroxocobalamin' ───
+2026-09-08 12:25:13,564 [INFO] [NEML] Resolving 'hydroxocobalamin' | is_combination=False | lead_query='hydroxocobalamin'
+2026-09-08 12:25:13,876 [INFO] [NEML] No DRAP results for generic 'hydroxocobalamin'
+2026-09-08 12:25:13,884 [INFO] ─── Processing 'warfarin' ───
+2026-09-08 12:25:13,884 [INFO] [NEML] Resolving 'warfarin' | is_combination=False | lead_query='warfarin'
+2026-09-08 12:25:15,200 [INFO] [NEML] 'warfarin' → 4 DRAP candidate(s): ['WARFARIN TABLETS 1MG', 'WARFARIN TABLETS ', 'WARFARIN TABLETS', 'Farin-5 Tablets Each tablet contains:- Warfarin So']
+2026-09-08 12:25:15,200 [INFO] [BrandSelect] 'warfarin' → 'WARFARIN TABLETS ' | reason: tablet (of 4) | scores: status=1 form=2 sim=0.500
+2026-09-08 12:25:16,720 [WARNING] [Verify] MISMATCH: searched='warfarin' (cleaned='warfarin'), best_score=0.533 (threshold=0.80). Ingredients: ['WARFARIN SOD BP']
+2026-09-08 12:25:17,018 [INFO] [RxNorm] exact search returned no RxCUI for 'WARFARIN SOD BP' — trying approximateTerm
+2026-09-08 12:25:18,108 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'WARFARIN SOD BP' -> 'warfarin' (rxcui=11289, score=12.00). Source data may contain a typo — review this mapping.
+2026-09-08 12:25:18,967 [INFO] ─── Processing 'tranexamic acid' ───
+2026-09-08 12:25:18,967 [INFO] [NEML] Resolving 'tranexamic acid' | is_combination=False | lead_query='tranexamic acid'
+2026-09-08 12:25:19,622 [INFO] [NEML] 'tranexamic acid' → 2 DRAP candidate(s): ['Tranexamic Acid Semos Capsule 250mg', 'Tranexamic Acid Semos Capsule 500mg']
+2026-09-08 12:25:19,623 [INFO] [BrandSelect] 'tranexamic acid' → 'Tranexamic Acid Semos Capsule 250mg' | reason: capsule (of 2) | scores: status=1 form=2 sim=0.429
+2026-09-08 12:25:20,618 [INFO] [Verify] OK: 'tranexamic acid' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:23,169 [INFO] ─── Processing 'bisoprolol' ───
+2026-09-08 12:25:23,169 [INFO] [NEML] Resolving 'bisoprolol' | is_combination=False | lead_query='bisoprolol'
+2026-09-08 12:25:23,330 [INFO] [NEML] 'bisoprolol' → 8 DRAP candidate(s): ['Bisoprolol Fumarate Tablet 5mg', 'Bisoprolol Fumarate Tablet 2.5mg', 'Bisoprolol Fumarate Tablet 10mg ', 'Bisoprolol Caraway 5 mg Tablet', 'Bisoprolol Caraway 10 mg Tablet']
+2026-09-08 12:25:23,330 [INFO] [BrandSelect] 'bisoprolol' → 'Bisoprolol Fumarate Tablet 5mg' | reason: tablet (of 8) | scores: status=1 form=2 sim=0.333
+2026-09-08 12:25:24,717 [INFO] [Verify] OK: 'bisoprolol' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:25,538 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'BISOPROLOL' -> 'bisoprolol' (rxcui=19484)
+2026-09-08 12:25:26,072 [INFO] ─── Processing 'amlodipine' ───
+2026-09-08 12:25:26,072 [INFO] [NEML] Resolving 'amlodipine' | is_combination=False | lead_query='amlodipine'
+2026-09-08 12:25:26,428 [INFO] [NEML] 'amlodipine' → 5 DRAP candidate(s): ['Amlodipine 5mg Tablet', 'Amlodipine 10mg Tablet', 'AMLODIPINE BESYLATE+VALSARTAN TABS', 'Amlodipine-Getz Pharma Tablets 5mg', 'Amlodipine-Getz Pharma Tablets 10mg ']
+2026-09-08 12:25:26,429 [INFO] [BrandSelect] 'amlodipine' → 'Amlodipine 5mg Tablet' | reason: tablet (of 5) | scores: status=1 form=2 sim=0.476
+2026-09-08 12:25:27,824 [WARNING] [Verify] MISMATCH: searched='amlodipine' (cleaned='amlodipine'), best_score=0.227 (threshold=0.80). Ingredients: ['Amlodipine besylate equivalent to amlodipine']
+2026-09-08 12:25:28,364 [INFO] [RxNorm] exact search returned no RxCUI for 'AMLODIPINE BESYLATE EQUIVALENT TO AMLODIPINE' — trying approximateTerm
+2026-09-08 12:25:29,735 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'AMLODIPINE BESYLATE EQUIVALENT TO AMLODIPINE' -> 'amlodipine besylate' (rxcui=104416, score=19.27). Source data may contain a typo — review this mapping.
+2026-09-08 12:25:30,667 [INFO] ─── Processing 'enalapril' ───
+2026-09-08 12:25:30,667 [INFO] [NEML] Resolving 'enalapril' | is_combination=False | lead_query='enalapril'
+2026-09-08 12:25:31,157 [INFO] [NEML] 'enalapril' → 11 DRAP candidate(s): ['ENAPEL 5MG TAB Each tablet contains:- ENALAPRIL MA', 'ENAPEL 20MG TAB Each tablet contains:- ENALAPRIL M', 'LOTRIAL 5MG TAB Each tablet contains:- ENALAPRIL M', 'LOTRIAL 10MG TAB Each tablet contains:- ENALAPRIL ', 'LOTRIAL 20MG TAB Each tablet contains:- ENALAPRIL ']
+2026-09-08 12:25:31,158 [INFO] [BrandSelect] 'enalapril' → 'LOTRIAL 10MG TAB Each tablet contains:- ENALAPRIL ' | reason: tablet (of 11) | scores: status=1 form=2 sim=0.184
+2026-09-08 12:25:32,619 [INFO] [Verify] OK: 'enalapril' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:34,554 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'ENALAPRIL' -> 'enalapril' (rxcui=3827)
+2026-09-08 12:25:38,171 [INFO] ─── Processing 'hydrochlorothiazide' ───
+2026-09-08 12:25:38,171 [INFO] [NEML] Resolving 'hydrochlorothiazide' | is_combination=False | lead_query='hydrochlorothiazide'
+2026-09-08 12:25:38,362 [INFO] [NEML] 'hydrochlorothiazide' → 2 DRAP candidate(s): ['Amiloride 5mg+Hydrochlorothiazide 50mg Tablet', 'Losartan 50mg + Hydrochlorothiazide 12.5mg Tablet']
+2026-09-08 12:25:38,362 [INFO] [BrandSelect] 'hydrochlorothiazide' → 'Amiloride 5mg+Hydrochlorothiazide 50mg Tablet' | reason: tablet (of 2) | scores: status=1 form=2 sim=0.422
+2026-09-08 12:25:39,780 [INFO] [Verify] OK: 'hydrochlorothiazide' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:45,054 [INFO] ─── Processing 'losartan' ───
+2026-09-08 12:25:45,055 [INFO] [NEML] Resolving 'losartan' | is_combination=False | lead_query='losartan'
+2026-09-08 12:25:45,303 [INFO] [NEML] 'losartan' → 8 DRAP candidate(s): ['DV-Losartan PlusTablets ', 'Losartan Tablets', 'DV-Losartan 100mg Tablets', 'Losartan 50mg + Hydrochlorothiazide 12.5mg Tablet', 'Losartan Plus Salveo tablet']
+2026-09-08 12:25:45,303 [INFO] [BrandSelect] 'losartan' → 'Losartan Tablets' | reason: tablet (of 8) | scores: status=1 form=2 sim=0.500
+2026-09-08 12:25:47,015 [WARNING] [Verify] MISMATCH: searched='losartan' (cleaned='losartan'), best_score=0.364 (threshold=0.80). Ingredients: ['Losartan Potassium USP']
+2026-09-08 12:25:47,783 [INFO] [RxNorm] exact search returned no RxCUI for 'LOSARTAN POTASSIUM USP' — trying approximateTerm
+2026-09-08 12:25:49,067 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'LOSARTAN POTASSIUM USP' -> 'losartan potassium' (rxcui=203160, score=14.83). Source data may contain a typo — review this mapping.
+2026-09-08 12:25:50,945 [INFO] ─── Processing 'furosemide' ───
+2026-09-08 12:25:50,946 [INFO] [NEML] Resolving 'furosemide' | is_combination=False | lead_query='furosemide'
+2026-09-08 12:25:51,228 [INFO] [NEML] 'furosemide' → 7 DRAP candidate(s): ['FUROSEMIDE TABLET', 'FUROSEMIDE ', 'FUROSEMIDE INJ', 'Furosemide Tablet 40mg ', '  Furosemide Injection 20mg/2ml']
+2026-09-08 12:25:51,229 [INFO] [BrandSelect] 'furosemide' → 'FUROSEMIDE TABLET' | reason: tablet (of 7) | scores: status=1 form=2 sim=0.588
+2026-09-08 12:25:53,012 [WARNING] [Verify] MISMATCH: searched='furosemide' (cleaned='furosemide'), best_score=0.625 (threshold=0.80). Ingredients: ['FUROSEMIDE 40MG,']
+2026-09-08 12:25:54,619 [INFO] ─── Processing 'spironolactone' ───
+2026-09-08 12:25:54,619 [INFO] [NEML] Resolving 'spironolactone' | is_combination=False | lead_query='spironolactone'
+2026-09-08 12:25:54,872 [INFO] [NEML] 'spironolactone' → 1 DRAP candidate(s): ['Spironolactone 100mg Tablet']
+2026-09-08 12:25:56,570 [INFO] [Verify] OK: 'spironolactone' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:25:58,895 [INFO] ─── Processing 'digoxin' ───
+2026-09-08 12:25:58,895 [INFO] [NEML] Resolving 'digoxin' | is_combination=False | lead_query='digoxin'
+2026-09-08 12:25:59,308 [INFO] [NEML] 'digoxin' → 4 DRAP candidate(s): ['DIGOXIN 0.25MG TAB ', 'Digoxin 0.5mg/2ml Injection ', '  Digoxin 0.5mg/2ml Injection', 'Digoxin 0.5mg/2ml Injection']
+2026-09-08 12:25:59,308 [INFO] [BrandSelect] 'digoxin' → 'DIGOXIN 0.25MG TAB ' | reason: first of 4 | scores: status=1 form=1 sim=0.389
+2026-09-08 12:26:00,860 [WARNING] [Verify] MISMATCH: searched='digoxin' (cleaned='digoxin'), best_score=0.467 (threshold=0.80). Ingredients: ['DIGOXIN 0.25MG,']
+2026-09-08 12:26:05,291 [INFO] ─── Processing 'amiodarone' ───
+2026-09-08 12:26:05,292 [INFO] [NEML] Resolving 'amiodarone' | is_combination=False | lead_query='amiodarone'
+2026-09-08 12:26:05,677 [INFO] [NEML] 'amiodarone' → 1 DRAP candidate(s): ['CARDILOR 200 TAB Each tablet contains:- AMIODARONE']
+2026-09-08 12:26:07,325 [WARNING] [Verify] MISMATCH: searched='amiodarone' (cleaned='amiodarone'), best_score=0.714 (threshold=0.80). Ingredients: ['AMIODARONE HCL']
+2026-09-08 12:26:11,134 [INFO] ─── Processing 'clopidogrel' ───
+2026-09-08 12:26:11,134 [INFO] [NEML] Resolving 'clopidogrel' | is_combination=False | lead_query='clopidogrel'
+2026-09-08 12:26:11,379 [INFO] [NEML] 'clopidogrel' → 2 DRAP candidate(s): ['Clopidogrel Bisulfate 75mg Tablet', 'Clopidogrel Caraway 75mg Tablet']
+2026-09-08 12:26:11,379 [INFO] [BrandSelect] 'clopidogrel' → 'Clopidogrel Caraway 75mg Tablet' | reason: tablet (of 2) | scores: status=1 form=2 sim=0.355
+2026-09-08 12:26:12,880 [WARNING] [Verify] MISMATCH: searched='clopidogrel' (cleaned='clopidogrel'), best_score=0.458 (threshold=0.80). Ingredients: ['Clopidogrel as bisulfate']
+2026-09-08 12:26:13,254 [INFO] [RxNorm] exact search returned no RxCUI for 'CLOPIDOGREL AS BISULFATE' — trying approximateTerm
+2026-09-08 12:26:14,226 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'CLOPIDOGREL AS BISULFATE' -> 'clopidogrel bisulfate' (rxcui=236991, score=18.26). Source data may contain a typo — review this mapping.
+2026-09-08 12:26:15,845 [INFO] ─── Processing 'simvastatin' ───
+2026-09-08 12:26:15,846 [INFO] [NEML] Resolving 'simvastatin' | is_combination=False | lead_query='simvastatin'
+2026-09-08 12:26:16,315 [INFO] [NEML] 'simvastatin' → 1 DRAP candidate(s): ['Simvastatin 20 mg F-C Tablet']
+2026-09-08 12:26:18,023 [INFO] [Verify] OK: 'simvastatin' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:26:19,926 [INFO] ─── Processing 'glyceryl trinitrate' ───
+2026-09-08 12:26:19,927 [INFO] [NEML] Resolving 'glyceryl trinitrate' | is_combination=False | lead_query='glyceryl trinitrate'
+2026-09-08 12:26:20,867 [INFO] [NEML] No DRAP results for generic 'glyceryl trinitrate'
+2026-09-08 12:26:20,873 [INFO] ─── Processing 'isosorbide dinitrate' ───
+2026-09-08 12:26:20,873 [INFO] [NEML] Resolving 'isosorbide dinitrate' | is_combination=False | lead_query='isosorbide dinitrate'
+2026-09-08 12:26:21,762 [INFO] [NEML] No DRAP results for generic 'isosorbide dinitrate'
+2026-09-08 12:26:21,767 [INFO] ─── Processing 'amiloride' ───
+2026-09-08 12:26:21,767 [INFO] [NEML] Resolving 'amiloride' | is_combination=False | lead_query='amiloride'
+2026-09-08 12:26:23,597 [INFO] [NEML] 'amiloride' → 3 DRAP candidate(s): ['Amiloride 5mg+Hydrochlorothiazide 50mg Tablet', 'AMILORIDE HCL TAB ', 'AMILOURETIC TAB Each tablet contains:- AMILORIDE H']
+2026-09-08 12:26:23,597 [INFO] [BrandSelect] 'amiloride' → 'Amiloride 5mg+Hydrochlorothiazide 50mg Tablet' | reason: tablet (of 3) | scores: status=1 form=2 sim=0.200
+2026-09-08 12:26:25,064 [INFO] [Verify] OK: 'amiloride' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:26:29,415 [INFO] ─── Processing 'omeprazole' ───
+2026-09-08 12:26:29,417 [INFO] [NEML] Resolving 'omeprazole' | is_combination=False | lead_query='omeprazole'
+2026-09-08 12:26:29,584 [INFO] [NEML] 'omeprazole' → 21 DRAP candidate(s): ['Romeprazole-20 Capsule', 'PPI-20 Capsule Each capsule contains:- Omeprazoleâ', 'Delser Capsule Each Capsule Contains:- Omeprazoleâ', 'Gastromeprazole 20Mg Capsules    ', 'AOMEI (OMEPRAZOLE SODIUM FOR INJECTION).']
+2026-09-08 12:26:29,584 [INFO] [BrandSelect] 'omeprazole' → 'Romeprazole-20 Capsule' | reason: capsule (of 21) | scores: status=1 form=2 sim=0.455
+2026-09-08 12:26:31,504 [INFO] [Verify] OK: 'omeprazole' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:26:32,797 [INFO] ─── Processing 'ranitidine' ───
+2026-09-08 12:26:32,798 [INFO] [NEML] Resolving 'ranitidine' | is_combination=False | lead_query='ranitidine'
+2026-09-08 12:26:33,219 [INFO] [NEML] 'ranitidine' → 17 DRAP candidate(s): ['RANITIDINE 300MG TAB Each tablet contains:- RANITI', 'RANITIDINE 150MG TAB Each tablet contains:- RANITI', 'RANITIDINE 150MG TAB Each tablet contains:- HYDROC', 'RANITIDINE 150MG TAB Each tablet contains:- RANITI', 'MANITAC TAB Each tablet contains:- RANITIDINE HCL ']
+2026-09-08 12:26:33,220 [INFO] [BrandSelect] 'ranitidine' → 'Ranitidine 150mg Tablet' | reason: tablet (of 17) | scores: status=1 form=2 sim=0.435
+2026-09-08 12:26:34,387 [INFO] [Verify] OK: 'ranitidine' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:26:36,349 [INFO] ─── Processing 'sulfasalazine' ───
+2026-09-08 12:26:36,350 [INFO] [NEML] Resolving 'sulfasalazine' | is_combination=False | lead_query='sulfasalazine'
+2026-09-08 12:26:36,800 [INFO] [NEML] No DRAP results for generic 'sulfasalazine'
+2026-09-08 12:26:36,810 [INFO] ─── Processing 'levothyroxine' ───
+2026-09-08 12:26:36,810 [INFO] [NEML] Resolving 'levothyroxine' | is_combination=False | lead_query='levothyroxine'
+2026-09-08 12:26:38,219 [INFO] [NEML] No DRAP results for generic 'levothyroxine'
+2026-09-08 12:26:38,228 [INFO] ─── Processing 'methimazole' ───
+2026-09-08 12:26:38,229 [INFO] [NEML] Resolving 'methimazole' | is_combination=False | lead_query='methimazole'
+2026-09-08 12:26:39,671 [INFO] [NEML] No DRAP results for generic 'methimazole'
+2026-09-08 12:26:39,677 [INFO] ─── Processing 'metformin' ───
+2026-09-08 12:26:39,677 [INFO] [NEML] Resolving 'metformin' | is_combination=False | lead_query='metformin'
+2026-09-08 12:26:41,201 [INFO] [NEML] 'metformin' → 18 DRAP candidate(s): ['METFORMIN 250MG TAB ', 'GLUMIN 500MG TAB Each tablet contains:- METFORMIN ', 'UNEPHAGE TAB Each tablet contains:- METFORMIN HCL ', 'ORABET 500MG TAB Each tablet contains:- METFORMIN ', 'ORABAT 850MG TAB Each tablet contains:- METFORMIN ']
+2026-09-08 12:26:41,203 [INFO] [BrandSelect] 'metformin' → ' Metformin Tablet 1g ' | reason: tablet (of 18) | scores: status=1 form=2 sim=0.474
+2026-09-08 12:26:42,603 [INFO] [Verify] OK: 'metformin' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:26:43,797 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'METFORMIN' -> 'metformin' (rxcui=6809)
+2026-09-08 12:26:45,310 [INFO] ─── Processing 'gliclazide' ───
+2026-09-08 12:26:45,310 [INFO] [NEML] Resolving 'gliclazide' | is_combination=False | lead_query='gliclazide'
+2026-09-08 12:26:45,775 [INFO] [NEML] 'gliclazide' → 6 DRAP candidate(s): ['CALONIDE TAB Each tablet contains:- GLICLAZIDE 80m', 'Gliclazide Tablet ', 'Gliclazide MR Tablet 30mg', 'Gliclazide MR Tablet 60mg', 'Gliclazide MR Tablet 30mg']
+2026-09-08 12:26:45,775 [INFO] [BrandSelect] 'gliclazide' → 'Gliclazide Tablet ' | reason: tablet (of 6) | scores: status=1 form=2 sim=0.588
+2026-09-08 12:26:46,922 [INFO] [Verify] OK: 'gliclazide' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:26:48,470 [INFO] ─── Processing 'empagliflozin' ───
+2026-09-08 12:26:48,471 [INFO] [NEML] Resolving 'empagliflozin' | is_combination=False | lead_query='empagliflozin'
+2026-09-08 12:26:48,780 [INFO] [NEML] No DRAP results for generic 'empagliflozin'
+2026-09-08 12:26:48,786 [INFO] ─── Processing 'glucagon' ───
+2026-09-08 12:26:48,786 [INFO] [NEML] Resolving 'glucagon' | is_combination=False | lead_query='glucagon'
+2026-09-08 12:26:50,135 [INFO] [NEML] No DRAP results for generic 'glucagon'
+2026-09-08 12:26:50,144 [INFO] ─── Processing 'ethinylestradiol + levonorgestrel' ───
+2026-09-08 12:26:50,144 [INFO] [NEML] Resolving 'ethinylestradiol + levonorgestrel' | is_combination=True | lead_query='ethinylestradiol'
+2026-09-08 12:26:51,599 [INFO] [NEML] No DRAP results for generic 'ethinylestradiol + levonorgestrel'
+2026-09-08 12:26:51,611 [INFO] ─── Processing 'olanzapine' ───
+2026-09-08 12:26:51,611 [INFO] [NEML] Resolving 'olanzapine' | is_combination=False | lead_query='olanzapine'
+2026-09-08 12:26:53,110 [INFO] [NEML] 'olanzapine' → 2 DRAP candidate(s): ['Olanzapine-Sandoz 5mg Tablets      ', 'Olanzapine-Sandoz 10mg Tablets      ']
+2026-09-08 12:26:53,110 [INFO] [BrandSelect] 'olanzapine' → 'Olanzapine-Sandoz 5mg Tablets      ' | reason: tablet (of 2) | scores: status=1 form=2 sim=0.345
+2026-09-08 12:26:54,822 [WARNING] [Verify] MISMATCH: searched='olanzapine' (cleaned='olanzapine'), best_score=0.714 (threshold=0.80). Ingredients: ['Â\xa0  Olanzapine']
+2026-09-08 12:26:55,130 [INFO] [RxNorm] exact search returned no RxCUI for 'Â   OLANZAPINE' — trying approximateTerm
+2026-09-08 12:26:56,121 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'Â   OLANZAPINE' -> 'olanzapine' (rxcui=61381, score=12.11). Source data may contain a typo — review this mapping.
+2026-09-08 12:26:57,543 [INFO] ─── Processing 'risperidone' ───
+2026-09-08 12:26:57,543 [INFO] [NEML] Resolving 'risperidone' | is_combination=False | lead_query='risperidone'
+2026-09-08 12:26:57,673 [INFO] [NEML] 'risperidone' → 4 DRAP candidate(s): ['Risperidone-Sandoz 1mg Tablet', 'Risperidone-Sandoz 2mg Tablet', 'Risperidone-Sandoz 3mg Tablet', 'Risperidone-Sandoz 4mg Tablet']
+2026-09-08 12:26:57,674 [INFO] [BrandSelect] 'risperidone' → 'Risperidone-Sandoz 1mg Tablet' | reason: tablet (of 4) | scores: status=1 form=2 sim=0.379
+2026-09-08 12:26:59,164 [INFO] [Verify] OK: 'risperidone' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:27:01,286 [INFO] ─── Processing 'lithium carbonate' ───
+2026-09-08 12:27:01,287 [INFO] [NEML] Resolving 'lithium carbonate' | is_combination=False | lead_query='lithium carbonate'
+2026-09-08 12:27:01,585 [INFO] [NEML] 'lithium carbonate' → 1 DRAP candidate(s): ['LITHIUM CARBONATE TABLET']
+2026-09-08 12:27:02,903 [WARNING] [Verify] MISMATCH: searched='lithium carbonate' (cleaned='lithium carbonate'), best_score=0.708 (threshold=0.80). Ingredients: ['LITHIUM CARBONATE 400MG,']
+2026-09-08 12:27:04,298 [INFO] ─── Processing 'quetiapine' ───
+2026-09-08 12:27:04,298 [INFO] [NEML] Resolving 'quetiapine' | is_combination=False | lead_query='quetiapine'
+2026-09-08 12:27:04,533 [INFO] [NEML] No DRAP results for generic 'quetiapine'
+2026-09-08 12:27:04,540 [INFO] ─── Processing 'clomipramine' ───
+2026-09-08 12:27:04,540 [INFO] [NEML] Resolving 'clomipramine' | is_combination=False | lead_query='clomipramine'
+2026-09-08 12:27:06,097 [INFO] [NEML] No DRAP results for generic 'clomipramine'
+2026-09-08 12:27:06,103 [INFO] ─── Processing 'bupropion' ───
+2026-09-08 12:27:06,103 [INFO] [NEML] Resolving 'bupropion' | is_combination=False | lead_query='bupropion'
+2026-09-08 12:27:07,520 [INFO] [NEML] No DRAP results for generic 'bupropion'
+2026-09-08 12:27:07,528 [INFO] ─── Processing 'budesonide' ───
+2026-09-08 12:27:07,528 [INFO] [NEML] Resolving 'budesonide' | is_combination=False | lead_query='budesonide'
+2026-09-08 12:27:09,071 [INFO] [NEML] No DRAP results for generic 'budesonide'
+2026-09-08 12:27:09,085 [INFO] ─── Processing 'salbutamol' ───
+2026-09-08 12:27:09,085 [INFO] [NEML] Resolving 'salbutamol' | is_combination=False | lead_query='salbutamol'
+2026-09-08 12:27:10,458 [INFO] [NEML] 'salbutamol' → 9 DRAP candidate(s): ['Salbutamol Syrup', 'SALBUTAMOL AEROSAL ', 'SALBUTAMOL SYP', 'SALBUTAMOL AEROSOL SUSPENSION', 'Asmatol Injection  Each 1Ml Contains:- Salbutamol ']
+2026-09-08 12:27:10,459 [INFO] [BrandSelect] 'salbutamol' → 'Salbutamol Syrup' | reason: syrup (of 9) | scores: status=1 form=2 sim=0.625
+2026-09-08 12:27:11,843 [WARNING] [Verify] MISMATCH: searched='salbutamol' (cleaned='salbutamol'), best_score=0.417 (threshold=0.80). Ingredients: ['Salbutamol (as Sulphate)']
+2026-09-08 12:27:12,138 [INFO] [RxNorm] exact search returned no RxCUI for 'SALBUTAMOL (AS SULPHATE)' — trying approximateTerm
+2026-09-08 12:27:13,359 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'SALBUTAMOL (AS SULPHATE)' -> 'albuterol' (rxcui=435, score=8.58). Source data may contain a typo — review this mapping.
+2026-09-08 12:27:13,980 [INFO] ─── Processing 'ipratropium bromide' ───
+2026-09-08 12:27:13,980 [INFO] [NEML] Resolving 'ipratropium bromide' | is_combination=False | lead_query='ipratropium bromide'
+2026-09-08 12:27:14,126 [INFO] [NEML] 'ipratropium bromide' → 3 DRAP candidate(s): ['Ipratropium Bromide 0.5mg and Albuterol Sulfate 3m', '  Ipratropium Bromide 500 mcg / 2 ml Nebulizer Solution', 'Ipratropium Bromide 500mcg/2ml Nebulizer Solution']
+2026-09-08 12:27:14,127 [INFO] [BrandSelect] 'ipratropium bromide' → 'Ipratropium Bromide 500mcg/2ml Nebulizer Solution' | reason: solution (of 3) | scores: status=1 form=2 sim=0.388
+2026-09-08 12:27:15,520 [INFO] [Verify] OK: 'ipratropium bromide' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:27:16,322 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'IPRATROPIUM' -> 'ipratropium' (rxcui=7213)
+2026-09-08 12:27:17,668 [INFO] ─── Processing 'tiotropium' ───
+2026-09-08 12:27:17,669 [INFO] [NEML] Resolving 'tiotropium' | is_combination=False | lead_query='tiotropium'
+2026-09-08 12:27:17,865 [INFO] [NEML] No DRAP results for generic 'tiotropium'
+2026-09-08 12:27:17,877 [INFO] ─── Processing 'calcium' ───
+2026-09-08 12:27:17,878 [INFO] [NEML] Resolving 'calcium' | is_combination=False | lead_query='calcium'
+2026-09-08 12:27:20,355 [INFO] [NEML] 'calcium' → 103 DRAP candidate(s): ['Calcium Syrup.', 'CALCIUM FLOGEN 25MG INJECTION.', 'CALCIUM FLOGEN 100MG INJECTION.', 'CALCIUM FLOGEN I.V INJECTION', 'FOSFOMYCIN CALCIUM FOR SUSPENSION.']
+2026-09-08 12:27:20,356 [INFO] [BrandSelect] 'calcium' → 'Calcium syrup ' | reason: syrup (of 103) | scores: status=1 form=2 sim=0.538
+2026-09-08 12:27:20,729 [WARNING] [Verify] MISMATCH: searched='calcium' (cleaned='calcium'), best_score=0.179 (threshold=0.80). Ingredients: ['Cal Heptagluconatelevakinate']
+2026-09-08 12:27:21,020 [INFO] [RxNorm] exact search returned no RxCUI for 'CAL HEPTAGLUCONATELEVAKINATE' — trying approximateTerm
+2026-09-08 12:27:22,032 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'CAL HEPTAGLUCONATELEVAKINATE' -> 'None' (rxcui=605098, score=11.78). Source data may contain a typo — review this mapping.
+2026-09-08 12:27:22,484 [INFO] ─── Processing 'colecalciferol (vitamin D)' ───
+2026-09-08 12:27:22,484 [INFO] [NEML] Resolving 'colecalciferol (vitamin D)' | is_combination=False | lead_query='colecalciferol'
+2026-09-08 12:27:22,664 [INFO] [NEML] No DRAP results for generic 'colecalciferol (vitamin D)'
+2026-09-08 12:27:22,670 [INFO] ─── Processing 'ascorbic acid (vitamin C)' ───
+2026-09-08 12:27:22,670 [INFO] [NEML] Resolving 'ascorbic acid (vitamin C)' | is_combination=False | lead_query='ascorbic acid'
+2026-09-08 12:27:24,582 [INFO] [NEML] 'ascorbic acid (vitamin C)' → 38 DRAP candidate(s): ['Ascorbic Acid 50mg Tablets', 'ASCORBIC ACID TABLET', 'ASCORBIC ACID 500 MG INJ', 'Ascorbic Acid 100mg Tablet', 'Ascorbic Acid 500mg Tablet']
+2026-09-08 12:27:24,582 [INFO] [BrandSelect] 'ascorbic acid' → 'ASCORBIC ACID TABLET' | reason: tablet (of 38) | scores: status=1 form=2 sim=0.650
+2026-09-08 12:27:25,545 [WARNING] [Verify] MISMATCH: searched='ascorbic acid (vitamin C)' (cleaned='ascorbic acid'), best_score=0.650 (threshold=0.80). Ingredients: ['ASCORBIC ACID 100MG,']
+2026-09-08 12:27:26,740 [INFO] ─── Processing 'pyridoxine (vitamin B6)' ───
+2026-09-08 12:27:26,740 [INFO] [NEML] Resolving 'pyridoxine (vitamin B6)' | is_combination=False | lead_query='pyridoxine'
+2026-09-08 12:27:27,135 [INFO] [NEML] 'pyridoxine (vitamin B6)' → 5 DRAP candidate(s): ['ISO-BENZACYL FORTE + PYRIDOXINE TAB ', 'PYRIDOXINE INJECTION', 'PYRIDOXINE HCL 50 MG TABLET ', 'Pyride Tablets Each tablet contains:- Pyridoxine H', 'V-Six Tablets Each Tablet Contains:- Pyridoxine Hc']
+2026-09-08 12:27:27,135 [INFO] [BrandSelect] 'pyridoxine' → 'PYRIDOXINE HCL 50 MG TABLET ' | reason: tablet (of 5) | scores: status=1 form=2 sim=0.370
+2026-09-08 12:27:28,547 [WARNING] [Verify] MISMATCH: searched='pyridoxine (vitamin B6)' (cleaned='pyridoxine'), best_score=0.714 (threshold=0.80). Ingredients: ['PYRIDOXINE HCL']
+2026-09-08 12:27:29,748 [INFO] ─── Processing 'thiamine (vitamin B1)' ───
+2026-09-08 12:27:29,749 [INFO] [NEML] Resolving 'thiamine (vitamin B1)' | is_combination=False | lead_query='thiamine'
+2026-09-08 12:27:30,113 [INFO] [NEML] 'thiamine (vitamin B1)' → 21 DRAP candidate(s): ['THIAMINE 100MG TAB ', 'Thiamine Hcl', 'Thiamine Compound Capsule', 'THIAMINE TAB ', 'THIAMINE HCL INJECTION']
+2026-09-08 12:27:30,113 [INFO] [BrandSelect] 'thiamine' → 'THIAMINE COMPOUND TABLET ' | reason: tablet (of 21) | scores: status=1 form=2 sim=0.333
+2026-09-08 12:27:31,633 [WARNING] [Verify] MISMATCH: searched='thiamine (vitamin B1)' (cleaned='thiamine'), best_score=0.400 (threshold=0.80). Ingredients: ['THIAMINE MONONITRATE']
+2026-09-08 12:27:32,956 [INFO] ─── Processing 'xylometazoline' ───
+2026-09-08 12:27:32,957 [INFO] [NEML] Resolving 'xylometazoline' | is_combination=False | lead_query='xylometazoline'
+2026-09-08 12:27:33,156 [INFO] [NEML] 'xylometazoline' → 2 DRAP candidate(s): ['XYLOMETAZOLINE ', 'Xylometazoline Nasal Spray']
+2026-09-08 12:27:33,156 [INFO] [BrandSelect] 'xylometazoline' → 'XYLOMETAZOLINE ' | reason: first of 2 | scores: status=1 form=1 sim=1.000
+2026-09-08 12:27:34,543 [WARNING] [Verify] MISMATCH: searched='xylometazoline' (cleaned='xylometazoline'), best_score=0.483 (threshold=0.80). Ingredients: ['XYLOMETAZOLINE HCL 0.1%,  W/V']
+2026-09-08 12:27:34,946 [INFO] [RxNorm] exact search returned no RxCUI for 'XYLOMETAZOLINE HCL 0.1%,  W/V' — trying approximateTerm
+2026-09-08 12:27:35,838 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'XYLOMETAZOLINE HCL 0.1%,  W/V' -> 'xylometazoline hydrochloride 1 MG/ML Nasal Solution' (rxcui=1549372, score=12.60). Source data may contain a typo — review this mapping.
+2026-09-08 12:27:36,310 [INFO] ─── Processing 'allopurinol' ───
+2026-09-08 12:27:36,310 [INFO] [NEML] Resolving 'allopurinol' | is_combination=False | lead_query='allopurinol'
+2026-09-08 12:27:36,497 [INFO] [NEML] 'allopurinol' → 2 DRAP candidate(s): ['Allopurinol 100mg Tablet', 'ALLOPURINOL -RETARD TABLET']
+2026-09-08 12:27:36,497 [INFO] [BrandSelect] 'allopurinol' → 'Allopurinol 100mg Tablet' | reason: tablet (of 2) | scores: status=1 form=2 sim=0.458
+2026-09-08 12:27:38,040 [INFO] [Verify] OK: 'allopurinol' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:27:39,598 [INFO] ─── Processing 'hydroxychloroquine' ───
+2026-09-08 12:27:39,598 [INFO] [NEML] Resolving 'hydroxychloroquine' | is_combination=False | lead_query='hydroxychloroquine'
+2026-09-08 12:27:40,052 [INFO] [NEML] 'hydroxychloroquine' → 10 DRAP candidate(s): ['Hydroxychloroquine 200mg Tablet', 'Hydroxychloroquine 200mg Tablet', 'Hydroxychloroquine Tablet', 'Hydroxychloroquine Tablet 200mg', 'Hydroxychloroquine Tablet 200mg']
+2026-09-08 12:27:40,052 [INFO] [BrandSelect] 'hydroxychloroquine' → 'Hydroxychloroquine Tablet' | reason: tablet (of 10) | scores: status=1 form=2 sim=0.720
+2026-09-08 12:27:41,423 [INFO] [Verify] OK: 'hydroxychloroquine' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:27:43,073 [INFO] ─── Processing 'methotrexate' ───
+2026-09-08 12:27:43,074 [INFO] [NEML] Resolving 'methotrexate' | is_combination=False | lead_query='methotrexate'
+2026-09-08 12:27:43,199 [INFO] [NEML] 'methotrexate' → 32 DRAP candidate(s): ['METHOTREXATE TABLET 2.5MG', 'Methotrexate Tablets 5mg', 'METHOTREXATE TABLET 10MG', 'METHOTREXATE FOR INJECTION 10MG', 'METHOTREXATE FOR INJECTION 50MG']
+2026-09-08 12:27:43,200 [INFO] [BrandSelect] 'methotrexate' → 'METHOTREXATE TABLETS' | reason: tablet (of 32) | scores: status=1 form=2 sim=0.600
+2026-09-08 12:27:44,677 [INFO] [Verify] OK: 'methotrexate' → best_score=1.000 (threshold=0.80)
+2026-09-08 12:27:46,494 [INFO] 
+2026-09-08 12:27:46,494 [INFO] ═══════════════════════════════════════════════
+2026-09-08 12:27:46,495 [INFO]   NEML batch complete — 96 generics processed
+2026-09-08 12:27:46,495 [INFO]   Output: neml_pipeline_results.csv
+2026-09-08 12:27:46,495 [INFO]   Status summary:
+2026-09-08 12:27:46,495 [INFO]     ok                                             38  ██████████████████████████████████████
+2026-09-08 12:27:46,496 [INFO]     composition_mismatch                           35  ███████████████████████████████████
+2026-09-08 12:27:46,496 [INFO]     no_drap_match                                  20  ████████████████████
+2026-09-08 12:27:46,496 [INFO]     empty_data                                      2  ██
+2026-09-08 12:27:46,497 [INFO]     combination_component_mismatch                  1  █
+2026-09-08 12:27:46,497 [INFO] ═══════════════════════════════════════════════
+2026-09-09 21:04:35,261 [INFO] Loaded 96 generic(s) from E:\mediAid_langraph\data\neml_generics.json
+2026-09-09 21:04:35,262 [INFO] ─── Processing 'acetylsalicylic acid' ───
+2026-09-09 21:04:35,262 [INFO] [NEML] Resolving 'acetylsalicylic acid' | is_combination=False | lead_query='acetylsalicylic acid'
+2026-09-09 21:04:36,484 [INFO] [NEML] No results for 'acetylsalicylic acid' — trying fallback query 'aspirin'
+2026-09-09 21:04:36,937 [INFO] [NEML] Fallback 'aspirin' → 118 DRAP candidate(s): ['ASPIRIN 300MG TAB ', 'ASPIRIN TAB ', 'ASPIRIN CO TAB ', 'ASPIRIN TAB ', 'ASPIRIN COMPOUND TAB ']
+2026-09-09 21:04:36,938 [INFO] [NEML] 'acetylsalicylic acid' → 118 DRAP candidate(s): ['ASPIRIN 300MG TAB ', 'ASPIRIN TAB ', 'ASPIRIN CO TAB ', 'ASPIRIN TAB ', 'ASPIRIN COMPOUND TAB ']
+2026-09-09 21:04:36,938 [INFO] [BrandSelect] 'aspirin' → 'ASPIRIN TABLET' | reason: tablet (of 118) | scores: combo=0 status=1 form=2 sim=0.500
+2026-09-09 21:04:38,438 [INFO] [Verify] OK: 'acetylsalicylic acid' → best_score=0.952 (threshold=0.80)
+2026-09-09 21:04:45,478 [INFO] ─── Processing 'ibuprofen' ───
+2026-09-09 21:04:45,479 [INFO] [NEML] Resolving 'ibuprofen' | is_combination=False | lead_query='ibuprofen'
+2026-09-09 21:04:45,684 [INFO] [NEML] 'ibuprofen' → 56 DRAP candidate(s): ['Ibuprofen Suspension', 'Ibuprofen Oral Suspension ', 'IBUPROFEN 200MG TAB ', 'IBUPROFEN 400MG TAB ', 'IBUPROFEN 400MG TABLET']
+2026-09-09 21:04:45,695 [INFO] [BrandSelect] 'ibuprofen' → 'Ibuprofen Tablets ' | reason: tablet (of 56) | scores: combo=0 status=1 form=2 sim=0.529
+2026-09-09 21:04:47,241 [INFO] ─── Processing 'paracetamol (acetaminophen)' ───
+2026-09-09 21:04:47,241 [INFO] [NEML] Resolving 'paracetamol (acetaminophen)' | is_combination=False | lead_query='paracetamol'
+2026-09-09 21:04:51,383 [INFO] [NEML] 'paracetamol (acetaminophen)' → 237 DRAP candidate(s): ['Paracetamol-666 Tablet', 'Paracetamol 120mg Oral Suspension', 'PARACETAMOL 120MG SUP', 'PARACETAMOL 500MG TAB ', 'PARACETAMOL COMPOUND TABLET']
+2026-09-09 21:04:51,386 [INFO] [BrandSelect] 'paracetamol' → 'Paracetamol Syrup' | reason: syrup (of 237) | scores: combo=0 status=1 form=2 sim=0.647
+2026-09-09 21:04:52,157 [INFO] [Verify] OK: 'paracetamol (acetaminophen)' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:04:57,611 [INFO] ─── Processing 'codeine' ───
+2026-09-09 21:04:57,611 [INFO] [NEML] Resolving 'codeine' | is_combination=False | lead_query='codeine'
+2026-09-09 21:04:57,794 [INFO] [NEML] 'codeine' → 1 DRAP candidate(s): ['Codeine Plus Tablets']
+2026-09-09 21:05:01,690 [INFO] [Verify] OK: 'codeine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:05:03,807 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CODEINE' -> 'codeine' (rxcui=2670)
+2026-09-09 21:05:11,535 [INFO] ─── Processing 'amitriptyline' ───
+2026-09-09 21:05:11,535 [INFO] [NEML] Resolving 'amitriptyline' | is_combination=False | lead_query='amitriptyline'
+2026-09-09 21:05:13,426 [INFO] [NEML] 'amitriptyline' → 9 DRAP candidate(s): ['Amitriptyline 25mg Tablet', 'AMITRIPTYLINE 25MG TAB ', 'AMITRIPTYLINE TAB ', 'AMITRIPTYLINE 75MG TAB ', 'AMITRIPTYLINE 25MG TAB ']
+2026-09-09 21:05:13,427 [INFO] [BrandSelect] 'amitriptyline' → 'Amitriptyline 25mg Tablet' | reason: tablet (of 9) | scores: combo=0 status=1 form=2 sim=0.520
+2026-09-09 21:05:13,576 [INFO] [Verify] OK: 'amitriptyline' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:05:14,934 [INFO] ─── Processing 'diazepam' ───
+2026-09-09 21:05:14,934 [INFO] [NEML] Resolving 'diazepam' | is_combination=False | lead_query='diazepam'
+2026-09-09 21:05:15,104 [INFO] [NEML] 'diazepam' → 111 DRAP candidate(s): ['Diazepam Tablet 5mg', 'Diazepam Tablets 10mg', 'Diazepam-5mg Tablet                               ', 'Diazepam-2mg Tablets', 'DIAZEPAM 2MG TABLET']
+2026-09-09 21:05:15,106 [INFO] [BrandSelect] 'diazepam' → 'DIAZEPAM TABLET' | reason: tablet (of 111) | scores: combo=0 status=1 form=2 sim=0.533
+2026-09-09 21:05:16,498 [INFO] [Verify] OK: 'diazepam' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:05:17,941 [INFO] ─── Processing 'loperamide' ───
+2026-09-09 21:05:17,941 [INFO] [NEML] Resolving 'loperamide' | is_combination=False | lead_query='loperamide'
+2026-09-09 21:05:18,328 [INFO] [NEML] 'loperamide' → 3 DRAP candidate(s): ['DIAVEX-LOPERAMIDE CAP ', 'STOPMOT CAP Each capsule contains:- LOPERAMIDE HCL', 'Novex Loperamide Capsule']
+2026-09-09 21:05:18,328 [INFO] [BrandSelect] 'loperamide' → 'Novex Loperamide Capsule' | reason: capsule (of 3) | scores: combo=0 status=1 form=2 sim=0.417
+2026-09-09 21:05:19,591 [INFO] [Verify] OK: 'loperamide' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:05:27,217 [INFO] ─── Processing 'metoclopramide' ───
+2026-09-09 21:05:27,218 [INFO] [NEML] Resolving 'metoclopramide' | is_combination=False | lead_query='metoclopramide'
+2026-09-09 21:05:28,949 [INFO] [NEML] 'metoclopramide' → 15 DRAP candidate(s): ['Metoclopramide Tablets 10mg', 'Metoclopramide Syrup', 'METOCLOPRAMIDE TAB ', 'METOCLOPRAMIDE SYP', 'METOCLOPRAMIDE HCL INJECTION']
+2026-09-09 21:05:28,950 [INFO] [BrandSelect] 'metoclopramide' → 'Metoclopramide Syrup' | reason: syrup (of 15) | scores: combo=0 status=1 form=2 sim=0.700
+2026-09-09 21:05:30,874 [INFO] [Verify] OK: 'metoclopramide' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:05:32,891 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'METOCLOPRAMIDE' -> 'metoclopramide' (rxcui=6915)
+2026-09-09 21:05:33,520 [INFO] ─── Processing 'ondansetron' ───
+2026-09-09 21:05:33,520 [INFO] [NEML] Resolving 'ondansetron' | is_combination=False | lead_query='ondansetron'
+2026-09-09 21:05:33,660 [INFO] [NEML] 'ondansetron' → 7 DRAP candidate(s): ['ONDANSETRON-SANDOZ 8MG/4ML SOLUTION FOR INJECTION.', 'Ondansetron Normon 8Mg Injection ', 'Ondansetron Injection 8mg/4ml', 'Ondansetron 8mg/4ml Injection', 'Ondansetron 8mg/4ml Injection']
+2026-09-09 21:05:33,661 [INFO] [BrandSelect] 'ondansetron' → 'ONDANSETRON-SANDOZ 8MG/4ML SOLUTION FOR INJECTION.' | reason: solution (of 7) | scores: combo=0 status=1 form=2 sim=0.220
+2026-09-09 21:05:35,197 [INFO] [Verify] OK: 'ondansetron' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:05:36,804 [INFO] ─── Processing 'senna' ───
+2026-09-09 21:05:36,805 [INFO] [NEML] Resolving 'senna' | is_combination=False | lead_query='senna'
+2026-09-09 21:05:37,033 [INFO] [NEML] 'senna' → 2 DRAP candidate(s): ['Senna Tablet 50mg', 'Senna Tablet 100mg']
+2026-09-09 21:05:37,033 [INFO] [BrandSelect] 'senna' → 'Senna Tablet 50mg' | reason: tablet (of 2) | scores: combo=0 status=1 form=2 sim=0.294
+2026-09-09 21:05:38,404 [WARNING] [Verify] MISMATCH: searched='senna' (cleaned='senna'), best_score=0.222 (threshold=0.80). Ingredients: ['Sildenafil Citrate eq. to Sildenafil']
+2026-09-09 21:05:39,332 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'SILDENAFIL CITRATE' -> 'sildenafil citrate' (rxcui=221161)
+2026-09-09 21:05:39,958 [INFO] ─── Processing 'fluoxetine' ───
+2026-09-09 21:05:39,958 [INFO] [NEML] Resolving 'fluoxetine' | is_combination=False | lead_query='fluoxetine'
+2026-09-09 21:05:40,172 [INFO] [NEML] 'fluoxetine' → 3 DRAP candidate(s): ['Flit Tablets Each Tablet Contains:- Fluoxetine Hcl', 'Fluoxetine Capsule', 'Fluoxetine capsule']
+2026-09-09 21:05:40,172 [INFO] [BrandSelect] 'fluoxetine' → 'Fluoxetine Capsule' | reason: capsule (of 3) | scores: combo=0 status=1 form=2 sim=0.556
+2026-09-09 21:05:42,666 [INFO] [Verify] OK: 'fluoxetine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:05:44,047 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'FLUOXETINE' -> 'fluoxetine' (rxcui=4493)
+2026-09-09 21:05:44,556 [INFO] ─── Processing 'haloperidol' ───
+2026-09-09 21:05:44,556 [INFO] [NEML] Resolving 'haloperidol' | is_combination=False | lead_query='haloperidol'
+2026-09-09 21:05:44,685 [INFO] [NEML] 'haloperidol' → 2 DRAP candidate(s): ['Halperon  Drops Each ml contains:- Haloperidolâ€¦.', 'Haloperidol Tablets']
+2026-09-09 21:05:44,685 [INFO] [BrandSelect] 'haloperidol' → 'Haloperidol Tablets' | reason: tablet (of 2) | scores: combo=0 status=1 form=2 sim=0.579
+2026-09-09 21:05:46,139 [INFO] ─── Processing 'dexamethasone' ───
+2026-09-09 21:05:46,140 [INFO] [NEML] Resolving 'dexamethasone' | is_combination=False | lead_query='dexamethasone'
+2026-09-09 21:05:47,766 [INFO] [NEML] 'dexamethasone' → 62 DRAP candidate(s): ['Dexamethasone Injection', 'DEXAMETHASONE TABLET', 'DEXAMETHASONE TABLET', 'DEXAMETHASONE TAB ', 'DEXAMETHASONE TAB ']
+2026-09-09 21:05:47,767 [INFO] [BrandSelect] 'dexamethasone' → 'DEXAMETHASONE TABLET' | reason: tablet (of 62) | scores: combo=0 status=1 form=2 sim=0.650
+2026-09-09 21:05:49,113 [INFO] [Verify] OK: 'dexamethasone' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:05:50,496 [INFO] ─── Processing 'epinephrine (adrenaline)' ───
+2026-09-09 21:05:50,520 [INFO] [NEML] Resolving 'epinephrine (adrenaline)' | is_combination=False | lead_query='epinephrine'
+2026-09-09 21:05:50,725 [INFO] [NEML] 'epinephrine (adrenaline)' → 6 DRAP candidate(s): ['RAPICAINE 2% EPINEPHRINE', 'LENTOCAINE 2% EPINEPHRINE', 'XILONIBSA 2% WITH EPINEPHRINE 1:80.000 SOLUTION FO', 'ARTICAINE 4% WITH EPINEPHRINE 1:100.000 INIBSA SOL', 'ARTICAINE 4% WITH EPINEPHRINE 1:200.000 INIBSA SOL']
+2026-09-09 21:05:50,725 [INFO] [BrandSelect] 'epinephrine' → 'XILONIBSA 2% WITH EPINEPHRINE 1:80.000 SOLUTION FO' | reason: solution (of 6) | scores: combo=0 status=1 form=2 sim=0.220
+2026-09-09 21:05:52,111 [WARNING] [Verify] MISMATCH: searched='epinephrine (adrenaline)' (cleaned='epinephrine'), best_score=0.364 (threshold=0.80). Ingredients: ['LIDOCAINE (INN)']
+2026-09-09 21:05:52,971 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'LIDOCAINE' -> 'lidocaine' (rxcui=6387)
+2026-09-09 21:05:53,793 [INFO] ─── Processing 'hydrocortisone' ───
+2026-09-09 21:05:53,793 [INFO] [NEML] Resolving 'hydrocortisone' | is_combination=False | lead_query='hydrocortisone'
+2026-09-09 21:05:53,936 [INFO] [NEML] 'hydrocortisone' → 30 DRAP candidate(s): ['Chloromycetin Hydrocortisone Ophthalmic Ointment', 'HYDROCORTISONE 1% (FOR EYE) DRP ', 'HYDROCORTISONE SODIUM SUCCINA. INJECTION', 'EURAX HYDROCORTISONE CRM', 'HYDROCORTISONE (FOR EYE) ONT']
+2026-09-09 21:05:53,937 [INFO] [BrandSelect] 'hydrocortisone' → 'HYDROCORTISONE ' | reason: first of 30 | scores: combo=0 status=1 form=1 sim=1.000
+2026-09-09 21:05:55,378 [WARNING] [Verify] MISMATCH: searched='hydrocortisone' (cleaned='hydrocortisone'), best_score=0.424 (threshold=0.80). Ingredients: ['HYDROCORTISONE (SODIUM SUCCINATE)']
+2026-09-09 21:05:56,758 [INFO] ─── Processing 'loratadine' ───
+2026-09-09 21:05:56,759 [INFO] [NEML] Resolving 'loratadine' | is_combination=False | lead_query='loratadine'
+2026-09-09 21:05:57,734 [INFO] [NEML] 'loratadine' → 5 DRAP candidate(s): ['Selectin Tablets Each tables contains:- Loratadine', 'Selectin Syrup Each 5ml contains:- Loratadineâ€¦â€', 'Alertine Tablets Each tablet contains:- Loratadine', 'Alertine Suspension Each 5ml contains:- Loratadine', 'Loratadine Lawari Tablet 10mg']
+2026-09-09 21:05:57,734 [INFO] [BrandSelect] 'loratadine' → 'Loratadine Lawari Tablet 10mg' | reason: tablet (of 5) | scores: combo=0 status=1 form=2 sim=0.345
+2026-09-09 21:05:58,446 [INFO] [Verify] OK: 'loratadine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:00,237 [INFO] ─── Processing 'prednisolone' ───
+2026-09-09 21:06:00,237 [INFO] [NEML] Resolving 'prednisolone' | is_combination=False | lead_query='prednisolone'
+2026-09-09 21:06:00,366 [INFO] [NEML] 'prednisolone' → 28 DRAP candidate(s): ['PREDNISOLONE 5MG TAB ', 'PREDNISOLONE TABLET', 'PREDNISOLONE 5MG TAB ', 'PREDNISOLONE 5MG TAB ', 'PREDNISOLONE STEAGLATE TAB ']
+2026-09-09 21:06:00,367 [INFO] [BrandSelect] 'prednisolone' → 'PREDNISOLONE TABLET' | reason: tablet (of 28) | scores: combo=0 status=1 form=2 sim=0.632
+2026-09-09 21:06:01,778 [INFO] [Verify] OK: 'prednisolone' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:03,223 [INFO] ─── Processing 'carbamazepine' ───
+2026-09-09 21:06:03,223 [INFO] [NEML] Resolving 'carbamazepine' | is_combination=False | lead_query='carbamazepine'
+2026-09-09 21:06:03,389 [INFO] [NEML] 'carbamazepine' → 3 DRAP candidate(s): ['CARBAMAZEPINE TAB ', 'CARBAMAZEPINE TABLETS 200MG', 'Carbamazepine 200mg Tablet']
+2026-09-09 21:06:03,389 [INFO] [BrandSelect] 'carbamazepine' → 'Carbamazepine 200mg Tablet' | reason: tablet (of 3) | scores: combo=0 status=1 form=2 sim=0.500
+2026-09-09 21:06:04,773 [INFO] [Verify] OK: 'carbamazepine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:06,896 [INFO] ─── Processing 'lamotrigine' ───
+2026-09-09 21:06:06,896 [INFO] [NEML] Resolving 'lamotrigine' | is_combination=False | lead_query='lamotrigine'
+2026-09-09 21:06:07,101 [INFO] [NEML] 'lamotrigine' → 4 DRAP candidate(s): ['Lamotrigine Tablet 25mg', 'Lamotrigine Tablet 100mg', 'Lamotrigine Tablet 50mg', 'Lamotrigine 50mg Tablet']
+2026-09-09 21:06:07,102 [INFO] [BrandSelect] 'lamotrigine' → 'Lamotrigine Tablet 25mg' | reason: tablet (of 4) | scores: combo=0 status=1 form=2 sim=0.478
+2026-09-09 21:06:08,424 [INFO] [Verify] OK: 'lamotrigine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:10,088 [INFO] ─── Processing 'levetiracetam' ───
+2026-09-09 21:06:10,088 [INFO] [NEML] Resolving 'levetiracetam' | is_combination=False | lead_query='levetiracetam'
+2026-09-09 21:06:10,234 [INFO] [NEML] 'levetiracetam' → 1 DRAP candidate(s): ['Levetiracetam 500mg Tablet']
+2026-09-09 21:06:11,690 [INFO] [Verify] OK: 'levetiracetam' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:13,038 [INFO] ─── Processing 'lorazepam' ───
+2026-09-09 21:06:13,038 [INFO] [NEML] Resolving 'lorazepam' | is_combination=False | lead_query='lorazepam'
+2026-09-09 21:06:13,273 [INFO] [NEML] 'lorazepam' → 4 DRAP candidate(s): ['ORGALOPAM TAB Each tablet contains:- LORAZEPAM 1mg', 'ORGALOPAM TAB Each tablet contains:- LORAZEPAM 2mg', 'Lorazepam  1 mg Tablets', 'Lorazepam  2 mg Tablets']
+2026-09-09 21:06:13,273 [INFO] [BrandSelect] 'lorazepam' → 'Lorazepam  1 mg Tablets' | reason: tablet (of 4) | scores: combo=0 status=1 form=2 sim=0.391
+2026-09-09 21:06:14,628 [INFO] [Verify] OK: 'lorazepam' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:15,955 [INFO] ─── Processing 'phenobarbital' ───
+2026-09-09 21:06:15,955 [INFO] [NEML] Resolving 'phenobarbital' | is_combination=False | lead_query='phenobarbital'
+2026-09-09 21:06:16,213 [INFO] [NEML] 'phenobarbital' → 4 DRAP candidate(s): ['Phenobarbital Injection 200mg/ml', 'PhenobarbitalTablet 30mg', 'Phenobarbital 200mg/ml Injection ', 'Phenobarbital Tablets 30mg']
+2026-09-09 21:06:16,225 [INFO] [BrandSelect] 'phenobarbital' → 'PhenobarbitalTablet 30mg' | reason: tablet (of 4) | scores: combo=0 status=1 form=2 sim=0.542
+2026-09-09 21:06:17,627 [INFO] [Verify] OK: 'phenobarbital' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:18,908 [INFO] ─── Processing 'phenytoin' ───
+2026-09-09 21:06:18,909 [INFO] [NEML] Resolving 'phenytoin' | is_combination=False | lead_query='phenytoin'
+2026-09-09 21:06:19,228 [INFO] [NEML] 'phenytoin' → 4 DRAP candidate(s): ['EPILAMIL CAP Each capsule contains:- PHENYTOIN SOD', 'EPINAT TAB Each tablet contains:- PHENYTOIN SODIUM', 'PHENYTOIN COMPOUND TABLETS ', 'PHENYTOIN SODIUM CAPSULES 100MG']
+2026-09-09 21:06:19,228 [INFO] [BrandSelect] 'phenytoin' → 'PHENYTOIN COMPOUND TABLETS ' | reason: tablet (of 4) | scores: combo=0 status=1 form=2 sim=0.346
+2026-09-09 21:06:20,703 [WARNING] [Verify] MISMATCH: searched='phenytoin' (cleaned='phenytoin'), best_score=0.273 (threshold=0.80). Ingredients: ['PHENYTOIN SOD 100MG, PHENOBABITAL']
+2026-09-09 21:06:21,075 [INFO] [RxNorm] exact search returned no RxCUI for 'PHENYTOIN SOD 100MG, PHENOBABITAL' — trying approximateTerm
+2026-09-09 21:06:22,053 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'PHENYTOIN SOD 100MG, PHENOBABITAL' -> 'phenobarbital 100 MG / phenytoin 100 MG Oral Tablet' (rxcui=252040, score=12.29). Source data may contain a typo — review this mapping.
+2026-09-09 21:06:22,454 [INFO] ─── Processing 'valproic acid (sodium valproate)' ───
+2026-09-09 21:06:22,455 [INFO] [NEML] Resolving 'valproic acid (sodium valproate)' | is_combination=False | lead_query='valproic acid'
+2026-09-09 21:06:22,617 [INFO] [NEML] No DRAP results for generic 'valproic acid (sodium valproate)' (all fallbacks exhausted)
+2026-09-09 21:06:22,620 [INFO] ─── Processing 'propranolol' ───
+2026-09-09 21:06:22,620 [INFO] [NEML] Resolving 'propranolol' | is_combination=False | lead_query='propranolol'
+2026-09-09 21:06:24,101 [INFO] [NEML] 'propranolol' → 12 DRAP candidate(s): ['Propranolol-10mg Tablet', 'Propranolol-40mg Tablets', 'PROPRANOLOL HCL 10MG TAB ', 'PROPRANOLOL HCL 40MG TAB ', 'PROPRANOLOL 10MG TAB ']
+2026-09-09 21:06:24,101 [INFO] [BrandSelect] 'propranolol' → 'PROPRANOLOL TABLETS' | reason: tablet (of 12) | scores: combo=0 status=1 form=2 sim=0.579
+2026-09-09 21:06:25,529 [WARNING] [Verify] MISMATCH: searched='propranolol' (cleaned='propranolol'), best_score=0.071 (threshold=0.80). Ingredients: ['SODIUM ALPHA-OXYBENZYLPHOSPHINIC ACID 100MG, , METHYLTESTOSTERONE 5MG, , VITAMIN E 1.5MG, , YOHIMBI']
+2026-09-09 21:06:25,977 [INFO] [RxNorm] exact search returned no RxCUI for 'SODIUM ALPHA-OXYBENZYLPHOSPHINIC ACID 100MG, , METHYLTESTOSTERONE 5MG, , VITAMIN E 1.5MG, , YOHIMBI' — trying approximateTerm
+2026-09-09 21:06:26,884 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'SODIUM ALPHA-OXYBENZYLPHOSPHINIC ACID 100MG, , METHYLTESTOSTERONE 5MG, , VITAMIN E 1.5MG, , YOHIMBI' -> 'methyltestosterone 5 MG' (rxcui=316292, score=13.19). Source data may contain a typo — review this mapping.
+2026-09-09 21:06:27,352 [INFO] ─── Processing 'sumatriptan' ───
+2026-09-09 21:06:27,352 [INFO] [NEML] Resolving 'sumatriptan' | is_combination=False | lead_query='sumatriptan'
+2026-09-09 21:06:27,479 [INFO] [NEML] No DRAP results for generic 'sumatriptan' (all fallbacks exhausted)
+2026-09-09 21:06:27,481 [INFO] ─── Processing 'verapamil' ───
+2026-09-09 21:06:27,482 [INFO] [NEML] Resolving 'verapamil' | is_combination=False | lead_query='verapamil'
+2026-09-09 21:06:28,974 [INFO] [NEML] 'verapamil' → 7 DRAP candidate(s): ['Verapamil Hcl Injection', 'VERAPAMIL 40MG TAB ', 'GEANGIN-40 TAB Each tablet contains:- VERAPAMIL HC', 'GEANGIN-80 TAB Each tablet contains:- VERAPAMIL HC', 'VERAPAMIL TAB Each tablet contains:- VERAPAMIL HCL']
+2026-09-09 21:06:28,975 [INFO] [BrandSelect] 'verapamil' → 'GEANGIN-40 TAB Each tablet contains:- VERAPAMIL HC' | reason: tablet (of 7) | scores: combo=0 status=1 form=2 sim=0.180
+2026-09-09 21:06:30,395 [INFO] [Verify] OK: 'verapamil' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:31,243 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'VERAPAMIL' -> 'verapamil' (rxcui=11170)
+2026-09-09 21:06:31,650 [INFO] ─── Processing 'amoxicillin' ───
+2026-09-09 21:06:31,651 [INFO] [NEML] Resolving 'amoxicillin' | is_combination=False | lead_query='amoxicillin'
+2026-09-09 21:06:31,996 [INFO] [NEML] 'amoxicillin' → 40 DRAP candidate(s): ['Amoxicillin 125mg/5ml Dry Suspension    ', 'Amoxicillin 250mg/5ml Dry Suspension    ', 'Amoxicillin 250mg Capsule   ', 'Amoxicillin 500mg Capsule   ', 'AMOXICILLIN CAPSULES 500MG']
+2026-09-09 21:06:31,997 [INFO] [BrandSelect] 'amoxicillin' → 'Amoxicillin 250mg Capsule   ' | reason: capsule (of 40) | scores: combo=0 status=1 form=2 sim=0.440
+2026-09-09 21:06:33,434 [INFO] [Verify] OK: 'amoxicillin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:34,313 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'AMOXICILLIN' -> 'amoxicillin' (rxcui=723)
+2026-09-09 21:06:34,766 [INFO] ─── Processing 'amoxicillin + clavulanic acid' ───
+2026-09-09 21:06:34,766 [INFO] [NEML] Resolving 'amoxicillin + clavulanic acid' | is_combination=True | lead_query='amoxicillin'
+2026-09-09 21:06:35,001 [INFO] [NEML] 'amoxicillin + clavulanic acid' → 40 DRAP candidate(s): ['Amoxicillin 125mg/5ml Dry Suspension    ', 'Amoxicillin 250mg/5ml Dry Suspension    ', 'Amoxicillin 250mg Capsule   ', 'Amoxicillin 500mg Capsule   ', 'AMOXICILLIN CAPSULES 500MG']
+2026-09-09 21:06:35,002 [INFO] [BrandSelect] 'amoxicillin' → 'Amoxicillin 250mg Capsule   ' | reason: capsule (of 40) | scores: combo=0 status=1 form=2 sim=0.440
+2026-09-09 21:06:36,415 [WARNING] [Verify] COMBINATION MISMATCH: 'amoxicillin + clavulanic acid' — unmatched: ['clavulanic acid']. scores=[('amoxicillin', '1.000'), ('clavulanic acid', '0.000')]. Ingredients: ['Amoxicillin(astrihydrate)']
+2026-09-09 21:06:37,266 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'AMOXICILLIN' -> 'amoxicillin' (rxcui=723)
+2026-09-09 21:06:37,665 [INFO] ─── Processing 'ampicillin' ───
+2026-09-09 21:06:37,665 [INFO] [NEML] Resolving 'ampicillin' | is_combination=False | lead_query='ampicillin'
+2026-09-09 21:06:38,540 [INFO] [NEML] 'ampicillin' → 157 DRAP candidate(s): ['AMPICILLIN 250MG CAP ', 'AMPICILLIN 125MG (DRY) SYP', 'AMPICILLIN  CAPSULES 250MG', 'AMPICILLIN INJECTION', 'AMPICILLIN  CAPSULES 250MG']
+2026-09-09 21:06:38,541 [INFO] [BrandSelect] 'ampicillin' → 'AMPICILLIN SYRUP' | reason: syrup (of 157) | scores: combo=0 status=1 form=2 sim=0.625
+2026-09-09 21:06:39,434 [INFO] [Verify] OK: 'ampicillin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:40,355 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'AMPICILLIN' -> 'ampicillin' (rxcui=733)
+2026-09-09 21:06:40,773 [INFO] ─── Processing 'cefalexin' ───
+2026-09-09 21:06:40,773 [INFO] [NEML] Resolving 'cefalexin' | is_combination=False | lead_query='cefalexin'
+2026-09-09 21:06:41,003 [INFO] [NEML] 'cefalexin' → 1 DRAP candidate(s): ['Cefalexine 15% Suspension Injectable ']
+2026-09-09 21:06:42,622 [INFO] [Verify] OK: 'cefalexin' → best_score=0.900 (threshold=0.80)
+2026-09-09 21:06:43,518 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CEFALEXINE' -> 'cephalexin' (rxcui=2231)
+2026-09-09 21:06:43,945 [INFO] ─── Processing 'cefixime' ───
+2026-09-09 21:06:43,945 [INFO] [NEML] Resolving 'cefixime' | is_combination=False | lead_query='cefixime'
+2026-09-09 21:06:44,088 [INFO] [NEML] 'cefixime' → 7 DRAP candidate(s): ['CEFAPAN 100MG CAP Each capsule contains:- CEFIXIME', 'Cefixime Trihydrate 100mg/5ml Suspension', 'Reta-Cefixime 100mg/5ml Suspension', 'Accefixime ', 'Accefixime ']
+2026-09-09 21:06:44,088 [INFO] [BrandSelect] 'cefixime' → 'Accefixime 400mg Tablet' | reason: tablet (of 7) | scores: combo=0 status=1 form=2 sim=0.348
+2026-09-09 21:06:45,486 [INFO] [Verify] OK: 'cefixime' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:46,337 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CEFIXIME' -> 'cefixime' (rxcui=25033)
+2026-09-09 21:06:46,759 [INFO] ─── Processing 'ciprofloxacin' ───
+2026-09-09 21:06:46,760 [INFO] [NEML] Resolving 'ciprofloxacin' | is_combination=False | lead_query='ciprofloxacin'
+2026-09-09 21:06:47,171 [INFO] [NEML] 'ciprofloxacin' → 14 DRAP candidate(s): ['CIPROFLOXACIN TAB Each tablet contains:- CIPROFLOX', 'CIPROFLOXACIN 250mg TAB Each tablet contains:- CIP', 'Ocuciprox Eye Drops Contains:- Ciprofloxacin Hclâ€', 'Ciprofloxacin 100mg/50ml Injection ', 'Ciprofloxacin 200mg/100ml Injection']
+2026-09-09 21:06:47,175 [INFO] [BrandSelect] 'ciprofloxacin' → 'Ciprofloxacin 250mg Tablet' | reason: tablet (of 14) | scores: combo=0 status=1 form=2 sim=0.500
+2026-09-09 21:06:48,733 [INFO] [Verify] OK: 'ciprofloxacin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:49,604 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CIPROFLOXACIN' -> 'ciprofloxacin' (rxcui=2551)
+2026-09-09 21:06:50,034 [INFO] ─── Processing 'clarithromycin' ───
+2026-09-09 21:06:50,034 [INFO] [NEML] Resolving 'clarithromycin' | is_combination=False | lead_query='clarithromycin'
+2026-09-09 21:06:50,188 [INFO] [NEML] 'clarithromycin' → 21 DRAP candidate(s): ['Helimox  Contains:- Clarithromycin   500mg Tablet ', 'Claramed  Syrup Each 5ml contains:- Clarithromycin', 'Clarithromycin 250mg Tablet', 'Clarithromycin 500mg Tablet', 'Clarithromycin Semos Tablet 250mg']
+2026-09-09 21:06:50,188 [INFO] [BrandSelect] 'clarithromycin' → 'Clarithromycin 250mg Tablet' | reason: tablet (of 21) | scores: combo=0 status=1 form=2 sim=0.519
+2026-09-09 21:06:51,573 [INFO] [Verify] OK: 'clarithromycin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:52,920 [INFO] ─── Processing 'doxycycline' ───
+2026-09-09 21:06:52,921 [INFO] [NEML] Resolving 'doxycycline' | is_combination=False | lead_query='doxycycline'
+2026-09-09 21:06:53,170 [INFO] [NEML] 'doxycycline' → 26 DRAP candidate(s): ['DOXYCYCLINE INJECTION 100MG', 'DOXYCYCLINE HYCLATE CAP Each capsule contains:- DO', 'DOXYKON CAP Each capsule contains:- DOXYCYCLINE HY', 'Doxycycline Capsules 100mg', 'APDOXY CAP Each capsule contains:- DOXYCYCLINE HYC']
+2026-09-09 21:06:53,171 [INFO] [BrandSelect] 'doxycycline' → 'Doxycycline Capsule' | reason: capsule (of 26) | scores: combo=0 status=1 form=2 sim=0.579
+2026-09-09 21:06:54,575 [INFO] [Verify] OK: 'doxycycline' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:55,936 [INFO] ─── Processing 'erythromycin' ───
+2026-09-09 21:06:55,937 [INFO] [NEML] Resolving 'erythromycin' | is_combination=False | lead_query='erythromycin'
+2026-09-09 21:06:56,190 [INFO] [NEML] 'erythromycin' → 32 DRAP candidate(s): ['Erythromycin Tablet 500mg', 'ERYTHROMYCIN 250MG TAB ', 'ERYTHROMYCIN TABLET', 'ERYTHROMYCIN TABLET', 'Erythromycin 250mg Tablet']
+2026-09-09 21:06:56,190 [INFO] [BrandSelect] 'erythromycin' → 'ERYTHROMYCIN TABLET' | reason: tablet (of 32) | scores: combo=0 status=1 form=2 sim=0.632
+2026-09-09 21:06:57,708 [INFO] [Verify] OK: 'erythromycin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:06:58,582 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'ERYTHROMYCIN' -> 'erythromycin' (rxcui=4053)
+2026-09-09 21:06:58,997 [INFO] ─── Processing 'azithromycin' ───
+2026-09-09 21:06:58,998 [INFO] [NEML] Resolving 'azithromycin' | is_combination=False | lead_query='azithromycin'
+2026-09-09 21:06:59,195 [INFO] [NEML] 'azithromycin' → 11 DRAP candidate(s): ['Azorox Suspension Each 5ml contains:- Azithromycin', 'Plazo Suspension Each 5Ml Contains:- Azithromycin ', 'Azithromycin Lawari Capsule 250mg', 'Azithromycin Lawari 250mg Tablet', 'Azithromycin Lawari 500mg Tablet']
+2026-09-09 21:06:59,195 [INFO] [BrandSelect] 'azithromycin' → ' Azithromycin 500mg Tablet' | reason: tablet (of 11) | scores: combo=0 status=1 form=2 sim=0.480
+2026-09-09 21:07:01,098 [INFO] [Verify] OK: 'azithromycin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:01,963 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'AZITHROMYCIN' -> 'azithromycin' (rxcui=18631)
+2026-09-09 21:07:02,436 [INFO] ─── Processing 'metronidazole' ───
+2026-09-09 21:07:02,436 [INFO] [NEML] Resolving 'metronidazole' | is_combination=False | lead_query='metronidazole'
+2026-09-09 21:07:02,684 [INFO] [NEML] 'metronidazole' → 43 DRAP candidate(s): ['Metronidazole Tablets 200mg', 'Metronidazole Tablets 400mg', 'Metronidazole Suspension', 'METRONIDAZOLE TABLET', 'METRONIDAZOLE ']
+2026-09-09 21:07:02,685 [INFO] [BrandSelect] 'metronidazole' → 'METRONIDAZOLE TABLET' | reason: tablet (of 43) | scores: combo=0 status=1 form=2 sim=0.650
+2026-09-09 21:07:07,190 [INFO] [Verify] OK: 'metronidazole' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:08,591 [INFO] ─── Processing 'nitrofurantoin' ───
+2026-09-09 21:07:08,591 [INFO] [NEML] Resolving 'nitrofurantoin' | is_combination=False | lead_query='nitrofurantoin'
+2026-09-09 21:07:08,775 [INFO] [NEML] 'nitrofurantoin' → 2 DRAP candidate(s): ['Nitrofurantoin tablet 100mg', 'Nitrofurantoin Tablet']
+2026-09-09 21:07:08,776 [INFO] [BrandSelect] 'nitrofurantoin' → 'Nitrofurantoin Tablet' | reason: tablet (of 2) | scores: combo=0 status=1 form=2 sim=0.667
+2026-09-09 21:07:10,191 [INFO] [Verify] OK: 'nitrofurantoin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:11,491 [INFO] ─── Processing 'sulfamethoxazole + trimethoprim' ───
+2026-09-09 21:07:11,492 [INFO] [NEML] Resolving 'sulfamethoxazole + trimethoprim' | is_combination=True | lead_query='sulfamethoxazole'
+2026-09-09 21:07:11,751 [INFO] [NEML] No results for 'sulfamethoxazole + trimethoprim' — trying fallback query 'trimethoprim'
+2026-09-09 21:07:13,251 [INFO] [NEML] Fallback 'trimethoprim' → 9 DRAP candidate(s): ['Trimethoprim 80mg+Sulphamethoxazole 400mg Tablet', 'TRIMETHOPRIM 300MG TAB ', 'SIZAPRIM TAB Each tablet contains:- TRIMETHOPRIM 3', 'COTRI DD TAB Each tablet contains:- TRIMETHOPRIM 1', 'TRIMAZOLE TAB Each tablet contains:- TRIMETHOPRIM ']
+2026-09-09 21:07:13,251 [INFO] [NEML] 'sulfamethoxazole + trimethoprim' → 9 DRAP candidate(s): ['Trimethoprim 80mg+Sulphamethoxazole 400mg Tablet', 'TRIMETHOPRIM 300MG TAB ', 'SIZAPRIM TAB Each tablet contains:- TRIMETHOPRIM 3', 'COTRI DD TAB Each tablet contains:- TRIMETHOPRIM 1', 'TRIMAZOLE TAB Each tablet contains:- TRIMETHOPRIM ']
+2026-09-09 21:07:13,252 [INFO] [BrandSelect] 'trimethoprim' → 'Trimethoprim 80mg+Sulphamethoxazole 400mg Tablet' | reason: tablet (of 9) | scores: combo=0 status=1 form=2 sim=0.250
+2026-09-09 21:07:17,853 [INFO] [Verify] COMBINATION OK: 'sulfamethoxazole + trimethoprim' — all 2 component(s) matched. scores=[('sulfamethoxazole', '0.882'), ('trimethoprim', '1.000')]
+2026-09-09 21:07:20,571 [INFO] ─── Processing 'clindamycin' ───
+2026-09-09 21:07:20,571 [INFO] [NEML] Resolving 'clindamycin' | is_combination=False | lead_query='clindamycin'
+2026-09-09 21:07:20,717 [INFO] [NEML] 'clindamycin' → 8 DRAP candidate(s): ['CLINDAMYCIN INJ', 'CLINDAMYCIN 900MG INJ', 'KLOCID CAP Each capsule contains:- CLINDAMYCIN HCL', 'CLINDAMYCIN HYDROCHLORIDE CAP Each capsule contain', 'Clindamycin 150mg Cap']
+2026-09-09 21:07:20,718 [INFO] [BrandSelect] 'clindamycin' → 'KLOCID CAP Each capsule contains:- CLINDAMYCIN HCL' | reason: capsule (of 8) | scores: combo=0 status=1 form=2 sim=0.220
+2026-09-09 21:07:22,193 [INFO] [Verify] OK: 'clindamycin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:23,043 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CLINDAMYCIN' -> 'clindamycin' (rxcui=2582)
+2026-09-09 21:07:23,504 [INFO] ─── Processing 'cloxacillin' ───
+2026-09-09 21:07:23,529 [INFO] [NEML] Resolving 'cloxacillin' | is_combination=False | lead_query='cloxacillin'
+2026-09-09 21:07:23,718 [INFO] [NEML] 'cloxacillin' → 22 DRAP candidate(s): ['CLOXACILLIN INJECTION 250MG', 'CLOXACILLIN INJECTION 250MG', 'CLOXACILLIN INJECTION 500MG', 'CLOXACILLIN INJECTION 250MG', 'CLOXACILLIN INJECTION 500MG']
+2026-09-09 21:07:23,719 [INFO] [BrandSelect] 'cloxacillin' → 'FLUCLOXACILLIN CAPSULES 250MG' | reason: capsule (of 22) | scores: combo=0 status=1 form=2 sim=0.379
+2026-09-09 21:07:25,132 [WARNING] [Verify] MISMATCH: searched='cloxacillin' (cleaned='cloxacillin'), best_score=0.786 (threshold=0.80). Ingredients: ['FLUCLOXACILLIN SODIUM BP']
+2026-09-09 21:07:25,991 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'FLUCLOXACILLIN' -> 'floxacillin' (rxcui=4448)
+2026-09-09 21:07:26,380 [INFO] ─── Processing 'fluconazole' ───
+2026-09-09 21:07:26,381 [INFO] [NEML] Resolving 'fluconazole' | is_combination=False | lead_query='fluconazole'
+2026-09-09 21:07:26,745 [INFO] [NEML] 'fluconazole' → 9 DRAP candidate(s): ['Fluzon Suspension Each 5Ml Contains:- Fluconazoleâ', 'Fluconazole Lawari Capsule 150mg', 'Fluziwell 200mg/100ml Infusion<br>[Fluconazole with Sodium Chloride 0.9%]', ' Conash Infusion l00mg/50ml (IV)<br>[Fluconazole in Sodium Chloride 0.9%}', ' Conash lnfusion 200mg/100ml (IV) <br>[Fluconazole in Sodium Chloride 0.9%]']
+2026-09-09 21:07:26,745 [INFO] [BrandSelect] 'fluconazole' → 'Fluconazole Salveo Capsule' | reason: capsule (of 9) | scores: combo=0 status=1 form=2 sim=0.423
+2026-09-09 21:07:28,113 [INFO] [Verify] OK: 'fluconazole' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:29,446 [INFO] ─── Processing 'clotrimazole' ───
+2026-09-09 21:07:29,447 [INFO] [NEML] Resolving 'clotrimazole' | is_combination=False | lead_query='clotrimazole'
+2026-09-09 21:07:29,781 [INFO] [NEML] 'clotrimazole' → 7 DRAP candidate(s): ['Canesten Clotrimazole Cream', 'Vaginex-1 Cream Each tube contains:- Clotrimazole.', 'Imazole Cream Each 1Gm Contains:- Clotrimazole â€¦', 'Clotrimazole Cream', 'Clotrimazole Cream']
+2026-09-09 21:07:29,782 [INFO] [BrandSelect] 'clotrimazole' → 'Clotrimazole Solution 1%w/v' | reason: solution (of 7) | scores: combo=0 status=1 form=2 sim=0.444
+2026-09-09 21:07:31,111 [INFO] [Verify] OK: 'clotrimazole' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:32,377 [INFO] ─── Processing 'terbinafine' ───
+2026-09-09 21:07:32,377 [INFO] [NEML] Resolving 'terbinafine' | is_combination=False | lead_query='terbinafine'
+2026-09-09 21:07:32,774 [INFO] [NEML] 'terbinafine' → 5 DRAP candidate(s): ['Terbinafine Tablet 250 mg', 'Terbinafine Cutaneous Solution 1%', ' Terbinafine Tablet  125mg', '  Terbinafine Tablet 25Omg', 'Terbinafine Cream 1%']
+2026-09-09 21:07:32,774 [INFO] [BrandSelect] 'terbinafine' → '  Terbinafine Tablet 25Omg' | reason: tablet (of 5) | scores: combo=0 status=1 form=2 sim=0.458
+2026-09-09 21:07:34,138 [INFO] [Verify] OK: 'terbinafine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:34,996 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'TERBINAFINE' -> 'terbinafine' (rxcui=37801)
+2026-09-09 21:07:35,392 [INFO] ─── Processing 'nystatin' ───
+2026-09-09 21:07:35,393 [INFO] [NEML] Resolving 'nystatin' | is_combination=False | lead_query='nystatin'
+2026-09-09 21:07:35,725 [INFO] [NEML] 'nystatin' → 8 DRAP candidate(s): ['Nystatin 500000IU Oral Tablet', 'O-NYSTAL ORAL TAB Each tablet contains:- NYSTATIN ', 'Nystatin Tablets Each tablet contains;- Nystatin U', 'Nystatin Oral Drops Each ml contains;- Nystatin US', 'Nystatin Oral Drops']
+2026-09-09 21:07:35,725 [INFO] [BrandSelect] 'nystatin' → 'Nystatin Oral Drops' | reason: oral (of 8) | scores: combo=0 status=1 form=2 sim=0.421
+2026-09-09 21:07:37,191 [INFO] [Verify] OK: 'nystatin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:38,458 [INFO] ─── Processing 'aciclovir' ───
+2026-09-09 21:07:38,458 [INFO] [NEML] Resolving 'aciclovir' | is_combination=False | lead_query='aciclovir'
+2026-09-09 21:07:38,780 [INFO] [NEML] 'aciclovir' → 1 DRAP candidate(s): ['ACICLOVIR TABLETS']
+2026-09-09 21:07:40,131 [INFO] [Verify] OK: 'aciclovir' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:41,441 [INFO] ─── Processing 'chloroquine' ───
+2026-09-09 21:07:41,441 [INFO] [NEML] Resolving 'chloroquine' | is_combination=False | lead_query='chloroquine'
+2026-09-09 21:07:41,745 [INFO] [NEML] 'chloroquine' → 186 DRAP candidate(s): ['CHLOROQUINE INJECTION', 'CHLOROQUINE SULPHATE-TASTELESS TAB ', 'Chloroquine Phospate 250mg Tablet', 'CHLOROQUINE PHOSPHATE 250MG TAB ', 'CHLOROQUINE PHOSPHATE 250MG TAB ']
+2026-09-09 21:07:41,746 [INFO] [BrandSelect] 'chloroquine' → 'Chloroquine Syrup' | reason: syrup (of 186) | scores: combo=0 status=1 form=2 sim=0.647
+2026-09-09 21:07:43,130 [INFO] [Verify] OK: 'chloroquine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:43,979 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CHLOROQUINE' -> 'chloroquine' (rxcui=2393)
+2026-09-09 21:07:44,382 [INFO] ─── Processing 'ferrous salt' ───
+2026-09-09 21:07:44,382 [INFO] [NEML] Resolving 'ferrous salt' | is_combination=False | lead_query='ferrous salt'
+2026-09-09 21:07:44,728 [INFO] [NEML] No DRAP results for generic 'ferrous salt' (all fallbacks exhausted)
+2026-09-09 21:07:44,733 [INFO] ─── Processing 'folic acid' ───
+2026-09-09 21:07:44,733 [INFO] [NEML] Resolving 'folic acid' | is_combination=False | lead_query='folic acid'
+2026-09-09 21:07:46,233 [INFO] [NEML] 'folic acid' → 36 DRAP candidate(s): ['Folic Acid Tablets 5mg', 'Folic Acid 5mg Tablet   ', 'Iro-P (Iron-III and Folic Acid) Tablet', 'FOLIC ACID INJECTION', 'Folic Acid Tablet']
+2026-09-09 21:07:46,233 [INFO] [BrandSelect] 'folic acid' → 'Folic Acid Tablet' | reason: tablet (of 36) | scores: combo=0 status=1 form=2 sim=0.588
+2026-09-09 21:07:47,644 [INFO] [Verify] OK: 'folic acid' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:48,899 [INFO] ─── Processing 'hydroxocobalamin' ───
+2026-09-09 21:07:48,899 [INFO] [NEML] Resolving 'hydroxocobalamin' | is_combination=False | lead_query='hydroxocobalamin'
+2026-09-09 21:07:49,226 [INFO] [NEML] No results for 'hydroxocobalamin' — trying fallback query 'cyanocobalamin'
+2026-09-09 21:07:50,741 [INFO] [NEML] Fallback 'cyanocobalamin' → 28 DRAP candidate(s): ['Cyanocobalamin Injection ', 'CYANOCOBALAMINE INJECTION', 'CYANOCOBALAMINE INJECTION', 'CYANOCOBALAMINE INJ', 'CYANOCOBALAMINE 1000MCG INJ']
+2026-09-09 21:07:50,742 [INFO] [NEML] 'hydroxocobalamin' → 28 DRAP candidate(s): ['Cyanocobalamin Injection ', 'CYANOCOBALAMINE INJECTION', 'CYANOCOBALAMINE INJECTION', 'CYANOCOBALAMINE INJ', 'CYANOCOBALAMINE 1000MCG INJ']
+2026-09-09 21:07:50,743 [INFO] [BrandSelect] 'cyanocobalamin' → 'Cyanocobalamin' | reason: first of 28 | scores: combo=0 status=1 form=1 sim=1.000
+2026-09-09 21:07:52,143 [WARNING] [Verify] MISMATCH: searched='hydroxocobalamin' (cleaned='hydroxocobalamin'), best_score=0.688 (threshold=0.80). Ingredients: ['Cyanocobalamin']
+2026-09-09 21:07:53,384 [INFO] ─── Processing 'warfarin' ───
+2026-09-09 21:07:53,384 [INFO] [NEML] Resolving 'warfarin' | is_combination=False | lead_query='warfarin'
+2026-09-09 21:07:53,728 [INFO] [NEML] 'warfarin' → 4 DRAP candidate(s): ['WARFARIN TABLETS 1MG', 'WARFARIN TABLETS ', 'WARFARIN TABLETS', 'Farin-5 Tablets Each tablet contains:- Warfarin So']
+2026-09-09 21:07:53,729 [INFO] [BrandSelect] 'warfarin' → 'WARFARIN TABLETS ' | reason: tablet (of 4) | scores: combo=0 status=1 form=2 sim=0.500
+2026-09-09 21:07:55,156 [INFO] [Verify] OK: 'warfarin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:07:56,015 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'WARFARIN' -> 'warfarin' (rxcui=11289)
+2026-09-09 21:07:56,482 [INFO] ─── Processing 'tranexamic acid' ───
+2026-09-09 21:07:56,483 [INFO] [NEML] Resolving 'tranexamic acid' | is_combination=False | lead_query='tranexamic acid'
+2026-09-09 21:07:56,749 [INFO] [NEML] 'tranexamic acid' → 2 DRAP candidate(s): ['Tranexamic Acid Semos Capsule 250mg', 'Tranexamic Acid Semos Capsule 500mg']
+2026-09-09 21:07:56,749 [INFO] [BrandSelect] 'tranexamic acid' → 'Tranexamic Acid Semos Capsule 250mg' | reason: capsule (of 2) | scores: combo=0 status=1 form=2 sim=0.429
+2026-09-09 21:07:58,152 [INFO] [Verify] OK: 'tranexamic acid' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:00,751 [INFO] ─── Processing 'bisoprolol' ───
+2026-09-09 21:08:00,752 [INFO] [NEML] Resolving 'bisoprolol' | is_combination=False | lead_query='bisoprolol'
+2026-09-09 21:08:00,890 [INFO] [NEML] 'bisoprolol' → 8 DRAP candidate(s): ['Bisoprolol Fumarate Tablet 5mg', 'Bisoprolol Fumarate Tablet 2.5mg', 'Bisoprolol Fumarate Tablet 10mg ', 'Bisoprolol Caraway 5 mg Tablet', 'Bisoprolol Caraway 10 mg Tablet']
+2026-09-09 21:08:00,890 [INFO] [BrandSelect] 'bisoprolol' → 'Bisoprolol Fumarate Tablet 5mg' | reason: tablet (of 8) | scores: combo=0 status=1 form=2 sim=0.333
+2026-09-09 21:08:02,300 [INFO] [Verify] OK: 'bisoprolol' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:03,154 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'BISOPROLOL' -> 'bisoprolol' (rxcui=19484)
+2026-09-09 21:08:03,589 [INFO] ─── Processing 'amlodipine' ───
+2026-09-09 21:08:03,590 [INFO] [NEML] Resolving 'amlodipine' | is_combination=False | lead_query='amlodipine'
+2026-09-09 21:08:03,898 [INFO] [NEML] 'amlodipine' → 5 DRAP candidate(s): ['Amlodipine 5mg Tablet', 'Amlodipine 10mg Tablet', 'AMLODIPINE BESYLATE+VALSARTAN TABS', 'Amlodipine-Getz Pharma Tablets 5mg', 'Amlodipine-Getz Pharma Tablets 10mg ']
+2026-09-09 21:08:03,899 [INFO] [BrandSelect] 'amlodipine' → 'Amlodipine 5mg Tablet' | reason: tablet (of 5) | scores: combo=0 status=1 form=2 sim=0.476
+2026-09-09 21:08:05,298 [INFO] [Verify] OK: 'amlodipine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:06,154 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'AMLODIPINE' -> 'amlodipine' (rxcui=17767)
+2026-09-09 21:08:06,606 [INFO] ─── Processing 'enalapril' ───
+2026-09-09 21:08:06,606 [INFO] [NEML] Resolving 'enalapril' | is_combination=False | lead_query='enalapril'
+2026-09-09 21:08:06,928 [INFO] [NEML] 'enalapril' → 11 DRAP candidate(s): ['ENAPEL 5MG TAB Each tablet contains:- ENALAPRIL MA', 'ENAPEL 20MG TAB Each tablet contains:- ENALAPRIL M', 'LOTRIAL 5MG TAB Each tablet contains:- ENALAPRIL M', 'LOTRIAL 10MG TAB Each tablet contains:- ENALAPRIL ', 'LOTRIAL 20MG TAB Each tablet contains:- ENALAPRIL ']
+2026-09-09 21:08:06,929 [INFO] [BrandSelect] 'enalapril' → 'LOTRIAL 10MG TAB Each tablet contains:- ENALAPRIL ' | reason: tablet (of 11) | scores: combo=0 status=1 form=2 sim=0.184
+2026-09-09 21:08:08,279 [INFO] [Verify] OK: 'enalapril' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:09,125 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'ENALAPRIL' -> 'enalapril' (rxcui=3827)
+2026-09-09 21:08:09,592 [INFO] ─── Processing 'hydrochlorothiazide' ───
+2026-09-09 21:08:09,592 [INFO] [NEML] Resolving 'hydrochlorothiazide' | is_combination=False | lead_query='hydrochlorothiazide'
+2026-09-09 21:08:09,988 [INFO] [NEML] 'hydrochlorothiazide' → 2 DRAP candidate(s): ['Amiloride 5mg+Hydrochlorothiazide 50mg Tablet', 'Losartan 50mg + Hydrochlorothiazide 12.5mg Tablet']
+2026-09-09 21:08:09,989 [INFO] [BrandSelect] 'hydrochlorothiazide' → 'Amiloride 5mg+Hydrochlorothiazide 50mg Tablet' | reason: tablet (of 2) | scores: combo=0 status=1 form=2 sim=0.422
+2026-09-09 21:08:11,331 [INFO] [Verify] OK: 'hydrochlorothiazide' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:13,896 [INFO] ─── Processing 'losartan' ───
+2026-09-09 21:08:13,896 [INFO] [NEML] Resolving 'losartan' | is_combination=False | lead_query='losartan'
+2026-09-09 21:08:14,054 [INFO] [NEML] 'losartan' → 8 DRAP candidate(s): ['DV-Losartan PlusTablets ', 'Losartan Tablets', 'DV-Losartan 100mg Tablets', 'Losartan 50mg + Hydrochlorothiazide 12.5mg Tablet', 'Losartan Plus Salveo tablet']
+2026-09-09 21:08:14,054 [INFO] [BrandSelect] 'losartan' → 'Losartan Tablets' | reason: tablet (of 8) | scores: combo=0 status=1 form=2 sim=0.500
+2026-09-09 21:08:15,424 [INFO] [Verify] OK: 'losartan' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:16,312 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'LOSARTAN' -> 'losartan' (rxcui=52175)
+2026-09-09 21:08:16,755 [INFO] ─── Processing 'furosemide' ───
+2026-09-09 21:08:16,755 [INFO] [NEML] Resolving 'furosemide' | is_combination=False | lead_query='furosemide'
+2026-09-09 21:08:17,068 [INFO] [NEML] 'furosemide' → 7 DRAP candidate(s): ['FUROSEMIDE TABLET', 'FUROSEMIDE ', 'FUROSEMIDE INJ', 'Furosemide Tablet 40mg ', '  Furosemide Injection 20mg/2ml']
+2026-09-09 21:08:17,068 [INFO] [BrandSelect] 'furosemide' → 'FUROSEMIDE TABLET' | reason: tablet (of 7) | scores: combo=0 status=1 form=2 sim=0.588
+2026-09-09 21:08:18,439 [INFO] [Verify] OK: 'furosemide' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:19,726 [INFO] ─── Processing 'spironolactone' ───
+2026-09-09 21:08:19,726 [INFO] [NEML] Resolving 'spironolactone' | is_combination=False | lead_query='spironolactone'
+2026-09-09 21:08:20,036 [INFO] [NEML] 'spironolactone' → 1 DRAP candidate(s): ['Spironolactone 100mg Tablet']
+2026-09-09 21:08:21,480 [INFO] [Verify] OK: 'spironolactone' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:22,768 [INFO] ─── Processing 'digoxin' ───
+2026-09-09 21:08:22,769 [INFO] [NEML] Resolving 'digoxin' | is_combination=False | lead_query='digoxin'
+2026-09-09 21:08:23,031 [INFO] [NEML] 'digoxin' → 4 DRAP candidate(s): ['DIGOXIN 0.25MG TAB ', 'Digoxin 0.5mg/2ml Injection ', '  Digoxin 0.5mg/2ml Injection', 'Digoxin 0.5mg/2ml Injection']
+2026-09-09 21:08:23,031 [INFO] [BrandSelect] 'digoxin' → 'DIGOXIN 0.25MG TAB ' | reason: first of 4 | scores: combo=0 status=1 form=1 sim=0.389
+2026-09-09 21:08:24,447 [INFO] [Verify] OK: 'digoxin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:25,719 [INFO] ─── Processing 'amiodarone' ───
+2026-09-09 21:08:25,719 [INFO] [NEML] Resolving 'amiodarone' | is_combination=False | lead_query='amiodarone'
+2026-09-09 21:08:26,043 [INFO] [NEML] 'amiodarone' → 1 DRAP candidate(s): ['CARDILOR 200 TAB Each tablet contains:- AMIODARONE']
+2026-09-09 21:08:27,453 [INFO] [Verify] OK: 'amiodarone' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:28,338 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'AMIODARONE' -> 'amiodarone' (rxcui=703)
+2026-09-09 21:08:28,766 [INFO] ─── Processing 'clopidogrel' ───
+2026-09-09 21:08:28,766 [INFO] [NEML] Resolving 'clopidogrel' | is_combination=False | lead_query='clopidogrel'
+2026-09-09 21:08:29,111 [INFO] [NEML] 'clopidogrel' → 2 DRAP candidate(s): ['Clopidogrel Bisulfate 75mg Tablet', 'Clopidogrel Caraway 75mg Tablet']
+2026-09-09 21:08:29,111 [INFO] [BrandSelect] 'clopidogrel' → 'Clopidogrel Caraway 75mg Tablet' | reason: tablet (of 2) | scores: combo=0 status=1 form=2 sim=0.355
+2026-09-09 21:08:30,460 [INFO] [Verify] OK: 'clopidogrel' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:31,311 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'CLOPIDOGREL' -> 'clopidogrel' (rxcui=32968)
+2026-09-09 21:08:31,777 [INFO] ─── Processing 'simvastatin' ───
+2026-09-09 21:08:31,777 [INFO] [NEML] Resolving 'simvastatin' | is_combination=False | lead_query='simvastatin'
+2026-09-09 21:08:32,173 [INFO] [NEML] 'simvastatin' → 1 DRAP candidate(s): ['Simvastatin 20 mg F-C Tablet']
+2026-09-09 21:08:33,429 [INFO] [Verify] OK: 'simvastatin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:34,745 [INFO] ─── Processing 'glyceryl trinitrate' ───
+2026-09-09 21:08:34,745 [INFO] [NEML] Resolving 'glyceryl trinitrate' | is_combination=False | lead_query='glyceryl trinitrate'
+2026-09-09 21:08:35,204 [INFO] [NEML] No results for 'glyceryl trinitrate' — trying fallback query 'nitroglycerin'
+2026-09-09 21:08:36,545 [INFO] [NEML] Fallback 'nitroglycerin' → 2 DRAP candidate(s): ['NITROGLYCERIN SOLUTION FOR INJECTION 5ML/1ML', 'NITROGLYCERIN SOLUTION FOR INJECTION 25ML/1ML']
+2026-09-09 21:08:36,545 [INFO] [NEML] 'glyceryl trinitrate' → 2 DRAP candidate(s): ['NITROGLYCERIN SOLUTION FOR INJECTION 5ML/1ML', 'NITROGLYCERIN SOLUTION FOR INJECTION 25ML/1ML']
+2026-09-09 21:08:36,546 [INFO] [BrandSelect] 'nitroglycerin' → 'NITROGLYCERIN SOLUTION FOR INJECTION 5ML/1ML' | reason: solution (of 2) | scores: combo=0 status=1 form=2 sim=0.295
+2026-09-09 21:08:37,942 [WARNING] [Verify] MISMATCH: searched='glyceryl trinitrate' (cleaned='glyceryl trinitrate'), best_score=0.158 (threshold=0.80). Ingredients: ['NITROGLYCERIN']
+2026-09-09 21:08:39,186 [INFO] ─── Processing 'isosorbide dinitrate' ───
+2026-09-09 21:08:39,187 [INFO] [NEML] Resolving 'isosorbide dinitrate' | is_combination=False | lead_query='isosorbide dinitrate'
+2026-09-09 21:08:39,545 [INFO] [NEML] No results for 'isosorbide dinitrate' — trying fallback query 'isordil'
+2026-09-09 21:08:41,045 [INFO] [NEML] Fallback 'isordil' → 4 DRAP candidate(s): ['ISORDIL SUB-LINGUAL 5MG TAB ', 'ISORDIL TABLET 10MG', 'ISORDIL 30MG TAB ', 'ISORDIL TEMBID CAPSULES']
+2026-09-09 21:08:41,045 [INFO] [NEML] 'isosorbide dinitrate' → 4 DRAP candidate(s): ['ISORDIL SUB-LINGUAL 5MG TAB ', 'ISORDIL TABLET 10MG', 'ISORDIL 30MG TAB ', 'ISORDIL TEMBID CAPSULES']
+2026-09-09 21:08:41,046 [INFO] [BrandSelect] 'isordil' → 'ISORDIL TABLET 10MG' | reason: tablet (of 4) | scores: combo=0 status=1 form=2 sim=0.368
+2026-09-09 21:08:42,472 [WARNING] [Verify] MISMATCH: searched='isosorbide dinitrate' (cleaned='isosorbide dinitrate'), best_score=0.350 (threshold=0.80). Ingredients: ['SORBIDE NITRATE']
+2026-09-09 21:08:43,339 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'SORBIDE' -> 'isosorbide dinitrate' (rxcui=6058)
+2026-09-09 21:08:43,741 [INFO] ─── Processing 'amiloride' ───
+2026-09-09 21:08:43,742 [INFO] [NEML] Resolving 'amiloride' | is_combination=False | lead_query='amiloride'
+2026-09-09 21:08:44,121 [INFO] [NEML] 'amiloride' → 3 DRAP candidate(s): ['Amiloride 5mg+Hydrochlorothiazide 50mg Tablet', 'AMILORIDE HCL TAB ', 'AMILOURETIC TAB Each tablet contains:- AMILORIDE H']
+2026-09-09 21:08:44,122 [INFO] [BrandSelect] 'amiloride' → 'Amiloride 5mg+Hydrochlorothiazide 50mg Tablet' | reason: tablet (of 3) | scores: combo=0 status=1 form=2 sim=0.200
+2026-09-09 21:08:45,450 [INFO] [Verify] OK: 'amiloride' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:48,284 [INFO] ─── Processing 'omeprazole' ───
+2026-09-09 21:08:48,284 [INFO] [NEML] Resolving 'omeprazole' | is_combination=False | lead_query='omeprazole'
+2026-09-09 21:08:48,436 [INFO] [NEML] 'omeprazole' → 21 DRAP candidate(s): ['Romeprazole-20 Capsule', 'PPI-20 Capsule Each capsule contains:- Omeprazoleâ', 'Delser Capsule Each Capsule Contains:- Omeprazoleâ', 'Gastromeprazole 20Mg Capsules    ', 'AOMEI (OMEPRAZOLE SODIUM FOR INJECTION).']
+2026-09-09 21:08:48,437 [INFO] [BrandSelect] 'omeprazole' → 'Romeprazole-20 Capsule' | reason: capsule (of 21) | scores: combo=0 status=1 form=2 sim=0.455
+2026-09-09 21:08:49,847 [INFO] [Verify] OK: 'omeprazole' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:51,196 [INFO] ─── Processing 'ranitidine' ───
+2026-09-09 21:08:51,197 [INFO] [NEML] Resolving 'ranitidine' | is_combination=False | lead_query='ranitidine'
+2026-09-09 21:08:51,426 [INFO] [NEML] 'ranitidine' → 17 DRAP candidate(s): ['RANITIDINE 300MG TAB Each tablet contains:- RANITI', 'RANITIDINE 150MG TAB Each tablet contains:- RANITI', 'RANITIDINE 150MG TAB Each tablet contains:- HYDROC', 'RANITIDINE 150MG TAB Each tablet contains:- RANITI', 'MANITAC TAB Each tablet contains:- RANITIDINE HCL ']
+2026-09-09 21:08:51,427 [INFO] [BrandSelect] 'ranitidine' → 'Ranitidine 150mg Tablet' | reason: tablet (of 17) | scores: combo=0 status=1 form=2 sim=0.435
+2026-09-09 21:08:52,827 [INFO] [Verify] OK: 'ranitidine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:08:54,097 [INFO] ─── Processing 'sulfasalazine' ───
+2026-09-09 21:08:54,098 [INFO] [NEML] Resolving 'sulfasalazine' | is_combination=False | lead_query='sulfasalazine'
+2026-09-09 21:08:54,502 [INFO] [NEML] No DRAP results for generic 'sulfasalazine' (all fallbacks exhausted)
+2026-09-09 21:08:54,514 [INFO] ─── Processing 'levothyroxine' ───
+2026-09-09 21:08:54,514 [INFO] [NEML] Resolving 'levothyroxine' | is_combination=False | lead_query='levothyroxine'
+2026-09-09 21:08:58,053 [INFO] [NEML] No DRAP results for generic 'levothyroxine' (all fallbacks exhausted)
+2026-09-09 21:08:58,060 [INFO] ─── Processing 'methimazole' ───
+2026-09-09 21:08:58,060 [INFO] [NEML] Resolving 'methimazole' | is_combination=False | lead_query='methimazole'
+2026-09-09 21:08:58,220 [INFO] [NEML] No DRAP results for generic 'methimazole' (all fallbacks exhausted)
+2026-09-09 21:08:58,226 [INFO] ─── Processing 'metformin' ───
+2026-09-09 21:08:58,227 [INFO] [NEML] Resolving 'metformin' | is_combination=False | lead_query='metformin'
+2026-09-09 21:08:59,695 [INFO] [NEML] 'metformin' → 18 DRAP candidate(s): ['METFORMIN 250MG TAB ', 'GLUMIN 500MG TAB Each tablet contains:- METFORMIN ', 'UNEPHAGE TAB Each tablet contains:- METFORMIN HCL ', 'ORABET 500MG TAB Each tablet contains:- METFORMIN ', 'ORABAT 850MG TAB Each tablet contains:- METFORMIN ']
+2026-09-09 21:08:59,695 [INFO] [BrandSelect] 'metformin' → ' Metformin Tablet 1g ' | reason: tablet (of 18) | scores: combo=0 status=1 form=2 sim=0.474
+2026-09-09 21:09:01,106 [INFO] [Verify] OK: 'metformin' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:01,957 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'METFORMIN' -> 'metformin' (rxcui=6809)
+2026-09-09 21:09:02,387 [INFO] ─── Processing 'gliclazide' ───
+2026-09-09 21:09:02,388 [INFO] [NEML] Resolving 'gliclazide' | is_combination=False | lead_query='gliclazide'
+2026-09-09 21:09:02,727 [INFO] [NEML] 'gliclazide' → 6 DRAP candidate(s): ['CALONIDE TAB Each tablet contains:- GLICLAZIDE 80m', 'Gliclazide Tablet ', 'Gliclazide MR Tablet 30mg', 'Gliclazide MR Tablet 60mg', 'Gliclazide MR Tablet 30mg']
+2026-09-09 21:09:02,727 [INFO] [BrandSelect] 'gliclazide' → 'Gliclazide Tablet ' | reason: tablet (of 6) | scores: combo=0 status=1 form=2 sim=0.588
+2026-09-09 21:09:04,126 [INFO] [Verify] OK: 'gliclazide' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:05,380 [INFO] ─── Processing 'empagliflozin' ───
+2026-09-09 21:09:05,380 [INFO] [NEML] Resolving 'empagliflozin' | is_combination=False | lead_query='empagliflozin'
+2026-09-09 21:09:05,713 [INFO] [NEML] No DRAP results for generic 'empagliflozin' (all fallbacks exhausted)
+2026-09-09 21:09:05,720 [INFO] ─── Processing 'glucagon' ───
+2026-09-09 21:09:05,720 [INFO] [NEML] Resolving 'glucagon' | is_combination=False | lead_query='glucagon'
+2026-09-09 21:09:07,212 [INFO] [NEML] No DRAP results for generic 'glucagon' (all fallbacks exhausted)
+2026-09-09 21:09:07,226 [INFO] ─── Processing 'ethinylestradiol + levonorgestrel' ───
+2026-09-09 21:09:07,227 [INFO] [NEML] Resolving 'ethinylestradiol + levonorgestrel' | is_combination=True | lead_query='ethinylestradiol'
+2026-09-09 21:09:08,710 [INFO] [NEML] No results for 'ethinylestradiol + levonorgestrel' — trying fallback query 'levonorgestrel'
+2026-09-09 21:09:10,207 [INFO] [NEML] No DRAP results for generic 'ethinylestradiol + levonorgestrel' (all fallbacks exhausted)
+2026-09-09 21:09:10,216 [INFO] ─── Processing 'olanzapine' ───
+2026-09-09 21:09:10,217 [INFO] [NEML] Resolving 'olanzapine' | is_combination=False | lead_query='olanzapine'
+2026-09-09 21:09:11,706 [INFO] [NEML] 'olanzapine' → 2 DRAP candidate(s): ['Olanzapine-Sandoz 5mg Tablets      ', 'Olanzapine-Sandoz 10mg Tablets      ']
+2026-09-09 21:09:11,706 [INFO] [BrandSelect] 'olanzapine' → 'Olanzapine-Sandoz 5mg Tablets      ' | reason: tablet (of 2) | scores: combo=0 status=1 form=2 sim=0.345
+2026-09-09 21:09:13,209 [INFO] [Verify] OK: 'olanzapine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:14,601 [INFO] ─── Processing 'risperidone' ───
+2026-09-09 21:09:14,601 [INFO] [NEML] Resolving 'risperidone' | is_combination=False | lead_query='risperidone'
+2026-09-09 21:09:14,780 [INFO] [NEML] 'risperidone' → 4 DRAP candidate(s): ['Risperidone-Sandoz 1mg Tablet', 'Risperidone-Sandoz 2mg Tablet', 'Risperidone-Sandoz 3mg Tablet', 'Risperidone-Sandoz 4mg Tablet']
+2026-09-09 21:09:14,781 [INFO] [BrandSelect] 'risperidone' → 'Risperidone-Sandoz 1mg Tablet' | reason: tablet (of 4) | scores: combo=0 status=1 form=2 sim=0.379
+2026-09-09 21:09:16,178 [INFO] [Verify] OK: 'risperidone' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:17,698 [INFO] ─── Processing 'lithium carbonate' ───
+2026-09-09 21:09:17,698 [INFO] [NEML] Resolving 'lithium carbonate' | is_combination=False | lead_query='lithium carbonate'
+2026-09-09 21:09:17,891 [INFO] [NEML] 'lithium carbonate' → 1 DRAP candidate(s): ['LITHIUM CARBONATE TABLET']
+2026-09-09 21:09:19,246 [INFO] [Verify] OK: 'lithium carbonate' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:20,569 [INFO] ─── Processing 'quetiapine' ───
+2026-09-09 21:09:20,569 [INFO] [NEML] Resolving 'quetiapine' | is_combination=False | lead_query='quetiapine'
+2026-09-09 21:09:21,051 [INFO] [NEML] No DRAP results for generic 'quetiapine' (all fallbacks exhausted)
+2026-09-09 21:09:21,062 [INFO] ─── Processing 'clomipramine' ───
+2026-09-09 21:09:21,062 [INFO] [NEML] Resolving 'clomipramine' | is_combination=False | lead_query='clomipramine'
+2026-09-09 21:09:22,357 [INFO] [NEML] No DRAP results for generic 'clomipramine' (all fallbacks exhausted)
+2026-09-09 21:09:22,365 [INFO] ─── Processing 'bupropion' ───
+2026-09-09 21:09:22,366 [INFO] [NEML] Resolving 'bupropion' | is_combination=False | lead_query='bupropion'
+2026-09-09 21:09:23,842 [INFO] [NEML] No DRAP results for generic 'bupropion' (all fallbacks exhausted)
+2026-09-09 21:09:23,853 [INFO] ─── Processing 'budesonide' ───
+2026-09-09 21:09:23,854 [INFO] [NEML] Resolving 'budesonide' | is_combination=False | lead_query='budesonide'
+2026-09-09 21:09:25,356 [INFO] [NEML] No DRAP results for generic 'budesonide' (all fallbacks exhausted)
+2026-09-09 21:09:25,363 [INFO] ─── Processing 'salbutamol' ───
+2026-09-09 21:09:25,364 [INFO] [NEML] Resolving 'salbutamol' | is_combination=False | lead_query='salbutamol'
+2026-09-09 21:09:26,854 [INFO] [NEML] 'salbutamol' → 9 DRAP candidate(s): ['Salbutamol Syrup', 'SALBUTAMOL AEROSAL ', 'SALBUTAMOL SYP', 'SALBUTAMOL AEROSOL SUSPENSION', 'Asmatol Injection  Each 1Ml Contains:- Salbutamol ']
+2026-09-09 21:09:26,855 [INFO] [BrandSelect] 'salbutamol' → 'Salbutamol Syrup' | reason: syrup (of 9) | scores: combo=0 status=1 form=2 sim=0.625
+2026-09-09 21:09:28,267 [INFO] [Verify] OK: 'salbutamol' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:29,112 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'SALBUTAMOL' -> 'albuterol' (rxcui=435)
+2026-09-09 21:09:29,569 [INFO] ─── Processing 'ipratropium bromide' ───
+2026-09-09 21:09:29,569 [INFO] [NEML] Resolving 'ipratropium bromide' | is_combination=False | lead_query='ipratropium bromide'
+2026-09-09 21:09:29,871 [INFO] [NEML] 'ipratropium bromide' → 3 DRAP candidate(s): ['Ipratropium Bromide 0.5mg and Albuterol Sulfate 3m', '  Ipratropium Bromide 500 mcg / 2 ml Nebulizer Solution', 'Ipratropium Bromide 500mcg/2ml Nebulizer Solution']
+2026-09-09 21:09:29,872 [INFO] [BrandSelect] 'ipratropium bromide' → 'Ipratropium Bromide 500mcg/2ml Nebulizer Solution' | reason: solution (of 3) | scores: combo=0 status=1 form=2 sim=0.388
+2026-09-09 21:09:31,273 [INFO] [Verify] OK: 'ipratropium bromide' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:32,221 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'IPRATROPIUM' -> 'ipratropium' (rxcui=7213)
+2026-09-09 21:09:32,623 [INFO] ─── Processing 'tiotropium' ───
+2026-09-09 21:09:32,624 [INFO] [NEML] Resolving 'tiotropium' | is_combination=False | lead_query='tiotropium'
+2026-09-09 21:09:32,865 [INFO] [NEML] No DRAP results for generic 'tiotropium' (all fallbacks exhausted)
+2026-09-09 21:09:32,873 [INFO] ─── Processing 'calcium' ───
+2026-09-09 21:09:32,874 [INFO] [NEML] Resolving 'calcium' | is_combination=False | lead_query='calcium'
+2026-09-09 21:09:34,436 [INFO] [NEML] 'calcium' → 104 DRAP candidate(s): ['Calcium Syrup.', 'CALCIUM FLOGEN 25MG INJECTION.', 'CALCIUM FLOGEN 100MG INJECTION.', 'CALCIUM FLOGEN I.V INJECTION', 'FOSFOMYCIN CALCIUM FOR SUSPENSION.']
+2026-09-09 21:09:34,437 [INFO] [BrandSelect] 'calcium' → 'Calcium syrup ' | reason: syrup (of 104) | scores: combo=0 status=1 form=2 sim=0.538
+2026-09-09 21:09:35,768 [WARNING] [Verify] MISMATCH: searched='calcium' (cleaned='calcium'), best_score=0.179 (threshold=0.80). Ingredients: ['Cal Heptagluconatelevakinate']
+2026-09-09 21:09:36,116 [INFO] [RxNorm] exact search returned no RxCUI for 'CAL HEPTAGLUCONATELEVAKINATE' — trying approximateTerm
+2026-09-09 21:09:37,132 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'CAL HEPTAGLUCONATELEVAKINATE' -> 'None' (rxcui=605098, score=11.78). Source data may contain a typo — review this mapping.
+2026-09-09 21:09:37,523 [INFO] ─── Processing 'colecalciferol (vitamin D)' ───
+2026-09-09 21:09:37,523 [INFO] [NEML] Resolving 'colecalciferol (vitamin D)' | is_combination=False | lead_query='colecalciferol'
+2026-09-09 21:09:37,666 [INFO] [NEML] No results for 'colecalciferol (vitamin D)' — trying fallback query 'cholecalciferol'
+2026-09-09 21:09:39,732 [INFO] [NEML] No results for 'colecalciferol (vitamin D)' — trying fallback query 'vitamin d3'
+2026-09-09 21:09:40,709 [INFO] [NEML] Fallback 'vitamin d3' → 9 DRAP candidate(s): ['Vitamin D3 Injection', 'Vitamin D3 Softgel Capsule', 'Vitamin D3 Inj', 'VITAMIN D3 INJECTION ', 'VITAMIN D3 INJECTION.']
+2026-09-09 21:09:40,709 [INFO] [NEML] 'colecalciferol (vitamin D)' → 9 DRAP candidate(s): ['Vitamin D3 Injection', 'Vitamin D3 Softgel Capsule', 'Vitamin D3 Inj', 'VITAMIN D3 INJECTION ', 'VITAMIN D3 INJECTION.']
+2026-09-09 21:09:40,709 [INFO] [BrandSelect] 'vitamin d3' → 'Vitamin D3 Softgel Capsule' | reason: capsule (of 9) | scores: combo=0 status=1 form=2 sim=0.385
+2026-09-09 21:09:42,089 [WARNING] [Verify] MISMATCH: searched='colecalciferol (vitamin D)' (cleaned='colecalciferol'), best_score=0.000 (threshold=0.80). Ingredients: ['']
+2026-09-09 21:09:42,097 [INFO] ─── Processing 'ascorbic acid (vitamin C)' ───
+2026-09-09 21:09:42,097 [INFO] [NEML] Resolving 'ascorbic acid (vitamin C)' | is_combination=False | lead_query='ascorbic acid'
+2026-09-09 21:09:43,777 [INFO] [NEML] 'ascorbic acid (vitamin C)' → 38 DRAP candidate(s): ['Ascorbic Acid 50mg Tablets', 'ASCORBIC ACID TABLET', 'ASCORBIC ACID 500 MG INJ', 'Ascorbic Acid 100mg Tablet', 'Ascorbic Acid 500mg Tablet']
+2026-09-09 21:09:43,777 [INFO] [BrandSelect] 'ascorbic acid' → 'ASCORBIC ACID TABLET' | reason: tablet (of 38) | scores: combo=0 status=1 form=2 sim=0.650
+2026-09-09 21:09:45,101 [INFO] [Verify] OK: 'ascorbic acid (vitamin C)' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:46,490 [INFO] ─── Processing 'pyridoxine (vitamin B6)' ───
+2026-09-09 21:09:46,490 [INFO] [NEML] Resolving 'pyridoxine (vitamin B6)' | is_combination=False | lead_query='pyridoxine'
+2026-09-09 21:09:46,670 [INFO] [NEML] 'pyridoxine (vitamin B6)' → 5 DRAP candidate(s): ['ISO-BENZACYL FORTE + PYRIDOXINE TAB ', 'PYRIDOXINE INJECTION', 'PYRIDOXINE HCL 50 MG TABLET ', 'Pyride Tablets Each tablet contains:- Pyridoxine H', 'V-Six Tablets Each Tablet Contains:- Pyridoxine Hc']
+2026-09-09 21:09:46,670 [INFO] [BrandSelect] 'pyridoxine' → 'PYRIDOXINE HCL 50 MG TABLET ' | reason: tablet (of 5) | scores: combo=0 status=1 form=2 sim=0.370
+2026-09-09 21:09:48,075 [INFO] [Verify] OK: 'pyridoxine (vitamin B6)' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:48,934 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'PYRIDOXINE' -> 'pyridoxine' (rxcui=684879)
+2026-09-09 21:09:49,335 [INFO] ─── Processing 'thiamine (vitamin B1)' ───
+2026-09-09 21:09:49,335 [INFO] [NEML] Resolving 'thiamine (vitamin B1)' | is_combination=False | lead_query='thiamine'
+2026-09-09 21:09:49,663 [INFO] [NEML] 'thiamine (vitamin B1)' → 21 DRAP candidate(s): ['THIAMINE 100MG TAB ', 'Thiamine Hcl', 'Thiamine Compound Capsule', 'THIAMINE TAB ', 'THIAMINE HCL INJECTION']
+2026-09-09 21:09:49,663 [INFO] [BrandSelect] 'thiamine' → 'THIAMINE COMPOUND TABLET ' | reason: tablet (of 21) | scores: combo=0 status=1 form=2 sim=0.333
+2026-09-09 21:09:51,081 [WARNING] [Verify] MISMATCH: searched='thiamine (vitamin B1)' (cleaned='thiamine'), best_score=0.400 (threshold=0.80). Ingredients: ['THIAMINE MONONITRATE']
+2026-09-09 21:09:52,413 [INFO] ─── Processing 'xylometazoline' ───
+2026-09-09 21:09:52,414 [INFO] [NEML] Resolving 'xylometazoline' | is_combination=False | lead_query='xylometazoline'
+2026-09-09 21:09:52,698 [INFO] [NEML] 'xylometazoline' → 2 DRAP candidate(s): ['XYLOMETAZOLINE ', 'Xylometazoline Nasal Spray']
+2026-09-09 21:09:52,698 [INFO] [BrandSelect] 'xylometazoline' → 'XYLOMETAZOLINE ' | reason: first of 2 | scores: combo=0 status=1 form=1 sim=1.000
+2026-09-09 21:09:54,075 [WARNING] [Verify] MISMATCH: searched='xylometazoline' (cleaned='xylometazoline'), best_score=0.483 (threshold=0.80). Ingredients: ['XYLOMETAZOLINE HCL 0.1%,  W/V']
+2026-09-09 21:09:54,428 [INFO] [RxNorm] exact search returned no RxCUI for 'XYLOMETAZOLINE HCL 0.1%,  W/V' — trying approximateTerm
+2026-09-09 21:09:55,431 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'XYLOMETAZOLINE HCL 0.1%,  W/V' -> 'xylometazoline hydrochloride 1 MG/ML Nasal Solution' (rxcui=1549372, score=12.60). Source data may contain a typo — review this mapping.
+2026-09-09 21:09:55,863 [INFO] ─── Processing 'allopurinol' ───
+2026-09-09 21:09:55,863 [INFO] [NEML] Resolving 'allopurinol' | is_combination=False | lead_query='allopurinol'
+2026-09-09 21:09:56,007 [INFO] [NEML] 'allopurinol' → 2 DRAP candidate(s): ['Allopurinol 100mg Tablet', 'ALLOPURINOL -RETARD TABLET']
+2026-09-09 21:09:56,008 [INFO] [BrandSelect] 'allopurinol' → 'Allopurinol 100mg Tablet' | reason: tablet (of 2) | scores: combo=0 status=1 form=2 sim=0.458
+2026-09-09 21:09:57,413 [INFO] [Verify] OK: 'allopurinol' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:09:58,711 [INFO] ─── Processing 'hydroxychloroquine' ───
+2026-09-09 21:09:58,711 [INFO] [NEML] Resolving 'hydroxychloroquine' | is_combination=False | lead_query='hydroxychloroquine'
+2026-09-09 21:09:59,009 [INFO] [NEML] 'hydroxychloroquine' → 10 DRAP candidate(s): ['Hydroxychloroquine 200mg Tablet', 'Hydroxychloroquine 200mg Tablet', 'Hydroxychloroquine Tablet', 'Hydroxychloroquine Tablet 200mg', 'Hydroxychloroquine Tablet 200mg']
+2026-09-09 21:09:59,010 [INFO] [BrandSelect] 'hydroxychloroquine' → 'Hydroxychloroquine Tablet' | reason: tablet (of 10) | scores: combo=0 status=1 form=2 sim=0.720
+2026-09-09 21:10:00,407 [INFO] [Verify] OK: 'hydroxychloroquine' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:10:01,685 [INFO] ─── Processing 'methotrexate' ───
+2026-09-09 21:10:01,685 [INFO] [NEML] Resolving 'methotrexate' | is_combination=False | lead_query='methotrexate'
+2026-09-09 21:10:02,030 [INFO] [NEML] 'methotrexate' → 32 DRAP candidate(s): ['METHOTREXATE TABLET 2.5MG', 'Methotrexate Tablets 5mg', 'METHOTREXATE TABLET 10MG', 'METHOTREXATE FOR INJECTION 10MG', 'METHOTREXATE FOR INJECTION 50MG']
+2026-09-09 21:10:02,031 [INFO] [BrandSelect] 'methotrexate' → 'METHOTREXATE TABLETS' | reason: tablet (of 32) | scores: combo=0 status=1 form=2 sim=0.600
+2026-09-09 21:10:03,417 [INFO] [Verify] OK: 'methotrexate' → best_score=1.000 (threshold=0.80)
+2026-09-09 21:10:07,961 [INFO] 
+2026-09-09 21:10:07,961 [INFO] ═══════════════════════════════════════════════
+2026-09-09 21:10:07,962 [INFO]   NEML batch complete — 96 generics processed
+2026-09-09 21:10:07,962 [INFO]   Output: neml_pipeline_results.csv
+2026-09-09 21:10:07,963 [INFO]   Status summary:
+2026-09-09 21:10:07,963 [INFO]     ok                                             66  ██████████████████████████████████████████████████████████████████
+2026-09-09 21:10:07,963 [INFO]     no_drap_match                                  14  ██████████████
+2026-09-09 21:10:07,964 [INFO]     composition_mismatch                           13  █████████████
+2026-09-09 21:10:07,964 [INFO]     empty_data                                      2  ██
+2026-09-09 21:10:07,964 [INFO]     combination_component_mismatch                  1  █
+2026-09-09 21:10:07,965 [INFO] ═══════════════════════════════════════════════

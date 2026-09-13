@@ -14,6 +14,7 @@ class Drug(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     brand_name: Mapped[str] = mapped_column(Text, nullable=False)
+    search_name: Mapped[str | None] = mapped_column(Text, index=True)
     drap_reg_no: Mapped[str | None] = mapped_column(Text)          # internal only — never returned by the API
     dosage_form: Mapped[str | None] = mapped_column(Text)
     company_name: Mapped[str | None] = mapped_column(Text)

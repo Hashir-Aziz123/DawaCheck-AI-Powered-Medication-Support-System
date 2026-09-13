@@ -1,0 +1,2139 @@
+{
+  "search::panadol": [
+    {
+      "id": "000817",
+      "text": "Panadol Tablet."
+    },
+    {
+      "id": "073487",
+      "text": "Panadol Expectorant Syrup"
+    },
+    {
+      "id": "008492",
+      "text": "Children's Panadol Liquid"
+    },
+    {
+      "id": "008556",
+      "text": "Children's Panadol Drops"
+    },
+    {
+      "id": "012437",
+      "text": "Panadol Extract Tablet"
+    },
+    {
+      "id": "013113",
+      "text": "Panadol CF Tablet"
+    },
+    {
+      "id": "013114",
+      "text": "PANADOL D TABLET"
+    },
+    {
+      "id": "076453",
+      "text": "Panadol Forte Suspension "
+    },
+    {
+      "id": "083993",
+      "text": "Panadol Junior Suspension  "
+    },
+    {
+      "id": "094797",
+      "text": "Panadol CF Day Tablet "
+    },
+    {
+      "id": "097070",
+      "text": "Panadol Extend Tablet "
+    },
+    {
+      "id": "101138",
+      "text": "Panadol Tablet"
+    },
+    {
+      "id": "101139",
+      "text": "Children's Panadol Liquid"
+    },
+    {
+      "id": "101140",
+      "text": "Children's Panadol Drops"
+    },
+    {
+      "id": "101141",
+      "text": "Panadol Extra Tablet"
+    },
+    {
+      "id": "108631",
+      "text": "Panadol Forte Suspension "
+    },
+    {
+      "id": "117949",
+      "text": " Panadol Night Tablet 500mg/25mg"
+    },
+    {
+      "id": "118336",
+      "text": "Panadol Extend Tablet"
+    }
+  ],
+  "detail::000817": {
+    "Product Name": "Panadol Tablet.",
+    "Registration No": "000817",
+    "Registration Date": "1976-08-15",
+    "Company Name": "",
+    "Company Address": "",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "PARACETAMOL",
+        "amount": "500 mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "search::disprin": [
+    {
+      "id": "000152",
+      "text": "Disprin Tablet"
+    },
+    {
+      "id": "012627",
+      "text": "Disprin Plus Tablet "
+    },
+    {
+      "id": "024262",
+      "text": "Disprin Cold n Fever Dispersible Tablet "
+    },
+    {
+      "id": "014828",
+      "text": "Disprin CV Tablet"
+    },
+    {
+      "id": "017691",
+      "text": "Disprin CF Sachet"
+    },
+    {
+      "id": "018030",
+      "text": "Disprin Flu"
+    },
+    {
+      "id": "033095",
+      "text": "Disprin Max tablet"
+    }
+  ],
+  "detail::000152": {
+    "Product Name": "Disprin Tablet",
+    "Registration No": "000152",
+    "Registration Date": "1976-04-19",
+    "Company Name": "RECKITT BENCKISER PAKISTAN LIMITED",
+    "Company Address": "F-18, Maripur Road, S.I.T.E",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "For pain relief from headache, toothache, body ache, cold & Fever",
+    "Container Closure": "Aluminium Foil",
+    "Composition": [
+      {
+        "name": "Acetylsalicylic Acid",
+        "amount": "300 mg"
+      },
+      {
+        "name": "Calcium Carbonate",
+        "amount": "90 mg"
+      },
+      {
+        "name": "Citric Acid",
+        "amount": "30 mg"
+      }
+    ],
+    "Pack Size(s)": "100 - (GTIN :\n06001106310066\n), 600 - (GTIN :\n06001106310073\n)"
+  },
+  "search::brufen": [
+    {
+      "id": "061940",
+      "text": "Medibrufen 400mg Tablet"
+    },
+    {
+      "id": "061941",
+      "text": "Medibrufen 200mg Tablet"
+    },
+    {
+      "id": "061947",
+      "text": "Medibrufen Suspension 100mg/5ml"
+    },
+    {
+      "id": "000072",
+      "text": "BRUFEN 200MG TAB "
+    },
+    {
+      "id": "001541",
+      "text": "BRUFEN 400MG TAB "
+    },
+    {
+      "id": "070851",
+      "text": "Brufen DS Suspension "
+    },
+    {
+      "id": "004595",
+      "text": "Brufen Suspension "
+    },
+    {
+      "id": "007850",
+      "text": "BRUFEN FORTE 600MG TAB "
+    },
+    {
+      "id": "012447",
+      "text": "Brufen Cream"
+    },
+    {
+      "id": "044414",
+      "text": "Brufen 600mg Sachet"
+    },
+    {
+      "id": "044415",
+      "text": "Brufen Plus Tablets"
+    },
+    {
+      "id": "093088",
+      "text": "Brufen 400mg/4ml Injection"
+    },
+    {
+      "id": "018388",
+      "text": "Brufen Retard 800mg Tablets"
+    },
+    {
+      "id": "021447",
+      "text": "Brufen Cream"
+    },
+    {
+      "id": "108578",
+      "text": "Brufen Duo Tablet"
+    },
+    {
+      "id": "019248-Ex",
+      "text": "Wellbrufen 400mg/100ml Infusion"
+    },
+    {
+      "id": "000418-EX",
+      "text": "BRUFEN FLU TABLET"
+    },
+    {
+      "id": "000420-EX",
+      "text": "BRUFEN FLU SUSPENSION"
+    }
+  ],
+  "detail::061940": {
+    "Product Name": "Medibrufen 400mg Tablet",
+    "Registration No": "061940",
+    "Registration Date": "2010-09-06",
+    "Company Name": "Mediate Pharmaceutical Pvt Ltd",
+    "Company Address": "Plot # 150-151 Sector 24, Korangi Industrial Area",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contain:\r\nIbuprofen......400mg",
+    "Container Closure": "pvc blitser in unit carton",
+    "Composition": [
+      {
+        "name": "Ibuprofen",
+        "amount": "400 mg"
+      }
+    ],
+    "Pack Size(s)": "25x10's - (GTIN :\n08961101955021\n)"
+  },
+  "search::augmentin": [
+    {
+      "id": "070662",
+      "text": "Augmentin BD 457mg/5ml Suspension"
+    },
+    {
+      "id": "010338",
+      "text": "Augmentin 600mg Injection"
+    },
+    {
+      "id": "011523",
+      "text": "Augmentin 1.2gm Injection"
+    },
+    {
+      "id": "052208",
+      "text": "Augmentin Drops"
+    },
+    {
+      "id": "018360D",
+      "text": "Augmentin DS Suspension 312.5mg/5ml "
+    },
+    {
+      "id": "022244",
+      "text": "Augmentin BD Tablet"
+    },
+    {
+      "id": "017297",
+      "text": "Augmentin 625mg Tablet"
+    },
+    {
+      "id": "009264",
+      "text": "Augmentin Suspension 156.25mg/5ml"
+    },
+    {
+      "id": "006747",
+      "text": "Augmentin Tablets 375mg"
+    }
+  ],
+  "detail::070662": {
+    "Product Name": "Augmentin BD 457mg/5ml Suspension",
+    "Registration No": "070662",
+    "Registration Date": "2011-08-19",
+    "Company Name": "GlaxoSmithKline Pakistan Limited",
+    "Company Address": "F/268, S.I.T.E., Karachi",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Dry Powder For Suspension",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each 5ml reconstituted suspension contains:\r\nAmoxicillin Trihydrate eq. to Amoxicillin 400mg\r\nPotassium Clavulanate eq. to Clavulanic acid 57mg",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Amoxicillin trihydrate eq to Amoxicillin",
+        "amount": "400 mg"
+      },
+      {
+        "name": "Potassium clavulanate eq to clavulanic acid",
+        "amount": "57 mg"
+      }
+    ],
+    "Pack Size(s)": "35ml - (GTIN :\n8964001577355\n), 70ml - (GTIN :\n8964001577355\n)"
+  },
+  "search::ponstan": [
+    {
+      "id": "000138",
+      "text": "Ponstan Tablet"
+    },
+    {
+      "id": "005539",
+      "text": "Ponstan Suspension 60ml"
+    },
+    {
+      "id": "006978",
+      "text": "Ponstan Forte Tablet 500mg"
+    },
+    {
+      "id": "028760",
+      "text": "Ponstan Flash Tablet"
+    }
+  ],
+  "detail::000138": {
+    "Product Name": "Ponstan Tablet",
+    "Registration No": "000138",
+    "Registration Date": "1976-04-24",
+    "Company Name": "Lucky Core Industries Limited",
+    "Company Address": "B-2, SITE",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "Manufacturer Specification",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each Tablet contains: \r\nMefenamic acid….. 250mg",
+    "Container Closure": "Packed in Alu Pvc Blister and packed in carton with PIL",
+    "Composition": [
+      {
+        "name": "Mefenamic Acid",
+        "amount": "250 mg"
+      }
+    ],
+    "Pack Size(s)": "600s - (GTIN :\n08964001705475\n), 200s - (GTIN :\n08964004390180\n)"
+  },
+  "search::glucophage": [
+    {
+      "id": "061799",
+      "text": "Glucophage XR Tablet"
+    },
+    {
+      "id": "000552",
+      "text": "GLUCOPHAGE 500MG TAB "
+    },
+    {
+      "id": "013365",
+      "text": "GLUCOPHAGE 250MG TAB Each tablet contains:- METFOR"
+    },
+    {
+      "id": "025488",
+      "text": "Glucophage  Tablets 1Gm Each Tablet Cotnains:- Met"
+    },
+    {
+      "id": "109987",
+      "text": "Glucophage XR Tablet 500mg"
+    },
+    {
+      "id": "109988",
+      "text": "Glucophage XR Tablet 1000mg"
+    },
+    {
+      "id": "003185-EX",
+      "text": "Glucophage XR 750mg Tablets"
+    },
+    {
+      "id": "003185-EX",
+      "text": "Glucophage XR 750mg Tablets"
+    }
+  ],
+  "detail::061799": {
+    "Product Name": "Glucophage XR Tablet",
+    "Registration No": "061799",
+    "Registration Date": "2010-08-17",
+    "Company Name": "Martin Dow Marker Limited",
+    "Company Address": "7, Jail Road Quetta.",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Extended Release Tablet",
+    "Product Specification": "As per Innovators Specification",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains:\r\nMetformin Hydrochloride ...... 750mg",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Metformin Hydrochloride",
+        "amount": "750 mg"
+      }
+    ],
+    "Pack Size(s)": "30's - (GTIN :\n)"
+  },
+  "search::concor": [
+    {
+      "id": "010194",
+      "text": "Concor Tablets 5 mg"
+    },
+    {
+      "id": "010195",
+      "text": "Concor Tablets 10 mg"
+    },
+    {
+      "id": "028000",
+      "text": "Concor Tab 2.5mg"
+    }
+  ],
+  "detail::010194": {
+    "Product Name": "Concor Tablets 5 mg",
+    "Registration No": "010194",
+    "Registration Date": "",
+    "Company Name": "Martin Dow Marker Limited",
+    "Company Address": "7, Jail Road Quetta.",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "BICOPROLOL FUMARATE",
+        "amount": "5MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "search::lipitor": [
+    {
+      "id": "023620",
+      "text": "Lipitor Tablet 10mg"
+    },
+    {
+      "id": "023621",
+      "text": "Lipitor Tablet 20mg"
+    },
+    {
+      "id": "023622",
+      "text": "Lipitor Tablet 40mg"
+    },
+    {
+      "id": "135270",
+      "text": "Lipitor Tablet 80mg "
+    }
+  ],
+  "detail::023620": {
+    "Product Name": "Lipitor Tablet 10mg",
+    "Registration No": "023620",
+    "Registration Date": "1999-05-11",
+    "Company Name": "AGP Limited",
+    "Company Address": "B-23-C, S.I.T.E., Karachi",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Film-coated tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each film coated tablet contains:\r\nAtorvastatin (as the calcium trihydrate salt)......10mg",
+    "Container Closure": "ALU/ALU",
+    "Composition": [
+      {
+        "name": "Atorvastatin Calcium",
+        "amount": "10 mg"
+      }
+    ],
+    "Pack Size(s)": "10s - (GTIN :\n08961101542931\n)"
+  },
+  "search::voltral": [
+    {
+      "id": "066108",
+      "text": " Voltral 25 Suppositories"
+    },
+    {
+      "id": "066109",
+      "text": " Voltral 100 Suppositories"
+    },
+    {
+      "id": "021524",
+      "text": "Voltral 25 mg Tablet"
+    },
+    {
+      "id": "021527",
+      "text": "Voltral Emulgel"
+    },
+    {
+      "id": "078140",
+      "text": "Voltral 12.5mg Suppositories"
+    },
+    {
+      "id": "078141",
+      "text": "Voltral 50mg Suppositories"
+    },
+    {
+      "id": "083991",
+      "text": "Voltral Emulgel "
+    },
+    {
+      "id": "089372",
+      "text": "Voltral Emulgel 2%"
+    },
+    {
+      "id": "021525",
+      "text": " Voltral 50mg Tablets"
+    },
+    {
+      "id": "021526",
+      "text": " Voltral SR 100mg Tablet"
+    }
+  ],
+  "detail::066108": {
+    "Product Name": "Voltral 25 Suppositories",
+    "Registration No": "066108",
+    "Registration Date": "2010-10-26",
+    "Company Name": "Nouveaux Pharma Limited",
+    "Company Address": "15 West Wharf, Dockyard Road, Karachi.",
+    "Registration Status": "Active",
+    "Route of Admin": "rectal",
+    "Used For": "Human",
+    "Dosage Form": "Suppositories",
+    "Product Specification": "As per Innovators Specification",
+    "Manufacturing Type": "Import",
+    "Label Claim": "Each suppository contains:­ Diclofenac sodium 25mg",
+    "Container Closure": "PVC/LDPE foil",
+    "Composition": [
+      {
+        "name": "Diclofenac sodium",
+        "amount": "25 mg"
+      }
+    ],
+    "Pack Size(s)": "10's - (GTIN :\n07612797198735\n)"
+  },
+  "search::amryl": [],
+  "search::maryl": [
+    {
+      "id": "057223",
+      "text": "Pamaryl Plus Tablet 1/500mg"
+    },
+    {
+      "id": "057224",
+      "text": "Pamaryl Plus Tablet 2/500mg"
+    },
+    {
+      "id": "019567",
+      "text": "Amaryl 1mg Tablets  "
+    },
+    {
+      "id": "019568",
+      "text": "Amaryl 2mg Tablets "
+    },
+    {
+      "id": "021094",
+      "text": " Amaryl 3mg Tablets"
+    },
+    {
+      "id": "021095",
+      "text": " Amaryl 4mg Tablets "
+    },
+    {
+      "id": "030499",
+      "text": "Pamaryl Tab 1mg"
+    },
+    {
+      "id": "030500",
+      "text": "Pamaryl Tab 2mg"
+    },
+    {
+      "id": "030501",
+      "text": "Pamaryl Tab 3mg"
+    },
+    {
+      "id": "030502",
+      "text": "Pamaryl Tab 4mg"
+    },
+    {
+      "id": "041812",
+      "text": "Bamaryl Tablet "
+    },
+    {
+      "id": "041813",
+      "text": "Bamaryl Tablet "
+    },
+    {
+      "id": "050372",
+      "text": "Amaryl M SR 1mg Tablet"
+    },
+    {
+      "id": "050373",
+      "text": "Amaryl M SR 2mg Tablet"
+    },
+    {
+      "id": "041813",
+      "text": "Bamaryl 2mg tablet"
+    },
+    {
+      "id": "041822",
+      "text": "Gamaryl 2mg"
+    },
+    {
+      "id": "041821",
+      "text": "Gamaryl 1mg"
+    },
+    {
+      "id": "041823",
+      "text": "Gamaryl 3mg"
+    },
+    {
+      "id": "041824",
+      "text": "Gamaryl 4mg"
+    }
+  ],
+  "detail::057223": {
+    "Product Name": "Pamaryl Plus Tablet 1/500mg",
+    "Registration No": "057223",
+    "Registration Date": "2009-04-02",
+    "Company Name": "Himont Pharmaceuticals (Pvt.) Ltd.",
+    "Company Address": "17-km Ferozpur Road, Lahore",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "Manufacturer Specification",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "each tablet contains \r\nglimeipiride............1 mg \r\nmetformin as HCl .....500 mg",
+    "Container Closure": "3x10's in PVC Blister",
+    "Composition": [
+      {
+        "name": "Glimeipiride",
+        "amount": "1 mg"
+      },
+      {
+        "name": "Metformin as HCl",
+        "amount": "500 mg"
+      }
+    ],
+    "Pack Size(s)": "3x10s - (GTIN :\n08964002035571\n)"
+  },
+  "detail::019567": {
+    "Product Name": "Amaryl 1mg Tablets",
+    "Registration No": "019567",
+    "Registration Date": "1997-07-08",
+    "Company Name": "Hoechst Pakistan Limited",
+    "Company Address": "Plot 23, Sector 22, Korangi Industrial Area,",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "As per Innovators Specification",
+    "Manufacturing Type": "Import",
+    "Label Claim": "Each tablet contains:\r\nGlimepiride….1mg",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Glimepiride",
+        "amount": "1 mg"
+      }
+    ],
+    "Pack Size(s)": "30's - (GTIN :\nN/A\n)"
+  },
+  "detail::002212": {
+    "Product Name": "ASPIRIN TABLET",
+    "Registration No": "002212",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "ACETYL SALICYLIC ACID",
+        "amount": "300MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::006203": {
+    "Product Name": "Paracetamol Syrup",
+    "Registration No": "006203",
+    "Registration Date": "1991-12-12",
+    "Company Name": "Polyfine Chempharma",
+    "Company Address": "51 Industrial Estate Hayatabad Peshawar, Pakistan",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Suspension",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "each 5ml contains\r\nParacetamol-----120mg",
+    "Container Closure": "PET Bottle",
+    "Composition": [
+      {
+        "name": "Paracetamol",
+        "amount": "120 mg"
+      }
+    ],
+    "Pack Size(s)": "60ml - (GTIN :\n08964001910367\n)"
+  },
+  "detail::032251": {
+    "Product Name": "Codeine Plus Tablets",
+    "Registration No": "032251",
+    "Registration Date": "2004-02-23",
+    "Company Name": "FYNK Pharmaceuticals",
+    "Company Address": "19-KM, G.T. Road, Kala Shah Kaku, Tehsil Ferozwala District Sheikhupura.",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Codeine Phosphate",
+        "amount": "15mg"
+      },
+      {
+        "name": "Paracetamol",
+        "amount": "500mg"
+      },
+      {
+        "name": "Caffeine",
+        "amount": ""
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::002805": {
+    "Product Name": "Amitriptyline 25mg Tablet",
+    "Registration No": "002805",
+    "Registration Date": "1977-09-26",
+    "Company Name": "CCL Pharmaceuticals (Pvt.) Ltd.",
+    "Company Address": "62-Quaid-e-Azam Industrial Estate, Kot Lakhpat",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Amitriptyline",
+        "amount": "25 mg"
+      }
+    ],
+    "Pack Size(s)": "20s - (GTIN :\n), 100s - (GTIN :\n)"
+  },
+  "detail::002555": {
+    "Product Name": "DIAZEPAM TABLET",
+    "Registration No": "002555",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "DIAZEPAM",
+        "amount": "2MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::009313-EX": {
+    "Product Name": "Novex Loperamide Capsule",
+    "Registration No": "009313-EX",
+    "Registration Date": "2020-08-21",
+    "Company Name": "Herbion Pakistan (Pvt.) Ltd.",
+    "Company Address": "Industrial Triangle, Kahuta road, Humak, Islamabad",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Capsule",
+    "Product Specification": "Specifications as per importing country",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each capsule contains:-\r\nLoperamide HCl .................. 2 mg",
+    "Container Closure": "Alu Alu Blister",
+    "Composition": [
+      {
+        "name": "Loperamide",
+        "amount": "2 mg"
+      }
+    ],
+    "Pack Size(s)": "As per importing country - (GTIN :\n), As per Importing Country - (GTIN :\n)"
+  },
+  "detail::069444": {
+    "Product Name": "Metoclopramide Syrup",
+    "Registration No": "069444",
+    "Registration Date": "2011-04-21",
+    "Company Name": "Drugpharm pvt ltd",
+    "Company Address": "28km sheikhupura road lahore",
+    "Registration Status": "Cancelled",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Syrup",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Metoclopramide as Benzoate",
+        "amount": "10mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::066121": {
+    "Product Name": "ONDANSETRON-SANDOZ 8MG/4ML SOLUTION FOR INJECTION.",
+    "Registration No": "066121",
+    "Registration Date": "2008-01-16",
+    "Company Name": "Bayer Pakistan Private Limited",
+    "Company Address": "Plot no 23, sector 22 K.I.A, Karachi",
+    "Registration Status": "Cancelled",
+    "Route of Admin": "parenteral",
+    "Used For": "Human",
+    "Dosage Form": "Injectable",
+    "Product Specification": "As per Innovators Specification",
+    "Manufacturing Type": "Import",
+    "Label Claim": "Each 4ml ampoule contains:\nOndansetron ...........8mg",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Ondansetron",
+        "amount": "8 mg"
+      }
+    ],
+    "Pack Size(s)": "1's - (GTIN :\nNil\n)"
+  },
+  "detail::110170": {
+    "Product Name": "Fluoxetine Capsule",
+    "Registration No": "110170",
+    "Registration Date": "2021-10-15",
+    "Company Name": "Lisko Pakistan (Pvt.) Ltd.",
+    "Company Address": "L-10-D, Block -21, F.B Industrial Area, Karachi",
+    "Registration Status": "Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Capsule",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each capsule contains:\nFluoxetine as Hydrochloride .......... 20mg.",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Fluoxetine as Hydrochloride",
+        "amount": "20 mg"
+      }
+    ],
+    "Pack Size(s)": "10's - (GTIN :\n)"
+  },
+  "detail::001928": {
+    "Product Name": "DEXAMETHASONE TABLET",
+    "Registration No": "001928",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "DEXAMETHASONE",
+        "amount": "0.5MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::110041": {
+    "Product Name": "Loratadine Lawari Tablet 10mg",
+    "Registration No": "110041",
+    "Registration Date": "2021-09-30",
+    "Company Name": "Lawari international",
+    "Company Address": "Valley Road Gulkada saidu sharif Swat",
+    "Registration Status": "Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains:\nLoratadine......10mg",
+    "Container Closure": "Alu-Alu blister",
+    "Composition": [
+      {
+        "name": "Loratadine",
+        "amount": "10 mg"
+      }
+    ],
+    "Pack Size(s)": "10s - (GTIN :\n08964005021588\n)"
+  },
+  "detail::001174": {
+    "Product Name": "PREDNISOLONE TABLET",
+    "Registration No": "001174",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "PREDNISOLONE",
+        "amount": "5MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::006059-EX": {
+    "Product Name": "Carbamazepine 200mg Tablet",
+    "Registration No": "006059-EX",
+    "Registration Date": "2017-01-23",
+    "Company Name": "Titlis Pharma (Private) Limited",
+    "Company Address": "528-A Sundar Industrial Estate, Raiwind Road Lahore",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each Tablet contains: Carbamazepine.......200mg",
+    "Container Closure": "ALU-PVC blister, packed in cardboard carton.",
+    "Composition": [
+      {
+        "name": "Carbamazepine",
+        "amount": "200 mg"
+      }
+    ],
+    "Pack Size(s)": "As per Importing Country - (GTIN :\n08964001641285\n), As per Importing Country - (GTIN :\n), As per Importing Country - (GTIN :\n)"
+  },
+  "detail::108787": {
+    "Product Name": "Lamotrigine Tablet 25mg",
+    "Registration No": "108787",
+    "Registration Date": "2021-07-16",
+    "Company Name": "Lisko Pakistan (Pvt.) Ltd.",
+    "Company Address": "L-10-D, Block -21, F.B Industrial Area, Karachi",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains:\r\nLamotrigine.....25mg",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Lamotrigine",
+        "amount": "25 mg"
+      }
+    ],
+    "Pack Size(s)": "3x10s - (GTIN :\n)"
+  },
+  "detail::018488-EX": {
+    "Product Name": "Levetiracetam 500mg Tablet",
+    "Registration No": "018488-EX",
+    "Registration Date": "2025-05-29",
+    "Company Name": "PHARMEVO (PVT) LTD.",
+    "Company Address": "A-29, NORTH WESTERN INDUSTRIAL ZONE, PORT QASSIM KARACHI.",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Film-coated tablet",
+    "Product Specification": "As per Importing Country",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each film-coated tablet contains:\nLevetiracetam......500mg",
+    "Container Closure": "Alu-Alu blister pack",
+    "Composition": [
+      {
+        "name": "Levetiracetam",
+        "amount": "500 mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::079396": {
+    "Product Name": "Lorazepam  1 mg Tablets",
+    "Registration No": "079396",
+    "Registration Date": "2015-04-27",
+    "Company Name": "Heal Pharmaceuticals Pvt Ltd",
+    "Company Address": "W-33 industrial estate hayatabad peshawar",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains Lorazepam 1mg",
+    "Container Closure": "The tablets are packed in alu pvc blister packs, are further packed in suitable printed cartons with insert.",
+    "Composition": [
+      {
+        "name": "Lorazepam",
+        "amount": "1 mg"
+      }
+    ],
+    "Pack Size(s)": "10 x 10's - (GTIN :\n08964002433957\n)"
+  },
+  "detail::096884": {
+    "Product Name": "PhenobarbitalTablet 30mg",
+    "Registration No": "096884",
+    "Registration Date": "2019-08-23",
+    "Company Name": "Avensis Pharmaceuticals",
+    "Company Address": "F24/1, eiz, port qasim.",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Phenobarbital",
+        "amount": "30 mg"
+      }
+    ],
+    "Pack Size(s)": "60’s - (GTIN :\n)"
+  },
+  "detail::011856": {
+    "Product Name": "GEANGIN-40 TAB Each tablet contains:- VERAPAMIL HC",
+    "Registration No": "011856",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "VERAPAMIL HCL",
+        "amount": "40mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::055781": {
+    "Product Name": "Amoxicillin 250mg Capsule",
+    "Registration No": "055781",
+    "Registration Date": "2009-04-22",
+    "Company Name": "Medimarker's Laboratories",
+    "Company Address": "Plot No. A-104, S.I.T.E. Hyderabad",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Capsule",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Amoxicillin(astrihydrate)",
+        "amount": "250mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::001010": {
+    "Product Name": "AMPICILLIN SYRUP",
+    "Registration No": "001010",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Syrup",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "AMPICILLIN TRIHYDRATE",
+        "amount": "125MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::085727": {
+    "Product Name": "Cefalexine 15% Suspension Injectable",
+    "Registration No": "085727",
+    "Registration Date": "2017-12-18",
+    "Company Name": "Mustafa Brothers",
+    "Company Address": "186-D, Peoples Colony No. 1, Faisalabad",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "intramuscular",
+    "Used For": "Veterinary",
+    "Dosage Form": "Injection",
+    "Product Specification": "As per Innovators Specification",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each 100ml contains:  \r\nCefalexine Monohydrate.. 15.78g eq. to Cefalexine 15g \r\n(As per Innovator’s Specification)",
+    "Container Closure": "VIAL",
+    "Composition": [
+      {
+        "name": "Cefalexine Monohydrate eq to Cefalexine",
+        "amount": "15g"
+      },
+      {
+        "name": "m",
+        "amount": "15.78 g"
+      },
+      {
+        "name": "m",
+        "amount": ""
+      }
+    ],
+    "Pack Size(s)": "100ml - (GTIN :\n)"
+  },
+  "detail::011015-EX": {
+    "Product Name": "Accefixime 400mg Tablet",
+    "Registration No": "011015-EX",
+    "Registration Date": "2021-07-08",
+    "Company Name": "OPAL LABORATORIES (PVT) LTD",
+    "Company Address": "LC-41, L.I.T.E., Landhi",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains: Cefixime (as trihydrate) 400mg",
+    "Container Closure": "Aluminium foil / Alu Alu",
+    "Composition": [
+      {
+        "name": "Cefixime (as trihydrate)",
+        "amount": "400 mg"
+      }
+    ],
+    "Pack Size(s)": "As per demand of Importing country - (GTIN :\n)"
+  },
+  "detail::045739": {
+    "Product Name": "Ciprofloxacin 250mg Tablet",
+    "Registration No": "045739",
+    "Registration Date": "2007-07-26",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Ciprofloxacin (as HCl)",
+        "amount": "250 mg"
+      }
+    ],
+    "Pack Size(s)": "10s - (GTIN :\n)"
+  },
+  "detail::045151": {
+    "Product Name": "Clarithromycin 250mg Tablet",
+    "Registration No": "045151",
+    "Registration Date": "2007-02-16",
+    "Company Name": "Adamjee Pharmaceuticals (Pvt) Ltd",
+    "Company Address": "Plot 39, Sector 15, Korangi Industrial Area, Karachi",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Clarithromycin U.S.P..............250mg",
+    "Container Closure": "Al Foil + Gray PVC Blister in Unit Carton with Leaflet",
+    "Composition": [
+      {
+        "name": "Clarithromycin",
+        "amount": "250 mg"
+      }
+    ],
+    "Pack Size(s)": "1x10 Tablet - (GTIN :\n08964002138241\n)"
+  },
+  "detail::029200": {
+    "Product Name": "Doxycycline Capsule",
+    "Registration No": "029200",
+    "Registration Date": "2002-12-04",
+    "Company Name": "",
+    "Company Address": "",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Capsule",
+    "Product Specification": "",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Doxycycline",
+        "amount": "100 mg"
+      }
+    ],
+    "Pack Size(s)": "6x10s - (GTIN :\n)"
+  },
+  "detail::001013": {
+    "Product Name": "ERYTHROMYCIN TABLET",
+    "Registration No": "001013",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "ERYTHROMYCIN STEARATE",
+        "amount": "250MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::129543": {
+    "Product Name": "Azithromycin 500mg Tablet",
+    "Registration No": "129543",
+    "Registration Date": "2025-08-08",
+    "Company Name": "Misaq Pharmaceuticals Pvt Ltd.",
+    "Company Address": "Plot no.7-B,Woven Garments Zone, Value addition City, Khurrianwala-Sahianwala Road (FIEDMC), Faisalabad.",
+    "Registration Status": "Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Film-coated tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each film coated tablet contains:\nAzithromycin Dihydrate eq. to Azithromycin...........500mg",
+    "Container Closure": "ALU-ALU Blister",
+    "Composition": [
+      {
+        "name": "Azithromycin Dihydrate",
+        "amount": "500 mg"
+      }
+    ],
+    "Pack Size(s)": "6's - (GTIN :\n08964005013088\n)"
+  },
+  "detail::001323": {
+    "Product Name": "METRONIDAZOLE TABLET",
+    "Registration No": "001323",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "METRONIDAZOLE",
+        "amount": "250MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::038568": {
+    "Product Name": "Nitrofurantoin Tablet",
+    "Registration No": "038568",
+    "Registration Date": "2009-06-30",
+    "Company Name": "Glitz Pharma",
+    "Company Address": "Plot No. 265, Industrial Triangle, Kahuta Road, Islamabad, Pakistan.",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains:",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Nitrofurantoin",
+        "amount": "100 mg"
+      }
+    ],
+    "Pack Size(s)": "10x10's - (GTIN :\n)"
+  },
+  "detail::000316": {
+    "Product Name": "Trimethoprim 80mg+Sulphamethoxazole 400mg Tablet",
+    "Registration No": "000316",
+    "Registration Date": "1997-06-26",
+    "Company Name": "Highnoon Laboratories Ltd",
+    "Company Address": "17.5 KM, Multan Road,",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains:\r\nTrimethoprim .... 80mg\r\nSulphamethoxazole ....... 400mg",
+    "Container Closure": "Blister",
+    "Composition": [
+      {
+        "name": "Trimethoprim",
+        "amount": "80 mg"
+      },
+      {
+        "name": "Sulphamethoxazole",
+        "amount": "400 mg"
+      }
+    ],
+    "Pack Size(s)": "As per requirement of importing country - (GTIN :\n)"
+  },
+  "detail::011844": {
+    "Product Name": "KLOCID CAP Each capsule contains:- CLINDAMYCIN HCL",
+    "Registration No": "011844",
+    "Registration Date": "",
+    "Company Name": "Hilton Pharma (Pvt) Limited.",
+    "Company Address": "Plot No. 13-14 & 43, Sector-15, Korangi Industrial Area",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Capsule",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "CLINDAMYCIN HCL",
+        "amount": "169.2mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::010724-EX": {
+    "Product Name": "Fluconazole Salveo Capsule",
+    "Registration No": "010724-EX",
+    "Registration Date": "2021-04-21",
+    "Company Name": "Wilshire Laboratories (Private) Limited",
+    "Company Address": "124/1, Quaid-e-Azam Industrial Estate, Kot Lakhpat, Lahore",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Capsule",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each Capsule contains:-\r\nFluconazole .................... 150mg",
+    "Container Closure": "Blister Packs",
+    "Composition": [
+      {
+        "name": "Fluconazole",
+        "amount": "150 mg"
+      }
+    ],
+    "Pack Size(s)": "As per the requirement of the importing country - (GTIN :\n)"
+  },
+  "detail::022958": {
+    "Product Name": "Clotrimazole Solution 1%w/v",
+    "Registration No": "022958",
+    "Registration Date": "1999-01-12",
+    "Company Name": "Karachi Chemical Industries Pvt. Ltd.",
+    "Company Address": "F/25, Estate Avenue, S.I.T.E., Karachi",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "topical",
+    "Used For": "Human",
+    "Dosage Form": "Solution",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Contains:-\r\nClotrimazole......1% w/v",
+    "Container Closure": "plastic Bottle",
+    "Composition": [
+      {
+        "name": "Clotrimazole",
+        "amount": "1 % W/V"
+      }
+    ],
+    "Pack Size(s)": "20 ML - (GTIN :\n)"
+  },
+  "detail::118161": {
+    "Product Name": "Terbinafine Tablet 25Omg",
+    "Registration No": "118161",
+    "Registration Date": "2023-12-08",
+    "Company Name": "Caliph Pharmaceuticals (Pvt) Ltd.",
+    "Company Address": "Plot 17, Special Industrial Zone (EPZ), Risalpur, KPK",
+    "Registration Status": "Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains:\nTerbinafine (as Hydrochloride)..........250mg",
+    "Container Closure": "Alu Alu Blister",
+    "Composition": [
+      {
+        "name": "Terbinafine (as Hydrochloride)",
+        "amount": "250 mg"
+      }
+    ],
+    "Pack Size(s)": "10's - (GTIN :\n08964002989454\n)"
+  },
+  "detail::025617": {
+    "Product Name": "Nystatin Oral Drops",
+    "Registration No": "025617",
+    "Registration Date": "2000-03-30",
+    "Company Name": "Highnoon Laboratories Ltd",
+    "Company Address": "17.5 KM, Multan Road,",
+    "Registration Status": "Approved / Finalized",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Drops",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each ml contains\r\nNystatin.................100,000 IU",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Nystatin",
+        "amount": "100000 IU"
+      }
+    ],
+    "Pack Size(s)": "30ml - (GTIN :\n)"
+  },
+  "detail::014680": {
+    "Product Name": "ACICLOVIR TABLETS",
+    "Registration No": "014680",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "ACICLOVIR",
+        "amount": "200MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::004702": {
+    "Product Name": "Chloroquine Syrup",
+    "Registration No": "004702",
+    "Registration Date": "1979-02-06",
+    "Company Name": "Pharmawise Labs. Private Limited",
+    "Company Address": "25-M Quaid e Azam Industrial Estate Kot Lakhpat Lahore.",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Syrup",
+    "Product Specification": "Manufacturer Specification",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each 5ml contains: Chloroquine phosphate eq. to Chloroquine ..... 50mg",
+    "Container Closure": "Amber colored pet bottle with pp caps properly labelled and packed in unit carton with leaflet.",
+    "Composition": [
+      {
+        "name": "Chloroquine phosphate",
+        "amount": "50mg/ 5ml %"
+      }
+    ],
+    "Pack Size(s)": "60ml - (GTIN :\n08964005100924\n), 450ml - (GTIN :\n08964005100931\n)"
+  },
+  "detail::000764": {
+    "Product Name": "Folic Acid Tablet",
+    "Registration No": "000764",
+    "Registration Date": "1988-09-14",
+    "Company Name": "",
+    "Company Address": "",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Folic acid",
+        "amount": "5 mg"
+      }
+    ],
+    "Pack Size(s)": "100s - (GTIN :\n)"
+  },
+  "detail::013514": {
+    "Product Name": "WARFARIN TABLETS",
+    "Registration No": "013514",
+    "Registration Date": "",
+    "Company Name": "Regent Laboratories",
+    "Company Address": "C-20 S.I.T.E., Super Highway, Karachi Pakistan.",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "WARFARIN SOD BP",
+        "amount": "5MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::104175": {
+    "Product Name": "Tranexamic Acid Semos Capsule 250mg",
+    "Registration No": "104175",
+    "Registration Date": "2020-09-21",
+    "Company Name": "Semos Pharmaceuticals PVT LTD",
+    "Company Address": "Plot No.11, Sector 12-A  North Karachi, Industrial Area, Karachi, Pakistan",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Capsule",
+    "Product Specification": "JP Specifications",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each capsule contains: \r\nTranexamic acid.....……..250mg",
+    "Container Closure": "Alu-Alu blister with unit carton",
+    "Composition": [
+      {
+        "name": "Tranexamic acid",
+        "amount": "250 mg"
+      },
+      {
+        "name": "Tranexamic acid",
+        "amount": "250 mg"
+      }
+    ],
+    "Pack Size(s)": "100's - (GTIN :\n08964005186478\n)"
+  },
+  "detail::108682": {
+    "Product Name": "Bisoprolol Fumarate Tablet 5mg",
+    "Registration No": "108682",
+    "Registration Date": "2021-07-16",
+    "Company Name": "CITY PHARMACEUTICAL LABORATORIES",
+    "Company Address": "PLOT NO. 12-A, I-5, SECTOR 5, NEW SURVEY NO. 276, KORANGI INDUSTRIAL AREA KARACHI",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Bisoprolol Fumarate",
+        "amount": "5 mg"
+      }
+    ],
+    "Pack Size(s)": "2x10s - (GTIN :\n)"
+  },
+  "detail::133944": {
+    "Product Name": "Amlodipine 5mg Tablet",
+    "Registration No": "133944",
+    "Registration Date": "2026-02-27",
+    "Company Name": "Pacific Pharmaceutical Ltd",
+    "Company Address": "30 km Multan Road Lahore",
+    "Registration Status": "Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains:\nAmlodipine besylate eq. to amlodipine ........................ 5mg",
+    "Container Closure": "white PVC-PVDC blisters sealed with aluminium foil",
+    "Composition": [
+      {
+        "name": "Amlodipine besylate equivalent to amlodipine",
+        "amount": "5 mg"
+      }
+    ],
+    "Pack Size(s)": "2x10's - (GTIN :\n08964005209047\n)"
+  },
+  "detail::012508": {
+    "Product Name": "LOTRIAL 10MG TAB Each tablet contains:- ENALAPRIL",
+    "Registration No": "012508",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "ENALAPRIL MALEATE",
+        "amount": "10mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::000144": {
+    "Product Name": "Amiloride 5mg+Hydrochlorothiazide 50mg Tablet",
+    "Registration No": "000144",
+    "Registration Date": "1997-06-26",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Amiloride",
+        "amount": "5 mg"
+      },
+      {
+        "name": "Hydrochlorothiazide",
+        "amount": "50 mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::054441": {
+    "Product Name": "Losartan Tablets",
+    "Registration No": "054441",
+    "Registration Date": "2009-03-26",
+    "Company Name": "FYNK Pharmaceuticals",
+    "Company Address": "19-KM, G.T. Road, Kala Shah Kaku, Tehsil Ferozwala District Sheikhupura.",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each film coated tablet contains:-\r\nLosartan Potassium USP...........50mg",
+    "Container Closure": "Blister Pack in Carton",
+    "Composition": [
+      {
+        "name": "Losartan Potassium USP",
+        "amount": "50 mg"
+      }
+    ],
+    "Pack Size(s)": "20s - (GTIN :\n08964004388668\n)"
+  },
+  "detail::001171": {
+    "Product Name": "FUROSEMIDE TABLET",
+    "Registration No": "001171",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "FUROSEMIDE",
+        "amount": "40MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::000142": {
+    "Product Name": "Spironolactone 100mg Tablet",
+    "Registration No": "000142",
+    "Registration Date": "1997-06-26",
+    "Company Name": "Highnoon Laboratories Ltd",
+    "Company Address": "17.5 KM, Multan Road,",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains:\r\nSpironolactone ....... 100mg",
+    "Container Closure": "Blister",
+    "Composition": [
+      {
+        "name": "Spironolactone",
+        "amount": "100 mg"
+      }
+    ],
+    "Pack Size(s)": "As per requirement of importing country - (GTIN :\n)"
+  },
+  "detail::001747": {
+    "Product Name": "DIGOXIN 0.25MG TAB",
+    "Registration No": "001747",
+    "Registration Date": "",
+    "Company Name": "Lahore Chemical and Pharmaceutical Works Pvt. Ltd.",
+    "Company Address": "137- Shahrah Maulana Jalaluddin Roomi, Lahore",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "DIGOXIN",
+        "amount": "0.25MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::011673": {
+    "Product Name": "CARDILOR 200 TAB Each tablet contains:- AMIODARONE",
+    "Registration No": "011673",
+    "Registration Date": "",
+    "Company Name": "SAMI Pharmaceuticals Pvt. Ltd.",
+    "Company Address": "F-95 Hub River Road S.I.T.E Karachi",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "AMIODARONE HCL",
+        "amount": "200mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::020231-EX": {
+    "Product Name": "Clopidogrel Caraway 75mg Tablet",
+    "Registration No": "020231-EX",
+    "Registration Date": "2026-03-19",
+    "Company Name": "Caraway Pharmaceuticals",
+    "Company Address": "PLOT NO.12, STREET NO.3 NATIONAL INDUSTRIAL ZONE RAWAT, PAKISTAN",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "As per Importing Country",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each film coated tablet contains:\nClopidogrel bisulfate eq. to Clopidogrel …….75mg",
+    "Container Closure": ".",
+    "Composition": [
+      {
+        "name": "Clopidogrel as bisulfate",
+        "amount": "75 %"
+      }
+    ],
+    "Pack Size(s)": "As per Importing Country - (GTIN :\n)"
+  },
+  "detail::008834-Ex": {
+    "Product Name": "Simvastatin 20 mg F-C Tablet",
+    "Registration No": "008834-Ex",
+    "Registration Date": "2020-04-22",
+    "Company Name": "Pacific Pharmaceutical Ltd",
+    "Company Address": "30 km Multan Road Lahore",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each Film Coated Tablet Contains: Simvastatin 20mg F-C Tablet",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Simvastatin",
+        "amount": "20 mg"
+      }
+    ],
+    "Pack Size(s)": "As per Importing Cou - (GTIN :\n)"
+  },
+  "detail::071415": {
+    "Product Name": "Romeprazole-20 Capsule",
+    "Registration No": "071415",
+    "Registration Date": "2011-08-18",
+    "Company Name": "Arsons Pharmaceutical Industries (Pvt) Ltd",
+    "Company Address": "22 KM, Multan Road, Off 2.5 KM Defence Road, Lahore",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Capsule",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each Capsule Contains (Omeprazole ...20mg)",
+    "Container Closure": "Hard gelatin capsules in blister packaing to Aluminium Foil and outer Carton",
+    "Composition": [
+      {
+        "name": "Omeprazole",
+        "amount": "20 mg"
+      }
+    ],
+    "Pack Size(s)": "2x7s     - (GTIN :\n08964001654407\n), 10 X 10's                     M.R.P  1647.61 - (GTIN :\n08964001654834\n), 10's                           M.R.P 179.39 - (GTIN :\n08964001654841\n)"
+  },
+  "detail::029208": {
+    "Product Name": "Ranitidine 150mg Tablet",
+    "Registration No": "029208",
+    "Registration Date": "2002-12-04",
+    "Company Name": "",
+    "Company Address": "",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Ranitidine",
+        "amount": "150 mg"
+      }
+    ],
+    "Pack Size(s)": "1x10s - (GTIN :\n)"
+  },
+  "detail::118218": {
+    "Product Name": "Metformin Tablet 1g",
+    "Registration No": "118218",
+    "Registration Date": "2023-12-08",
+    "Company Name": "City Pharmaceutical Laboratories",
+    "Company Address": "Plot 12-A, I-5, Sector 5, Korangi Industrial Area, Karachi, Pakistan",
+    "Registration Status": "Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Film-coated tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each film coated tablet contains:\nMetformin Hydrochloride..........1g",
+    "Container Closure": "Alu-PVC Blister Strip in Printed Carton Box",
+    "Composition": [
+      {
+        "name": "Metformin Hydrochloride",
+        "amount": "1 gm"
+      }
+    ],
+    "Pack Size(s)": "30's  - (GTIN :\n), 50's - (GTIN :\n), 100's - (GTIN :\n)"
+  },
+  "detail::036742": {
+    "Product Name": "Gliclazide Tablet",
+    "Registration No": "036742",
+    "Registration Date": "2004-01-31",
+    "Company Name": "English Pharmaceutical Indsutries",
+    "Company Address": "link Kattar bund road , Thokar Naiz baig, Multan Road Lahore",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each film coated tablet containsl:\r\nGliclazide ..... 80mg",
+    "Container Closure": "Alu/Alu  blisters in unit carton",
+    "Composition": [
+      {
+        "name": "Gliclazide",
+        "amount": "80 mg"
+      }
+    ],
+    "Pack Size(s)": "2x10s - (GTIN :\n)"
+  },
+  "detail::048411": {
+    "Product Name": "Olanzapine-Sandoz 5mg Tablets",
+    "Registration No": "048411",
+    "Registration Date": "2008-01-31",
+    "Company Name": "Bayer Pakistan Private Limited",
+    "Company Address": "Plot no 23, sector 22 K.I.A, Karachi",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Olanzapine",
+        "amount": "5mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::048831": {
+    "Product Name": "Risperidone-Sandoz 1mg Tablet",
+    "Registration No": "048831",
+    "Registration Date": "2008-07-22",
+    "Company Name": "Bayer Pakistan Private Limited",
+    "Company Address": "Plot no 23, sector 22 K.I.A, Karachi",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Risperidone",
+        "amount": "1mg"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::005114": {
+    "Product Name": "LITHIUM CARBONATE TABLET",
+    "Registration No": "005114",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "LITHIUM CARBONATE",
+        "amount": "400MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::057327": {
+    "Product Name": "Salbutamol Syrup",
+    "Registration No": "057327",
+    "Registration Date": "2009-04-06",
+    "Company Name": "Ameer Pharma Pvt Ltd",
+    "Company Address": "23 km sheikhupura road lahore",
+    "Registration Status": "Reviewed",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Syrup/Suspension",
+    "Product Specification": "British Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each 5ml contains\r\nSalbutamol (as Sulphate).........2mg",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "Salbutamol (as Sulphate)",
+        "amount": "2 mg"
+      }
+    ],
+    "Pack Size(s)": "60ml - (GTIN :\n8964001981312\n)"
+  },
+  "detail::124523": {
+    "Product Name": "Ipratropium Bromide 500 mcg / 2 ml Nebulizer Solution",
+    "Registration No": "124523",
+    "Registration Date": "2024-11-29",
+    "Company Name": "Pacific Pharmaceuticals Ltd.",
+    "Company Address": "Plot No.384, Sundar Industrial Estate, Raiwind Road, Lahore",
+    "Registration Status": "Active",
+    "Route of Admin": "nasal",
+    "Used For": "Human",
+    "Dosage Form": "Nebuliser solution",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each 2 ml contains:\nIpratropium Bromide........500 mcg",
+    "Container Closure": "LDPE Respule",
+    "Composition": [
+      {
+        "name": "Ipratropium Bromide",
+        "amount": "500 mcg"
+      }
+    ],
+    "Pack Size(s)": "5s x 2 ml Respule - (GTIN :\n08964005212405\n)"
+  },
+  "detail::001341": {
+    "Product Name": "ASCORBIC ACID TABLET",
+    "Registration No": "001341",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "ASCORBIC ACID",
+        "amount": "100MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::006024": {
+    "Product Name": "PYRIDOXINE HCL 50 MG TABLET",
+    "Registration No": "006024",
+    "Registration Date": "",
+    "Company Name": "Hilton Pharma (Pvt) Limited.",
+    "Company Address": "Plot No. 13-14 & 43, Sector-15, Korangi Industrial Area",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "PYRIDOXINE HCL",
+        "amount": "50 MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  },
+  "detail::000333": {
+    "Product Name": "Allopurinol 100mg Tablet",
+    "Registration No": "000333",
+    "Registration Date": "1997-06-26",
+    "Company Name": "Highnoon Laboratories Ltd",
+    "Company Address": "17.5 KM, Multan Road,",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "Manufacturer Specification",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each tablet contains: Allopurinol ..... 100mg",
+    "Container Closure": "Blister",
+    "Composition": [
+      {
+        "name": "Allopurinol",
+        "amount": "100 mg"
+      }
+    ],
+    "Pack Size(s)": "As per requirement of Importing Country - (GTIN :\n)"
+  },
+  "detail::102662": {
+    "Product Name": "Hydroxychloroquine Tablet",
+    "Registration No": "102662",
+    "Registration Date": "2020-05-13",
+    "Company Name": "Paramount Pharmaceuitcals",
+    "Company Address": "36- Industrial Triangle Kahuta Road Islamabad",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "oral",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "United States Pharmacopeia",
+    "Manufacturing Type": "Self Manufacturing",
+    "Label Claim": "Each film coated tablet contains: Hydroxychloroquine Sulfate...200mg",
+    "Container Closure": "30s, 50s",
+    "Composition": [
+      {
+        "name": "Hydroxychloroquine",
+        "amount": "200 mg"
+      }
+    ],
+    "Pack Size(s)": "30s - (GTIN :\n), 50s - (GTIN :\n)"
+  },
+  "detail::016354": {
+    "Product Name": "METHOTREXATE TABLETS",
+    "Registration No": "016354",
+    "Registration Date": "",
+    "Company Name": "test3",
+    "Company Address": "test",
+    "Registration Status": "Provisionally Active",
+    "Route of Admin": "",
+    "Used For": "Human",
+    "Dosage Form": "Tablet",
+    "Product Specification": "",
+    "Manufacturing Type": "Import",
+    "Label Claim": "",
+    "Container Closure": "",
+    "Composition": [
+      {
+        "name": "METHOTREXATE",
+        "amount": "2.5MG"
+      }
+    ],
+    "Pack Size(s)": ""
+  }
+}

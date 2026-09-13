@@ -78,6 +78,7 @@ def build_drug_record(brand_name: str) -> DrugResolution:
         label, fda_status = get_fda_label(query_name)
         ing.fda_status = fda_status
         if label:
+            ing.raw_fda_response = label
             (
                 ing.drug_interactions,
                 ing.warnings,

@@ -1,0 +1,92 @@
+{
+  "PARACETAMOL": {
+    "rxcui": "161",
+    "rxnorm_name": "acetaminophen",
+    "status": "ok"
+  },
+  "ACETYLSALICYLIC ACID": {
+    "rxcui": "1191",
+    "rxnorm_name": "aspirin",
+    "status": "ok"
+  },
+  "CALCIUM CARBONATE": {
+    "rxcui": "1897",
+    "rxnorm_name": "calcium carbonate",
+    "status": "ok"
+  },
+  "CITRIC ACID": {
+    "rxcui": "21183",
+    "rxnorm_name": "citric acid",
+    "status": "ok"
+  },
+  "IBUPROFEN": {
+    "rxcui": "5640",
+    "rxnorm_name": "ibuprofen",
+    "status": "ok"
+  },
+  "MEFENAMIC ACID": {
+    "rxcui": "6693",
+    "rxnorm_name": "mefenamic acid",
+    "status": "ok"
+  },
+  "METFORMIN HYDROCHLORIDE": {
+    "rxcui": "235743",
+    "rxnorm_name": "metformin hydrochloride",
+    "status": "ok"
+  },
+  "ATORVASTATIN CALCIUM": {
+    "rxcui": "83366",
+    "rxnorm_name": "atorvastatin calcium",
+    "status": "ok"
+  },
+  "DICLOFENAC SODIUM": {
+    "rxcui": "203214",
+    "rxnorm_name": "diclofenac sodium",
+    "status": "ok"
+  },
+  "AMOXICILLIN": {
+    "rxcui": "723",
+    "rxnorm_name": "amoxicillin",
+    "status": "stripped_and_matched"
+  },
+  "POTASSIUM CLAVULANATE": {
+    "rxcui": "831418",
+    "rxnorm_name": "clavulanate potassium",
+    "status": "stripped_and_matched"
+  },
+  "METFORMIN": {
+    "rxcui": "6809",
+    "rxnorm_name": "metformin",
+    "status": "stripped_and_matched"
+  },
+  "BICOPROLOL": {
+    "rxcui": "19484",
+    "rxnorm_name": "bisoprolol",
+    "status": "approximate_match"
+  },
+  "ATORVASTATIN": {
+    "rxcui": "83367",
+    "rxnorm_name": "atorvastatin",
+    "status": "stripped_and_matched"
+  },
+  "GLIMEIPIRIDE": {
+    "rxcui": "25789",
+    "rxnorm_name": "glimepiride",
+    "status": "approximate_match"
+  },
+  "METFORMIN AS HCL": {
+    "rxcui": "235743",
+    "rxnorm_name": "metformin hydrochloride",
+    "status": "approximate_match"
+  },
+  "DICLOFENAC": {
+    "rxcui": "3355",
+    "rxnorm_name": "diclofenac",
+    "status": "stripped_and_matched"
+  },
+  "GLIMEPIRIDE": {
+    "rxcui": "25789",
+    "rxnorm_name": "glimepiride",
+    "status": "ok"
+  }
+}

@@ -1,0 +1,70 @@
+drug_id,brand_name,drap_reg_no,dosage_form,company_name,ingredient_id,generic_name,dose,rxcui,rxnorm_name
+1,ASPIRIN TABLET,002212,tablet,,47,ACETYL SALICYLIC ACID,300MG,1191,aspirin
+2,Paracetamol Syrup,006203,syrup,Polyfine Chempharma,69,PARACETAMOL,120 mg,161,acetaminophen
+3,Codeine Plus Tablets,032251,,FYNK Pharmaceuticals,71,CODEINE,15mg,2670,codeine
+3,Codeine Plus Tablets,032251,,FYNK Pharmaceuticals,72,PARACETAMOL,500mg,161,acetaminophen
+3,Codeine Plus Tablets,032251,,FYNK Pharmaceuticals,73,CAFFEINE,,1886,caffeine
+4,Amitriptyline 25mg Tablet,002805,tablet,CCL Pharmaceuticals (Pvt.) Ltd.,53,AMITRIPTYLINE,25 mg,704,amitriptyline
+5,DIAZEPAM TABLET,002555,tablet,,17,DIAZEPAM,2MG,3322,diazepam
+6,Novex Loperamide Capsule,009313-EX,capsule,Herbion Pakistan (Pvt.) Ltd.,31,LOPERAMIDE,2 mg,6468,loperamide
+7,Metoclopramide Syrup,069444,syrup,Drugpharm pvt ltd,35,METOCLOPRAMIDE,10mg,6915,metoclopramide
+8,ONDANSETRON-SANDOZ 8MG/4ML SOLUTION FOR INJECTION.,066121,solution,Bayer Pakistan Private Limited,65,ONDANSETRON,8 mg,26225,ondansetron
+9,Fluoxetine Capsule,110170,capsule,Lisko Pakistan (Pvt.) Ltd.,32,FLUOXETINE,20 mg,4493,fluoxetine
+10,DEXAMETHASONE TABLET,001928,tablet,,7,DEXAMETHASONE,0.5MG,3264,dexamethasone
+11,Loratadine Lawari Tablet 10mg,110041,tablet,Lawari international,34,LORATADINE,10 mg,28889,loratadine
+12,PREDNISOLONE TABLET,001174,tablet,,16,PREDNISOLONE,5MG,8638,prednisolone
+13,Carbamazepine 200mg Tablet,006059-EX,tablet,Titlis Pharma (Private) Limited,33,CARBAMAZEPINE,200 mg,2002,carbamazepine
+14,Lamotrigine Tablet 25mg,108787,tablet,Lisko Pakistan (Pvt.) Ltd.,37,LAMOTRIGINE,25 mg,28439,lamotrigine
+15,Levetiracetam 500mg Tablet,018488-EX,,PHARMEVO (PVT) LTD.,45,LEVETIRACETAM,500 mg,114477,levetiracetam
+16,Lorazepam  1 mg Tablets,079396,tablet,Heal Pharmaceuticals Pvt Ltd,42,LORAZEPAM,1 mg,6470,lorazepam
+17,PhenobarbitalTablet 30mg,096884,tablet,Avensis Pharmaceuticals,20,PHENOBARBITAL,30 mg,8134,phenobarbital
+18,GEANGIN-40 TAB Each tablet contains:- VERAPAMIL HC,011856,tablet,,21,VERAPAMIL,40mg,11170,verapamil
+19,Amoxicillin 250mg Capsule,055781,capsule,Medimarker's Laboratories,48,AMOXICILLIN,250mg,723,amoxicillin
+20,AMPICILLIN SYRUP,001010,syrup,,55,AMPICILLIN,125MG,733,ampicillin
+21,Cefalexine 15% Suspension Injectable,085727,,Mustafa Brothers,58,CEFALEXINE,15.78 gm,2231,cephalexin
+22,Accefixime 400mg Tablet,011015-EX,tablet,OPAL LABORATORIES (PVT) LTD,51,CEFIXIME,400 mg,25033,cefixime
+23,Ciprofloxacin 250mg Tablet,045739,tablet,,66,CIPROFLOXACIN,250 mg,2551,ciprofloxacin
+24,Clarithromycin 250mg Tablet,045151,tablet,Adamjee Pharmaceuticals (Pvt) Ltd,10,CLARITHROMYCIN,250 mg,21212,clarithromycin
+25,Doxycycline Capsule,029200,capsule,,54,DOXYCYCLINE,100 mg,3640,doxycycline
+26,ERYTHROMYCIN TABLET,001013,tablet,,5,ERYTHROMYCIN,250MG,4053,erythromycin
+27,Azithromycin 500mg Tablet,129543,tablet,Misaq Pharmaceuticals Pvt Ltd.,30,AZITHROMYCIN,500 mg,18631,azithromycin
+28,METRONIDAZOLE TABLET,001323,tablet,,27,METRONIDAZOLE,250MG,6922,metronidazole
+29,Nitrofurantoin Tablet,038568,tablet,Glitz Pharma,43,NITROFURANTOIN,100 mg,7454,nitrofurantoin
+30,Trimethoprim 80mg+Sulphamethoxazole 400mg Tablet,000316,tablet,Highnoon Laboratories Ltd,56,TRIMETHOPRIM,80 mg,10829,trimethoprim
+30,Trimethoprim 80mg+Sulphamethoxazole 400mg Tablet,000316,tablet,Highnoon Laboratories Ltd,57,SULPHAMETHOXAZOLE,400 mg,10180,sulfamethoxazole
+31,KLOCID CAP Each capsule contains:- CLINDAMYCIN HCL,011844,capsule,Hilton Pharma (Pvt) Limited.,60,CLINDAMYCIN,169.2mg,2582,clindamycin
+32,Fluconazole Salveo Capsule,010724-EX,capsule,Wilshire Laboratories (Private) Limited,50,FLUCONAZOLE,150 mg,4450,fluconazole
+33,Clotrimazole Solution 1%w/v,022958,solution,Karachi Chemical Industries Pvt. Ltd.,8,CLOTRIMAZOLE,1 % W/V,2623,clotrimazole
+34,Terbinafine Tablet 25Omg,118161,tablet,Caliph Pharmaceuticals (Pvt) Ltd.,41,TERBINAFINE,250 mg,37801,terbinafine
+35,Nystatin Oral Drops,025617,oral,Highnoon Laboratories Ltd,62,NYSTATIN,100000 IU,7597,nystatin
+36,ACICLOVIR TABLETS,014680,,,63,ACICLOVIR,200MG,281,acyclovir
+37,Chloroquine Syrup,004702,syrup,Pharmawise Labs. Private Limited,6,CHLOROQUINE,50mg/ 5ml %,2393,chloroquine
+38,Folic Acid Tablet,000764,tablet,,61,FOLIC ACID,5 mg,4511,folic acid
+39,WARFARIN TABLETS,013514,tablet,Regent Laboratories,24,WARFARIN,5MG,11289,warfarin
+40,Tranexamic Acid Semos Capsule 250mg,104175,capsule,Semos Pharmaceuticals PVT LTD,22,TRANEXAMIC ACID,250 mg,10691,tranexamic acid
+41,Bisoprolol Fumarate Tablet 5mg,108682,tablet,CITY PHARMACEUTICAL LABORATORIES,2,BISOPROLOL,5 mg,19484,bisoprolol
+42,Amlodipine 5mg Tablet,133944,tablet,Pacific Pharmaceutical Ltd,39,AMLODIPINE,5 mg,17767,amlodipine
+43,LOTRIAL 10MG TAB Each tablet contains:- ENALAPRIL,012508,tablet,,59,ENALAPRIL,10mg,3827,enalapril
+44,Amiloride 5mg+Hydrochlorothiazide 50mg Tablet,000144,tablet,,11,AMILORIDE,5 mg,644,amiloride
+44,Amiloride 5mg+Hydrochlorothiazide 50mg Tablet,000144,tablet,,12,HYDROCHLOROTHIAZIDE,50 mg,5487,hydrochlorothiazide
+45,Losartan Tablets,054441,tablet,FYNK Pharmaceuticals,46,LOSARTAN,50 mg,52175,losartan
+46,FUROSEMIDE TABLET,001171,tablet,,1,FUROSEMIDE,40MG,4603,furosemide
+47,Spironolactone 100mg Tablet,000142,,Highnoon Laboratories Ltd,29,SPIRONOLACTONE,100 mg,9997,spironolactone
+48,DIGOXIN 0.25MG TAB,001747,,Lahore Chemical and Pharmaceutical Works Pvt. Ltd.,44,DIGOXIN,0.25MG,3407,digoxin
+49,CARDILOR 200 TAB Each tablet contains:- AMIODARONE,011673,,SAMI Pharmaceuticals Pvt. Ltd.,52,AMIODARONE,200mg,703,amiodarone
+50,Clopidogrel Caraway 75mg Tablet,020231-EX,tablet,Caraway Pharmaceuticals,28,CLOPIDOGREL,75 %,32968,clopidogrel
+51,Simvastatin 20 mg F-C Tablet,008834-Ex,,Pacific Pharmaceutical Ltd,19,SIMVASTATIN,20 mg,36567,simvastatin
+52,Romeprazole-20 Capsule,071415,capsule,Arsons Pharmaceutical Industries (Pvt) Ltd,15,OMEPRAZOLE,20 mg,7646,omeprazole
+53,Ranitidine 150mg Tablet,029208,tablet,,40,RANITIDINE,150 mg,9143,ranitidine
+54,Metformin Tablet 1g,118218,tablet,City Pharmaceutical Laboratories,70,METFORMIN,1 gm,6809,metformin
+55,Gliclazide Tablet,036742,tablet,English Pharmaceutical Indsutries,26,GLICLAZIDE,80 mg,4816,gliclazide
+56,Olanzapine-Sandoz 5mg Tablets,048411,tablet,Bayer Pakistan Private Limited,36,OLANZAPINE,5mg,61381,olanzapine
+57,Risperidone-Sandoz 1mg Tablet,048831,tablet,Bayer Pakistan Private Limited,64,RISPERIDONE,1mg,35636,risperidone
+58,LITHIUM CARBONATE TABLET,005114,,,67,LITHIUM CARBONATE,400MG,42351,lithium carbonate
+59,Salbutamol Syrup,057327,syrup,Ameer Pharma Pvt Ltd,4,SALBUTAMOL,2 mg,435,albuterol
+60,Ipratropium Bromide 500mcg/2ml Nebulizer Solution,124523,solution,Pacific Pharmaceuticals Ltd.,38,IPRATROPIUM,500 mcg,7213,ipratropium
+61,ASCORBIC ACID TABLET,001341,tablet,,25,ASCORBIC ACID,100MG,1151,ascorbic acid
+62,PYRIDOXINE HCL 50 MG TABLET,006024,tablet,Hilton Pharma (Pvt) Limited.,68,PYRIDOXINE,50 MG,684879,pyridoxine
+63,Allopurinol 100mg Tablet,000333,tablet,Highnoon Laboratories Ltd,18,ALLOPURINOL,100 mg,519,allopurinol
+64,Hydroxychloroquine Tablet,102662,tablet,Paramount Pharmaceuitcals,3,HYDROXYCHLOROQUINE,200 mg,5521,hydroxychloroquine
+65,METHOTREXATE TABLETS,016354,tablet,,9,METHOTREXATE,2.5MG,6851,methotrexate

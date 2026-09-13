@@ -1,0 +1,136 @@
+2026-08-14 19:30:42,750 [INFO] Processing 'Panadol'...
+2026-08-14 19:30:52,810 [WARNING] Retrying (Retry(total=2, connect=2, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870d040>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Panadol&_type=brand+name
+2026-08-14 19:31:04,827 [WARNING] Retrying (Retry(total=1, connect=1, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870d1c0>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Panadol&_type=brand+name
+2026-08-14 19:31:18,847 [WARNING] Retrying (Retry(total=0, connect=0, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870d4c0>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Panadol&_type=brand+name
+2026-08-14 19:31:28,860 [ERROR] [DRAP] search failed for 'Panadol': HTTPSConnectionPool(host='eapp.dra.gov.pk', port=443): Max retries exceeded with url: /productView.php?search=Panadol&_type=brand+name (Caused by ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870d640>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)'))
+2026-08-14 19:31:28,860 [INFO] Processing 'Disprin'...
+2026-08-14 19:31:38,864 [WARNING] Retrying (Retry(total=2, connect=2, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870da30>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Disprin&_type=brand+name
+2026-08-14 19:31:50,875 [WARNING] Retrying (Retry(total=1, connect=1, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870daf0>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Disprin&_type=brand+name
+2026-08-14 19:32:04,877 [WARNING] Retrying (Retry(total=0, connect=0, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870dc70>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Disprin&_type=brand+name
+2026-08-14 19:32:14,892 [ERROR] [DRAP] search failed for 'Disprin': HTTPSConnectionPool(host='eapp.dra.gov.pk', port=443): Max retries exceeded with url: /productView.php?search=Disprin&_type=brand+name (Caused by ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870ddf0>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)'))
+2026-08-14 19:32:14,892 [INFO] Processing 'Brufen'...
+2026-08-14 19:32:24,903 [WARNING] Retrying (Retry(total=2, connect=2, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870e240>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Brufen&_type=brand+name
+2026-08-14 19:32:36,910 [WARNING] Retrying (Retry(total=1, connect=1, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870e300>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Brufen&_type=brand+name
+2026-08-14 19:32:50,924 [WARNING] Retrying (Retry(total=0, connect=0, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d56967e00>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Brufen&_type=brand+name
+2026-08-14 19:33:00,932 [ERROR] [DRAP] search failed for 'Brufen': HTTPSConnectionPool(host='eapp.dra.gov.pk', port=443): Max retries exceeded with url: /productView.php?search=Brufen&_type=brand+name (Caused by ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870d820>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)'))
+2026-08-14 19:33:00,933 [INFO] Processing 'Augmentin'...
+2026-08-14 19:33:10,940 [WARNING] Retrying (Retry(total=2, connect=2, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870dc40>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Augmentin&_type=brand+name
+2026-08-14 19:33:22,955 [WARNING] Retrying (Retry(total=1, connect=1, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870d790>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Augmentin&_type=brand+name
+2026-08-14 19:33:36,965 [WARNING] Retrying (Retry(total=0, connect=0, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870d3d0>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Augmentin&_type=brand+name
+2026-08-14 19:33:46,969 [ERROR] [DRAP] search failed for 'Augmentin': HTTPSConnectionPool(host='eapp.dra.gov.pk', port=443): Max retries exceeded with url: /productView.php?search=Augmentin&_type=brand+name (Caused by ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x23d5870d490>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)'))
+2026-08-14 19:33:46,970 [INFO] Processing 'Ponstan'...
+2026-08-15 17:39:27,242 [INFO] Processing 'Panadol'...
+2026-08-15 17:39:37,276 [WARNING] Retrying (Retry(total=2, connect=2, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x2445194d3a0>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Panadol&_type=brand+name
+2026-08-15 17:39:49,288 [WARNING] Retrying (Retry(total=1, connect=1, read=3, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<HTTPSConnection(host='eapp.dra.gov.pk', port=443) at 0x2445194d4c0>, 'Connection to eapp.dra.gov.pk timed out. (connect timeout=10)')': /productView.php?search=Panadol&_type=brand+name
+2026-08-18 18:01:26,923 [INFO] Processing 'Panadol'...
+2026-08-18 18:01:27,650 [WARNING] [DRAP] 'Panadol' had 18 matches — defaulting to first: 'Panadol Tablet.'
+2026-08-18 18:01:33,799 [INFO] Processing 'Disprin'...
+2026-08-18 18:01:33,920 [WARNING] [DRAP] 'Disprin' had 7 matches — defaulting to first: 'Disprin Tablet'
+2026-08-18 18:01:39,602 [INFO] Processing 'Brufen'...
+2026-08-18 18:01:39,722 [WARNING] [DRAP] 'Brufen' had 18 matches — defaulting to first: 'Medibrufen 400mg Tablet'
+2026-08-18 18:01:42,471 [INFO] Processing 'Augmentin'...
+2026-08-18 18:01:42,854 [WARNING] [DRAP] 'Augmentin' had 9 matches — defaulting to first: 'Augmentin BD 457mg/5ml Suspension'
+2026-08-18 18:01:44,596 [INFO] [RxNorm] no RxCUI found for 'AMOXICILLIN TRIHYDRATE EQ TO AMOXICILLIN'
+2026-08-18 18:01:45,428 [INFO] [RxNorm] no RxCUI found for 'POTASSIUM CLAVULANATE EQ TO CLAVULANIC ACID'
+2026-08-18 18:01:45,918 [INFO] Processing 'Ponstan'...
+2026-08-18 18:01:46,058 [WARNING] [DRAP] 'Ponstan' had 4 matches — defaulting to first: 'Ponstan Tablet'
+2026-08-18 18:01:49,231 [INFO] Processing 'Glucophage'...
+2026-08-18 18:01:49,346 [WARNING] [DRAP] 'Glucophage' had 8 matches — defaulting to first: 'Glucophage XR Tablet'
+2026-08-18 18:01:52,514 [INFO] Processing 'Concor'...
+2026-08-18 18:01:52,637 [WARNING] [DRAP] 'Concor' had 3 matches — defaulting to first: 'Concor Tablets 5 mg'
+2026-08-18 18:01:54,464 [INFO] [RxNorm] no RxCUI found for 'BICOPROLOL FUMARATE'
+2026-08-18 18:01:54,958 [INFO] Processing 'Lipitor'...
+2026-08-18 18:01:55,659 [WARNING] [DRAP] 'Lipitor' had 4 matches — defaulting to first: 'Lipitor Tablet 10mg'
+2026-08-18 18:01:58,345 [INFO] Processing 'Amryl'...
+2026-08-18 18:01:58,650 [INFO] Processing 'Voltral'...
+2026-08-18 18:02:00,136 [WARNING] [DRAP] 'Voltral' had 10 matches — defaulting to first: ' Voltral 25 Suppositories'
+2026-08-18 18:02:02,837 [INFO] Batch complete — results written to drap_pipeline_results.csv
+2026-08-21 12:14:17,184 [INFO] Processing 'Panadol'...
+2026-08-21 12:14:17,186 [INFO] [DRAP] cache hit: search 'Panadol'
+2026-08-21 12:14:17,187 [WARNING] [DRAP] 'Panadol' had 18 matches — defaulting to first: 'Panadol Tablet.'
+2026-08-21 12:14:17,188 [INFO] Processing 'Disprin'...
+2026-08-21 12:14:17,188 [INFO] [DRAP] cache hit: search 'Disprin'
+2026-08-21 12:14:17,188 [WARNING] [DRAP] 'Disprin' had 7 matches — defaulting to first: 'Disprin Tablet'
+2026-08-21 12:14:17,189 [INFO] Processing 'Brufen'...
+2026-08-21 12:14:17,189 [INFO] [DRAP] cache hit: search 'Brufen'
+2026-08-21 12:14:17,190 [WARNING] [DRAP] 'Brufen' had 18 matches — defaulting to first: 'Medibrufen 400mg Tablet'
+2026-08-21 12:14:17,190 [INFO] Processing 'Augmentin'...
+2026-08-21 12:14:17,191 [INFO] [DRAP] cache hit: search 'Augmentin'
+2026-08-21 12:14:17,191 [WARNING] [DRAP] 'Augmentin' had 9 matches — defaulting to first: 'Augmentin BD 457mg/5ml Suspension'
+2026-08-21 12:14:17,191 [INFO] [Preprocess] Salt/qualifier stripped: 'AMOXICILLIN TRIHYDRATE EQ TO AMOXICILLIN' -> 'AMOXICILLIN' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:14:17,192 [INFO] [Preprocess] Salt/qualifier stripped: 'POTASSIUM CLAVULANATE EQ TO CLAVULANIC ACID' -> 'POTASSIUM CLAVULANATE' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:14:19,764 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'AMOXICILLIN' -> 'amoxicillin' (rxcui=723)
+2026-08-21 12:14:23,012 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'POTASSIUM CLAVULANATE' -> 'clavulanate potassium' (rxcui=831418)
+2026-08-21 12:14:23,417 [INFO] Processing 'Ponstan'...
+2026-08-21 12:14:23,417 [INFO] [DRAP] cache hit: search 'Ponstan'
+2026-08-21 12:14:23,418 [WARNING] [DRAP] 'Ponstan' had 4 matches — defaulting to first: 'Ponstan Tablet'
+2026-08-21 12:14:23,420 [INFO] Processing 'Glucophage'...
+2026-08-21 12:14:23,421 [INFO] [DRAP] cache hit: search 'Glucophage'
+2026-08-21 12:14:23,421 [WARNING] [DRAP] 'Glucophage' had 8 matches — defaulting to first: 'Glucophage XR Tablet'
+2026-08-21 12:14:23,421 [INFO] [Preprocess] Salt/qualifier stripped: 'METFORMIN HYDROCHLORIDE' -> 'METFORMIN' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:14:24,268 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'METFORMIN' -> 'metformin' (rxcui=6809)
+2026-08-21 12:14:25,056 [INFO] Processing 'Concor'...
+2026-08-21 12:14:25,056 [INFO] [DRAP] cache hit: search 'Concor'
+2026-08-21 12:14:25,056 [WARNING] [DRAP] 'Concor' had 3 matches — defaulting to first: 'Concor Tablets 5 mg'
+2026-08-21 12:14:25,057 [INFO] [Preprocess] Salt/qualifier stripped: 'BICOPROLOL FUMARATE' -> 'BICOPROLOL' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:14:25,435 [INFO] [RxNorm] exact search returned no RxCUI for 'BICOPROLOL' — trying approximateTerm
+2026-08-21 12:14:26,400 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'BICOPROLOL' -> 'bisoprolol' (rxcui=19484, score=8.15). Source data may contain a typo — review this mapping.
+2026-08-21 12:14:26,850 [INFO] Processing 'Lipitor'...
+2026-08-21 12:14:26,850 [INFO] [DRAP] cache hit: search 'Lipitor'
+2026-08-21 12:14:26,851 [WARNING] [DRAP] 'Lipitor' had 4 matches — defaulting to first: 'Lipitor Tablet 10mg'
+2026-08-21 12:14:26,852 [INFO] [Preprocess] Salt/qualifier stripped: 'ATORVASTATIN CALCIUM' -> 'ATORVASTATIN' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:14:27,696 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'ATORVASTATIN' -> 'atorvastatin' (rxcui=83367)
+2026-08-21 12:14:28,138 [INFO] Processing 'Amryl'...
+2026-08-21 12:14:28,772 [INFO] [DRAP] No results for 'Amryl' — trying 9 spelling variant(s): ['mAryl', 'Armyl', 'Amyrl', 'Amrly', 'Amaryl', 'Ameryl', 'Amiryl', 'Amoryl', 'Amuryl']
+2026-08-21 12:14:29,781 [INFO] [DRAP] Spelling-variant retry succeeded: 'Amryl' -> 'mAryl' returned 19 result(s)
+2026-08-21 12:14:29,782 [WARNING] [DRAP] 'Amryl' had 19 matches — defaulting to first: 'Pamaryl Plus Tablet 1/500mg'
+2026-08-21 12:14:31,522 [INFO] [RxNorm] exact search returned no RxCUI for 'GLIMEIPIRIDE' — trying approximateTerm
+2026-08-21 12:14:32,526 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'GLIMEIPIRIDE' -> 'glimepiride' (rxcui=25789, score=8.13). Source data may contain a typo — review this mapping.
+2026-08-21 12:14:33,293 [INFO] [RxNorm] exact search returned no RxCUI for 'METFORMIN AS HCL' — trying approximateTerm
+2026-08-21 12:14:34,292 [WARNING] [RxNorm] APPROXIMATE_MATCH accepted: 'METFORMIN AS HCL' -> 'metformin hydrochloride' (rxcui=235743, score=12.40). Source data may contain a typo — review this mapping.
+2026-08-21 12:14:34,294 [INFO] Processing 'Voltral'...
+2026-08-21 12:14:34,295 [INFO] [DRAP] cache hit: search 'Voltral'
+2026-08-21 12:14:34,295 [WARNING] [DRAP] 'Voltral' had 10 matches — defaulting to first: ' Voltral 25 Suppositories'
+2026-08-21 12:14:34,296 [INFO] [Preprocess] Salt/qualifier stripped: 'DICLOFENAC SODIUM' -> 'DICLOFENAC' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:14:35,300 [INFO] [RxNorm] STRIPPED_AND_MATCHED: exact lookup succeeded after stripping -> 'DICLOFENAC' -> 'diclofenac' (rxcui=3355)
+2026-08-21 12:14:35,718 [INFO] Batch complete — results written to drap_pipeline_results.csv
+2026-08-21 12:27:45,476 [INFO] Processing 'Panadol'...
+2026-08-21 12:27:45,477 [INFO] [DRAP] cache hit: search 'Panadol'
+2026-08-21 12:27:45,477 [WARNING] [DRAP] 'Panadol' had 18 matches — defaulting to first: 'Panadol Tablet.'
+2026-08-21 12:27:45,477 [INFO] Processing 'Disprin'...
+2026-08-21 12:27:45,478 [INFO] [DRAP] cache hit: search 'Disprin'
+2026-08-21 12:27:45,478 [WARNING] [DRAP] 'Disprin' had 7 matches — defaulting to first: 'Disprin Tablet'
+2026-08-21 12:27:45,479 [INFO] Processing 'Brufen'...
+2026-08-21 12:27:45,479 [INFO] [DRAP] cache hit: search 'Brufen'
+2026-08-21 12:27:45,479 [WARNING] [DRAP] 'Brufen' had 18 matches — defaulting to first: 'Medibrufen 400mg Tablet'
+2026-08-21 12:27:45,480 [INFO] Processing 'Augmentin'...
+2026-08-21 12:27:45,480 [INFO] [DRAP] cache hit: search 'Augmentin'
+2026-08-21 12:27:45,480 [WARNING] [DRAP] 'Augmentin' had 9 matches — defaulting to first: 'Augmentin BD 457mg/5ml Suspension'
+2026-08-21 12:27:45,480 [INFO] [Preprocess] Salt/qualifier stripped: 'AMOXICILLIN TRIHYDRATE EQ TO AMOXICILLIN' -> 'AMOXICILLIN' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:27:45,481 [INFO] [Preprocess] Salt/qualifier stripped: 'POTASSIUM CLAVULANATE EQ TO CLAVULANIC ACID' -> 'POTASSIUM CLAVULANATE' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:27:45,482 [INFO] Processing 'Ponstan'...
+2026-08-21 12:27:45,482 [INFO] [DRAP] cache hit: search 'Ponstan'
+2026-08-21 12:27:45,482 [WARNING] [DRAP] 'Ponstan' had 4 matches — defaulting to first: 'Ponstan Tablet'
+2026-08-21 12:27:45,484 [INFO] Processing 'Glucophage'...
+2026-08-21 12:27:45,484 [INFO] [DRAP] cache hit: search 'Glucophage'
+2026-08-21 12:27:45,484 [WARNING] [DRAP] 'Glucophage' had 8 matches — defaulting to first: 'Glucophage XR Tablet'
+2026-08-21 12:27:45,485 [INFO] [Preprocess] Salt/qualifier stripped: 'METFORMIN HYDROCHLORIDE' -> 'METFORMIN' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:27:45,485 [INFO] Processing 'Concor'...
+2026-08-21 12:27:45,486 [INFO] [DRAP] cache hit: search 'Concor'
+2026-08-21 12:27:45,486 [WARNING] [DRAP] 'Concor' had 3 matches — defaulting to first: 'Concor Tablets 5 mg'
+2026-08-21 12:27:45,486 [INFO] [Preprocess] Salt/qualifier stripped: 'BICOPROLOL FUMARATE' -> 'BICOPROLOL' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:27:45,487 [INFO] Processing 'Lipitor'...
+2026-08-21 12:27:45,487 [INFO] [DRAP] cache hit: search 'Lipitor'
+2026-08-21 12:27:45,487 [WARNING] [DRAP] 'Lipitor' had 4 matches — defaulting to first: 'Lipitor Tablet 10mg'
+2026-08-21 12:27:45,488 [INFO] [Preprocess] Salt/qualifier stripped: 'ATORVASTATIN CALCIUM' -> 'ATORVASTATIN' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:27:45,488 [INFO] Processing 'Amryl'...
+2026-08-21 12:27:45,489 [INFO] [DRAP] cache hit: search 'Amryl'
+2026-08-21 12:27:45,489 [INFO] [DRAP] No results for 'Amryl' — trying 9 spelling variant(s): ['mAryl', 'Armyl', 'Amyrl', 'Amrly', 'Amaryl', 'Ameryl', 'Amiryl', 'Amoryl', 'Amuryl']
+2026-08-21 12:27:45,489 [INFO] [DRAP] cache hit: search 'mAryl'
+2026-08-21 12:27:45,491 [INFO] [DRAP] Spelling-variant retry accepted: 'Amryl' -> 'Amaryl 1mg Tablets  ' via variant 'mAryl' (similarity=0.767, status=spelling_retry_found)
+2026-08-21 12:27:45,491 [WARNING] [DRAP] 'Amryl' had 6 matches — defaulting to first: 'Amaryl 1mg Tablets  '
+2026-08-21 12:27:48,417 [INFO] Processing 'Voltral'...
+2026-08-21 12:27:48,418 [INFO] [DRAP] cache hit: search 'Voltral'
+2026-08-21 12:27:48,418 [WARNING] [DRAP] 'Voltral' had 10 matches — defaulting to first: ' Voltral 25 Suppositories'
+2026-08-21 12:27:48,418 [INFO] [Preprocess] Salt/qualifier stripped: 'DICLOFENAC SODIUM' -> 'DICLOFENAC' (STRIPPED_AND_MATCHED will be set if RxNorm resolves this)
+2026-08-21 12:27:48,419 [INFO] Batch complete — results written to drap_pipeline_results.csv
