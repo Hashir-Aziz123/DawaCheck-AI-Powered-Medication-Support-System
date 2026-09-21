@@ -1,0 +1,46 @@
+[
+  {
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Aspirin",
+    "expected_output": {
+      "final_status": "interaction_found",
+      "requires_grounded": true,
+      "forbidden_severity_terms": [],
+      "citation_must_state_effect": true
+    },
+    "notes": "Original bare-list citation bug was found and fixed here. Citation must be a full effect-stating sentence — bare drug-name lists must never pass grounding again."
+  },
+  {
+    "drug_a_name": "Panadol",
+    "drug_b_name": "Omeprazole",
+    "expected_output": {
+      "final_status": "none_found",
+      "requires_grounded": false,
+      "forbidden_severity_terms": [],
+      "citation_must_state_effect": false
+    },
+    "notes": "Control pair. No interaction expected in FDA label text. Confirms the pipeline does not hallucinate interactions where none exist."
+  },
+  {
+    "drug_a_name": "Mefenamic Acid",
+    "drug_b_name": "Warfarin",
+    "expected_output": {
+      "final_status": "interaction_found",
+      "requires_grounded": true,
+      "forbidden_severity_terms": ["serious", "severe"],
+      "citation_must_state_effect": true
+    },
+    "notes": "Preventive guard against LLM severity overstatement. The interaction is real and was correctly detected. The severity_overstatement evaluator ensures the claim does not introduce 'serious'/'severe' language that is absent from the cited FDA source sentence (e.g. claim overstating 'serious bleeding risk' when citation only says 'increased bleeding risk')."
+  },
+  {
+    "drug_a_name": "Aspirin",
+    "drug_b_name": "Ibuprofen",
+    "expected_output": {
+      "final_status": "interaction_found",
+      "requires_grounded": true,
+      "forbidden_severity_terms": [],
+      "citation_must_state_effect": true
+    },
+    "notes": "Interaction was expected and successfully found. The citation must be a proper effect-stating sentence — this pair previously exposed the bare-table-citation bug and confirmed its fix."
+  }
+]

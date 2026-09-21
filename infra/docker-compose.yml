@@ -18,5 +18,19 @@ services:
       timeout: 5s
       retries: 5
 
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: drug_assistant_mq
+    restart: unless-stopped
+    ports:
+      - "5672:5672"    # AMQP port, used by the app/worker
+      - "15672:15672"  # management UI, for visually inspecting the queue during development
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
 volumes:
   pg_data:
+

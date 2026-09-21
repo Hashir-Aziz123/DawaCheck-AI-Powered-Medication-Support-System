@@ -6,3 +6,8 @@ python-dotenv
 bs4
 urllib3
 requests
+langgraph
+langchain-groq
+langchain-core
+langsmith
+pika
