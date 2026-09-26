@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 def _drug_to_candidate(drug: Drug) -> ResolvedDrugInfo:
     """Convert a Drug ORM object to a minimal, consumer-safe ResolvedDrugInfo."""
     display_name = _build_display_name(drug.brand_name, drug.dosage_form)
-    return ResolvedDrugInfo(display_name=display_name, dosage_form=drug.dosage_form)
+    return ResolvedDrugInfo(display_name=display_name, dosage_form=drug.dosage_form, drug_id=drug.id)
 
 
 def _build_display_name(brand_name: str, dosage_form: str | None) -> str:
@@ -49,11 +49,13 @@ def _build_db_response(drug: Drug, labels_by_rxcui: dict, matched_as: str) -> Dr
         matched_as=matched_as,
         brand_name=drug.brand_name,
         dosage_form=drug.dosage_form,
-        ingredients=ingredients_resp
+        ingredients=ingredients_resp,
+        drug_id=drug.id,
     )
 
 
-def _build_live_response(record: DrugResolution, query: str, matched_as: str) -> DrugResolutionResult:
+
+def _build_live_response(record: DrugResolution, query: str, matched_as: str, drug_id: int | None = None) -> DrugResolutionResult:
     ingredients_resp = []
     for ing in record.ingredients:
         ingredients_resp.append(IngredientResponse(
@@ -71,11 +73,15 @@ def _build_live_response(record: DrugResolution, query: str, matched_as: str) ->
         matched_as=matched_as,
         brand_name=record.matched_name or query,
         dosage_form=None,
-        ingredients=ingredients_resp
+        ingredients=ingredients_resp,
+        drug_id=drug_id,
     )
 
 
-def _persist_live_record(record: DrugResolution, query: str, db_session: Session):
+def _persist_live_record(record: DrugResolution, query: str, db_session: Session) -> int | None:
+    """Persist a live-resolved drug to the database and return its integer id.
+    Returns None if persistence fails (caller should still return the live response).
+    """
     try:
         drug_id = None
         if record.drap_reg_no:
@@ -120,10 +126,12 @@ def _persist_live_record(record: DrugResolution, query: str, db_session: Session
                 db_session.execute(fda_stmt)
 
         db_session.commit()
-        logger.info("Successfully persisted live resolution for '%s' to database.", query)
+        logger.info("Successfully persisted live resolution for '%s' to database (drug_id=%s).", query, drug_id)
+        return drug_id
     except Exception as e:
         logger.exception("Failed to persist live resolution for '%s': %s", query, e)
         db_session.rollback()
+        return None
 
 
 def resolve_drug(query: str, db_session: Session) -> DrugResolutionResult:
@@ -251,15 +259,15 @@ def resolve_drug(query: str, db_session: Session) -> DrugResolutionResult:
     logger.info("Step 5: Live Brand Search")
     brand_record = build_drug_record(query)
     if brand_record.status in (Status.OK, Status.SPELLING_RETRY_FOUND, Status.SPELLING_RETRY_LOW_CONFIDENCE):
-        _persist_live_record(brand_record, query, db_session)
-        return _build_live_response(brand_record, query, matched_as="brand")
+        live_drug_id = _persist_live_record(brand_record, query, db_session)
+        return _build_live_response(brand_record, query, matched_as="brand", drug_id=live_drug_id)
 
     # 6. Live Generic Fallback
     logger.info("Step 6: Live Generic Search")
     generic_record = build_generic_record(query)
     if generic_record.status in (Status.OK, Status.SPELLING_RETRY_FOUND, Status.SPELLING_RETRY_LOW_CONFIDENCE):
-        _persist_live_record(generic_record, query, db_session)
-        return _build_live_response(generic_record, query, matched_as="generic")
+        live_drug_id = _persist_live_record(generic_record, query, db_session)
+        return _build_live_response(generic_record, query, matched_as="generic", drug_id=live_drug_id)
 
     # Failed all paths
     logger.info("All resolution paths failed for '%s'.", query)

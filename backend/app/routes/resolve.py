@@ -27,17 +27,18 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 
-def _build_drug_info(brand_name: str, dosage_form: str | None) -> ResolvedDrugInfo:
+def _build_drug_info(brand_name: str, dosage_form: str | None, drug_id: int | None = None) -> ResolvedDrugInfo:
     """Build a consumer-safe drug info object.
 
     Appends dosage_form only when it isn't already present in brand_name,
     preventing duplicates like "Paracetamol Syrup syrup".
+    ``drug_id`` is included so the frontend can pass it to POST /check.
     """
     if dosage_form and dosage_form.lower() not in brand_name.lower():
         display_name = f"{brand_name} {dosage_form}".strip()
     else:
         display_name = brand_name
-    return ResolvedDrugInfo(display_name=display_name, dosage_form=dosage_form)
+    return ResolvedDrugInfo(display_name=display_name, dosage_form=dosage_form, drug_id=drug_id)
 
 
 @router.post("/resolve", response_model=ResolveResponse)
@@ -70,9 +71,11 @@ def resolve(
         )
 
     if result.status == "found":
+        drug_info = _build_drug_info(result.brand_name, result.dosage_form, result.drug_id)
         return ResolveResponse(
             status="resolved",
-            drug=_build_drug_info(result.brand_name, result.dosage_form),
+            drug=drug_info,
+            drug_id=result.drug_id,
         )
 
     if result.status == "ambiguous":

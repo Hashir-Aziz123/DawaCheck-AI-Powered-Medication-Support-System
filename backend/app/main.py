@@ -10,10 +10,12 @@ import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.routes.resolve import router as resolve_router
 from app.routes.check import router as check_router
 from app.routes.ws import router as ws_router
+from app.routes.drugs import router as drugs_router
 from core.db.listeners import start_listener
 
 logging.basicConfig(
@@ -52,6 +54,20 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+# Allow the Next.js dev server to reach the API.
+# In production, restrict allowed_origins to the actual domain.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(resolve_router)
 app.include_router(check_router)
 app.include_router(ws_router)
+app.include_router(drugs_router)
