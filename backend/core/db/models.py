@@ -55,6 +55,26 @@ class FdaLabel(Base):
     fetched_at: Mapped[datetime] = mapped_column(server_default=func.now())
 
 
+class DrugClass(Base):
+    """Pharmacological class data from NLM RxClass API, keyed by RxCUI.
+
+    One row per ingredient (rxcui). class_names holds the human-readable class
+    labels (e.g. ["Selective Serotonin Reuptake Inhibitors"]), class_sources the
+    corresponding source tags (e.g. ["ATC", "MEDRT-MOA"]).  Both are parallel
+    lists of the same length so they can be zipped.
+
+    Intentionally mirrors the fda_labels table structure: same unique(rxcui)
+    constraint, same ON CONFLICT DO NOTHING write-back strategy.
+    """
+    __tablename__ = "drug_classes"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    rxcui: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
+    class_names: Mapped[list] = mapped_column(JSONB, nullable=False)    # ["Selective Serotonin Reuptake Inhibitors", ...]
+    class_sources: Mapped[list] = mapped_column(JSONB, nullable=False)  # ["ATC", "MEDRT-MOA", ...] — parallel to class_names
+    fetched_at: Mapped[datetime] = mapped_column(server_default=func.now())
+
+
 class InteractionJob(Base):
     __tablename__ = "interaction_jobs"
     __table_args__ = (

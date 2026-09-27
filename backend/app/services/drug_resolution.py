@@ -3,7 +3,7 @@ from sqlalchemy import select, func
 from sqlalchemy.orm import Session
 from sqlalchemy.dialects.postgresql import insert
 
-from core.db.models import Drug, DrugIngredient, FdaLabel
+from core.db.models import Drug, DrugIngredient, FdaLabel, DrugClass
 from core.resolution import build_drug_record
 from core.generic_resolution import build_generic_record, generate_search_name
 from core.status import Status
@@ -30,10 +30,28 @@ def _build_display_name(brand_name: str, dosage_form: str | None) -> str:
     return brand_name
 
 
-def _build_db_response(drug: Drug, labels_by_rxcui: dict, matched_as: str) -> DrugResolutionResult:
+def _load_classes_by_rxcui(rxcui_list: list, db_session: Session) -> dict:
+    """Fetch DrugClass rows for the given rxcuis and return as {rxcui: DrugClass}."""
+    if not rxcui_list:
+        return {}
+    stmt = select(DrugClass).where(DrugClass.rxcui.in_(rxcui_list))
+    rows = db_session.execute(stmt).scalars().all()
+    return {row.rxcui: row for row in rows}
+
+
+def _build_db_response(drug: Drug, labels_by_rxcui: dict, matched_as: str, classes_by_rxcui: dict | None = None) -> DrugResolutionResult:
+    if classes_by_rxcui is None:
+        classes_by_rxcui = {}
     ingredients_resp = []
     for ing in drug.ingredients:
         label = labels_by_rxcui.get(ing.rxcui) if ing.rxcui else None
+        dc = classes_by_rxcui.get(ing.rxcui) if ing.rxcui else None
+        drug_classes: list[dict] = []
+        if dc and dc.class_names:
+            drug_classes = [
+                {"class_name": name, "class_source": source}
+                for name, source in zip(dc.class_names, dc.class_sources)
+            ]
         ingredients_resp.append(IngredientResponse(
             generic_name=ing.generic_name,
             dose=ing.dose,
@@ -41,8 +59,9 @@ def _build_db_response(drug: Drug, labels_by_rxcui: dict, matched_as: str) -> Dr
             drug_interactions=label.drug_interactions if label else None,
             warnings=label.warnings if label else None,
             boxed_warning=label.boxed_warning if label else None,
+            drug_classes=drug_classes,
         ))
-        
+
     return DrugResolutionResult(
         status="found",
         source="database",
@@ -52,7 +71,6 @@ def _build_db_response(drug: Drug, labels_by_rxcui: dict, matched_as: str) -> Dr
         ingredients=ingredients_resp,
         drug_id=drug.id,
     )
-
 
 
 def _build_live_response(record: DrugResolution, query: str, matched_as: str, drug_id: int | None = None) -> DrugResolutionResult:
@@ -65,6 +83,7 @@ def _build_live_response(record: DrugResolution, query: str, matched_as: str, dr
             drug_interactions=ing.drug_interactions,
             warnings=ing.warnings,
             boxed_warning=ing.boxed_warning,
+            drug_classes=getattr(ing, "drug_classes", []) or [],
         ))
 
     return DrugResolutionResult(
@@ -125,6 +144,17 @@ def _persist_live_record(record: DrugResolution, query: str, db_session: Session
                 ).on_conflict_do_nothing(index_elements=["rxcui"])
                 db_session.execute(fda_stmt)
 
+            # Write drug_classes alongside fda_labels — same ON CONFLICT strategy.
+            if ing.rxcui and getattr(ing, "drug_classes", None) is not None:
+                class_names = [c["class_name"] for c in ing.drug_classes]
+                class_sources = [c["class_source"] for c in ing.drug_classes]
+                dc_stmt = insert(DrugClass).values(
+                    rxcui=ing.rxcui,
+                    class_names=class_names,
+                    class_sources=class_sources,
+                ).on_conflict_do_nothing(index_elements=["rxcui"])
+                db_session.execute(dc_stmt)
+
         db_session.commit()
         logger.info("Successfully persisted live resolution for '%s' to database (drug_id=%s).", query, drug_id)
         return drug_id
@@ -158,12 +188,14 @@ def resolve_drug(query: str, db_session: Session) -> DrugResolutionResult:
         
         rxcui_list = [ing.rxcui for ing in drug.ingredients if ing.rxcui]
         labels_by_rxcui = {}
+        classes_by_rxcui = {}
         if rxcui_list:
             stmt = select(FdaLabel).where(FdaLabel.rxcui.in_(rxcui_list))
             labels = db_session.execute(stmt).scalars().all()
             labels_by_rxcui = {label.rxcui: label for label in labels}
+            classes_by_rxcui = _load_classes_by_rxcui(rxcui_list, db_session)
 
-        return _build_db_response(drug, labels_by_rxcui, matched_as="brand")
+        return _build_db_response(drug, labels_by_rxcui, matched_as="brand", classes_by_rxcui=classes_by_rxcui)
 
     # 2. Database Generic Search
     logger.info("Step 2: DB Generic Search")
@@ -183,12 +215,14 @@ def resolve_drug(query: str, db_session: Session) -> DrugResolutionResult:
         
         rxcui_list = [ing.rxcui for ing in drug.ingredients if ing.rxcui]
         labels_by_rxcui = {}
+        classes_by_rxcui = {}
         if rxcui_list:
             stmt = select(FdaLabel).where(FdaLabel.rxcui.in_(rxcui_list))
             labels = db_session.execute(stmt).scalars().all()
             labels_by_rxcui = {label.rxcui: label for label in labels}
+            classes_by_rxcui = _load_classes_by_rxcui(rxcui_list, db_session)
 
-        return _build_db_response(drug, labels_by_rxcui, matched_as="generic")
+        return _build_db_response(drug, labels_by_rxcui, matched_as="generic", classes_by_rxcui=classes_by_rxcui)
 
     # 3. Database Brand Fuzzy Search
     logger.info("Step 3: DB Brand Fuzzy Search")
@@ -215,12 +249,14 @@ def resolve_drug(query: str, db_session: Session) -> DrugResolutionResult:
             drug = top_matches[0].Drug
             rxcui_list = [ing.rxcui for ing in drug.ingredients if ing.rxcui]
             labels_by_rxcui = {}
+            classes_by_rxcui = {}
             if rxcui_list:
                 stmt = select(FdaLabel).where(FdaLabel.rxcui.in_(rxcui_list))
                 labels = db_session.execute(stmt).scalars().all()
                 labels_by_rxcui = {label.rxcui: label for label in labels}
+                classes_by_rxcui = _load_classes_by_rxcui(rxcui_list, db_session)
 
-            return _build_db_response(drug, labels_by_rxcui, matched_as="brand")
+            return _build_db_response(drug, labels_by_rxcui, matched_as="brand", classes_by_rxcui=classes_by_rxcui)
 
     # 4. Database Generic Fuzzy Search
     logger.info("Step 4: DB Generic Fuzzy Search")
@@ -248,12 +284,14 @@ def resolve_drug(query: str, db_session: Session) -> DrugResolutionResult:
             logger.info("DB Fuzzy Generic hit for '%s' -> (score: %.2f).", query, highest_score)
             rxcui_list = [ing.rxcui for ing in drug.ingredients if ing.rxcui]
             labels_by_rxcui = {}
+            classes_by_rxcui = {}
             if rxcui_list:
                 stmt = select(FdaLabel).where(FdaLabel.rxcui.in_(rxcui_list))
                 labels = db_session.execute(stmt).scalars().all()
                 labels_by_rxcui = {label.rxcui: label for label in labels}
+                classes_by_rxcui = _load_classes_by_rxcui(rxcui_list, db_session)
 
-            return _build_db_response(drug, labels_by_rxcui, matched_as="generic")
+            return _build_db_response(drug, labels_by_rxcui, matched_as="generic", classes_by_rxcui=classes_by_rxcui)
 
     # 5. Live Brand Fallback
     logger.info("Step 5: Live Brand Search")

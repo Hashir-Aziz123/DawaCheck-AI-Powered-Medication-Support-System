@@ -89,13 +89,14 @@ def run_interaction_check(drug_a: dict, drug_b: dict) -> dict:
 
     Returns:
         final_answer dict with keys:
-            final_status  — "interaction_found" | "none_found" | "unverifiable"
-            drug_a        — brand name string
-            drug_b        — brand name string
-            interaction_claim  — str | None
-            citation_text      — str | None
-            is_grounded        — bool | None
-            groundedness_reasoning — str | None
+            final_status  -- "interaction_found" | "none_found" | "unverifiable"
+            drug_a        -- brand name string
+            drug_b        -- brand name string
+            interaction_claim  -- str | None
+            citation_text      -- str | None
+            match_type         -- "direct" | "class_level" | None
+            is_grounded        -- bool | None
+            groundedness_reasoning -- str | None
     """
     a_name = drug_a.get("brand_name", "Drug A")
     b_name = drug_b.get("brand_name", "Drug B")
@@ -106,8 +107,11 @@ def run_interaction_check(drug_a: dict, drug_b: dict) -> dict:
         "drug_b": drug_b,
         "drug_a_fda_text": None,
         "drug_b_fda_text": None,
+        "drug_a_classes": [],
+        "drug_b_classes": [],
         "interaction_claim": None,
         "citation_text": None,
+        "match_type": None,
         "is_grounded": None,
         "groundedness_reasoning": None,
         "final_status": "",

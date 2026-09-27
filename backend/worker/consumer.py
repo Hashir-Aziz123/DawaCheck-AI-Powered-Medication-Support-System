@@ -23,7 +23,7 @@ load_dotenv(dotenv_path=env_path)
 from sqlalchemy import select, update, func
 from sqlalchemy.orm import selectinload
 
-from core.db.models import InteractionJob, Drug, DrugIngredient, FdaLabel
+from core.db.models import InteractionJob, Drug, DrugIngredient, FdaLabel, DrugClass
 from worker.langgraph_pipeline.graph import run_interaction_check
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
@@ -101,6 +101,19 @@ async def fetch_drug_data(drug_id: int):
         ingredients_resp = []
         for ing in drug.ingredients:
             label = labels_by_rxcui.get(ing.rxcui) if ing.rxcui else None
+
+            # Load pharmacological class data for this ingredient
+            drug_classes = []
+            if ing.rxcui:
+                dc_stmt = select(DrugClass).where(DrugClass.rxcui == ing.rxcui)
+                dc_result = await session.execute(dc_stmt)
+                dc = dc_result.scalar_one_or_none()
+                if dc and dc.class_names:
+                    drug_classes = [
+                        {"class_name": name, "class_source": source}
+                        for name, source in zip(dc.class_names, dc.class_sources)
+                    ]
+
             ingredients_resp.append({
                 "generic_name": ing.generic_name,
                 "dose": ing.dose,
@@ -108,6 +121,7 @@ async def fetch_drug_data(drug_id: int):
                 "drug_interactions": label.drug_interactions if label else None,
                 "warnings": label.warnings if label else None,
                 "boxed_warning": label.boxed_warning if label else None,
+                "drug_classes": drug_classes,
             })
 
         return {

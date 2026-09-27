@@ -2,22 +2,23 @@
 Drug-resolution orchestration — the single shared entry point.
 
 ``build_drug_record(brand_name)`` is the function that both the batch
-script and the live API should call.  It chains the three external services
+script and the live API should call.  It chains the four external services
 in the canonical order:
 
-    DRAP (brand → composition)
-        → RxNorm (generic-name normalization)
-        → openFDA (interaction / warning label text)
+    DRAP (brand -> composition)
+        -> RxNorm (generic-name normalization)
+        -> openFDA (interaction / warning label text)
+        -> RxClass (pharmacological class data)
 
 **Caching note:** This function (and the client functions it delegates to)
 performs **no caching of any kind**.  Callers are responsible for their own
 cache strategy:
 
-* ``scripts/create_dataset.py`` — wraps this call with a ``JsonCache``
+* ``scripts/create_dataset.py`` -- wraps this call with a ``JsonCache``
   (disk-backed) keyed by brand name.
-* A future live-API caller — would check Postgres first (``drugs`` /
-  ``drug_ingredients`` / ``fda_labels`` tables), falling back to
-  ``build_drug_record()`` only on a miss.
+* A future live-API caller -- would check Postgres first (``drugs`` /
+  ``drug_ingredients`` / ``fda_labels`` / ``drug_classes`` tables), falling
+  back to ``build_drug_record()`` only on a miss.
 
 Re-exported for callers' convenience::
 
@@ -26,20 +27,21 @@ Re-exported for callers' convenience::
 """
 
 import logging
-from typing import Optional  # noqa: F401 — kept for re-export convenience
+from typing import Optional  # noqa: F401 -- kept for re-export convenience
 
 from core.clients.drap_client import resolve_brand
 from core.clients.openfda_client import extract_interaction_text, get_fda_label
+from core.clients.rxclass_client import get_drug_classes
 from core.clients.rxnorm_client import get_rxnorm_name
 from core.status import Status
-from core.types import DrugResolution, Ingredient  # noqa: F401 — re-exported
+from core.types import DrugResolution, Ingredient  # noqa: F401 -- re-exported
 
 logger = logging.getLogger(__name__)
 
 
 def build_drug_record(brand_name: str) -> DrugResolution:
     """
-    Fully resolve *brand_name* through the DRAP → RxNorm → openFDA pipeline.
+    Fully resolve *brand_name* through the DRAP -> RxNorm -> openFDA -> RxClass pipeline.
 
     Parameters
     ----------
@@ -84,5 +86,10 @@ def build_drug_record(brand_name: str) -> DrugResolution:
                 ing.warnings,
                 ing.boxed_warning,
             ) = extract_interaction_text(label)
+
+        # RxClass: fetch pharmacological class data when we have an rxcui.
+        # Empty result is expected for some drugs — not an error.
+        if rxcui:
+            ing.drug_classes = get_drug_classes(rxcui)
 
     return record

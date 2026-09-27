@@ -15,6 +15,7 @@ class IngredientResponse(BaseModel):
     drug_interactions: str | None = None
     warnings: str | None = None
     boxed_warning: str | None = None
+    drug_classes: list[dict] = []   # [{class_name, class_source}] from drug_classes table
 
 
 class ResolvedDrugInfo(BaseModel):

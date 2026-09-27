@@ -18,7 +18,7 @@ from core.status import Status
 
 @dataclass
 class Ingredient:
-    """A single active ingredient as resolved through the DRAP→RxNorm→openFDA pipeline."""
+    """A single active ingredient as resolved through the DRAP->RxNorm->openFDA pipeline."""
 
     name: str            # cleaned name used for RxNorm lookup (may have been salt-stripped)
     amount: str
@@ -32,6 +32,7 @@ class Ingredient:
     warnings: Optional[str] = None
     boxed_warning: Optional[str] = None
     raw_fda_response: Optional[dict] = None
+    drug_classes: list[dict] = field(default_factory=list)  # [{class_name, class_source}] from RxClass
 
 
 @dataclass
@@ -46,7 +47,7 @@ class DrugResolution:
     spelling_variant_used: Optional[str] = None   # Problem 3: variant that DRAP matched on
     ingredients: list[Ingredient] = field(default_factory=list)
     error: Optional[str] = None
-    
+
     # Generic-resolution specific fields (originally from batch script)
     selection_reason: Optional[str] = None
     composition_verified: Optional[bool] = None
