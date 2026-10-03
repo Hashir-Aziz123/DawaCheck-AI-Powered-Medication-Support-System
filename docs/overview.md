@@ -1,31 +1,96 @@
-# MediAid LangGraph Overview
+# DawaCheck — System Overview
 
-## Project Goals
-MediAid is designed to resolve Pakistani drug names (brands and generics, notably from the National Essential Medicines List - NEML) to canonical medical concepts in order to extract robust drug interaction and warning label data. 
+DawaCheck is an AI-powered medication support system for Pakistani drug names. It resolves brand/generic drug queries to canonical medical concepts, fetches FDA safety data, and checks pairwise drug interactions using an LLM-backed pipeline.
 
-The system relies on external medical databases and standardizes disparate drug naming conventions through a multi-step resolution pipeline.
+## What it does
+
+1. A user searches for a drug by brand or generic name.
+2. The system resolves it against DRAP (Pakistan's drug registry), normalizes ingredients via RxNorm, and fetches FDA interaction/warning text.
+3. The user picks two resolved drugs and submits an interaction check.
+4. A worker runs the LangGraph pipeline — two LLM calls with a groundedness verification step — and pushes the result back to the client in real time via WebSocket.
+
+---
 
 ## High-Level Architecture
-The project is split into a back-end pipeline engine and a (future) API/worker layer. 
 
-1. **Resolution Pipeline**: The core engine that orchestrates queries between:
-    - **DRAP (Drug Regulatory Authority of Pakistan)**: Resolves local brand names to generic compositions.
-    - **RxNorm (NLM)**: Normalizes generic ingredients to a canonical RxCUI (concept ID).
-    - **openFDA**: Fetches interaction text, warnings, and boxed warnings using the normalized RxNorm name.
+```
+┌─────────────┐    HTTP/WS    ┌──────────────────┐
+│  Next.js    │ ◄──────────── │  FastAPI backend  │
+│  frontend   │ ────────────► │  (app/)           │
+└─────────────┘               └────────┬──────────┘
+                                       │ RabbitMQ
+                               ┌───────▼───────────┐
+                               │  Worker process    │
+                               │  (worker/)         │
+                               │                    │
+                               │  LangGraph pipeline│
+                               │  (Groq LLM)        │
+                               └───────┬────────────┘
+                                       │
+                               ┌───────▼────────────┐
+                               │  PostgreSQL         │
+                               │  (drugs, FDA labels,│
+                               │   interaction jobs) │
+                               └────────────────────┘
+```
 
-2. **Data & Storage**: 
-    - A PostgreSQL database stores the structured `Drug`, `DrugIngredient`, and `FdaLabel` data.
-    - Local disk caches (`.cache/`) speed up batch processing and protect against rate limits.
+### Components
 
-3. **Batch Processing**:
-    - Standalone scripts (e.g., `create_dataset.py`, `resolve_neml_dataset.py`) read raw inputs (like CSVs or JSON lists) and push them through the resolution pipeline, outputting validated datasets or storing them in the database.
+| Component | Location | Purpose |
+|-----------|----------|---------|
+| Frontend | `frontend/` | Next.js app — drug search, interaction UI |
+| API | `backend/app/` | FastAPI — resolve, check, WebSocket endpoints |
+| Worker | `backend/worker/` | RabbitMQ consumer + LangGraph interaction pipeline |
+| Core | `backend/core/` | Resolution clients (DRAP, RxNorm, openFDA, RxClass), DB models |
+| Infra | `infra/` | Docker Compose for Postgres + RabbitMQ |
 
-4. **API & AI Workers (Pending)**:
-    - A FastAPI layer will provide endpoints for UI interactions.
-    - A LangGraph pipeline will manage asynchronous multi-agent evaluation or complex query resolution.
+---
 
-## Navigating the Documentation
-For a deeper dive into the system, refer to the following documents:
-- [Pipeline Architecture](pipeline.md): Deep dive into the DRAP -> RxNorm -> openFDA resolution chain.
-- [Infrastructure & Data Models](infrastructure.md): Details on the database schema, Docker setup, and caching layer.
-- [Pending Work](pending_work.md): A guide to the unimplemented modules and placeholders awaiting development.
+## Request Lifecycle
+
+```
+User types drug name
+    │
+    ▼
+POST /resolve  →  DB cache hit?  →  Yes: return stored data
+                       │
+                       No
+                       │
+                    DRAP → RxNorm → openFDA → RxClass
+                       │
+                    Persist to DB, return result
+    │
+User picks Drug A + Drug B → POST /check
+    │
+    ▼
+Job created in DB (status=queued)
+    │
+    ▼
+Published to RabbitMQ "interaction_checks" queue
+    │
+    ▼
+Worker consumes message → runs LangGraph pipeline
+    │
+    ▼
+Result stored in DB → Postgres NOTIFY fired
+    │
+    ▼
+FastAPI LISTEN task receives NOTIFY → signals WebSocket event
+    │
+    ▼
+WS /ws/jobs/{job_id} sends result to client
+```
+
+---
+
+## Documentation Index
+
+| File | Contents |
+|------|----------|
+| [overview.md](overview.md) | This file — system summary and lifecycle |
+| [pipeline.md](pipeline.md) | Drug resolution pipeline (DRAP → RxNorm → openFDA → RxClass) |
+| [langgraph.md](langgraph.md) | LangGraph interaction-checking pipeline (nodes, state, prompts) |
+| [api.md](api.md) | FastAPI routes, schemas, WebSocket protocol |
+| [infrastructure.md](infrastructure.md) | Database schema, Docker setup, message queue |
+| [testing.md](testing.md) | Test suite structure and how to run tests |
+| [cicd.md](cicd.md) | CI/CD pipeline (GitHub Actions, deployment) |

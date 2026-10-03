@@ -1,46 +1,92 @@
-# Testing Documentation
+# Testing
 
-The repository currently features a highly robust and fast test suite (98 passing tests) focusing on the core resolution logic and database integrity. The tests are split into **unit tests** (which use mocking to run instantly without network calls) and **integration tests** (which interact with the live PostgreSQL database).
+## Running Tests
+
+```bash
+cd backend
+
+# All tests
+pytest
+
+# Unit tests only (no external services needed)
+pytest tests/unit/
+
+# Integration tests (requires Docker Postgres + RabbitMQ running)
+pytest tests/integration/
+```
+
+---
 
 ## Unit Tests (`backend/tests/unit/`)
 
-The unit test suite ensures that the complex string parsing, API fallbacks, and data extraction logic work flawlessly even when edge cases are encountered. All external HTTP requests (to DRAP, RxNorm, and openFDA) are mocked using `unittest.mock.patch`.
+All external HTTP calls are mocked with `unittest.mock.patch`. Tests run in under 30 seconds with no network access.
 
-### 1. `test_composition_parser.py`
-This is a pure-logic test suite that covers the `parse_composition()` and `preprocess_ingredient_name()` functions.
-- **Separator Logic**: Verifies that both `..` (dot separators) and space separators correctly split raw composition strings into lists of generic ingredients and dosages.
-- **Edge Cases**: Ensures empty strings, blank lines, and trailing punctuation (like stray commas) don't break the regex parser.
+### `test_composition_parser.py`
+Tests `parse_composition()` and `preprocess_ingredient_name()` from the DRAP client.
+- Dot-separator and space-separator parsing.
+- Edge cases: empty strings, blank lines, trailing punctuation, stray commas.
 
-### 2. `test_drap_client.py`
-Tests the DRAP client logic, focusing on fuzzy matching and data cleaning.
-- **Salt Stripping**: Confirms that phrases like "EQ TO" or "TRIHYDRATE" are accurately stripped from generic names.
-- **Spelling Similarity**: Verifies the calibrated thresholds for the Levenshtein distance fallback (e.g., confirming "Amryl" successfully matches "Amaryl" above the `0.65` confidence threshold).
-- **Network Paths**: Mocks HTTP calls to test happy paths, network errors, and the `SPELLING_RETRY_FOUND` logic when an exact match isn't found.
+### `test_drap_client.py`
+Tests DRAP client logic — fuzzy matching and data cleaning.
+- Salt stripping: "EQ TO", "TRIHYDRATE", "HYDROCHLORIDE" removed correctly.
+- Levenshtein spelling retry: "Amryl" matches "Amaryl" above the 0.65 threshold.
+- Network paths: happy path, `SPELLING_RETRY_FOUND`, API error handling.
 
-### 3. `test_rxnorm_client.py`
-Validates the canonical normalization pathways.
-- Tests the cascading logic: Exact hit -> Stripped Name hit -> Approximate Match fallback.
-- Ensures the proper `Status` enum is assigned based on which search pathway succeeded.
+### `test_rxnorm_client.py`
+Tests the RxNorm normalization cascade.
+- Exact hit → stripped name hit → approximate match fallback.
+- Correct `Status` enum assigned per pathway.
 
-### 4. `test_openfda_client.py`
-Validates label retrieval and text extraction.
-- **HTTP Handling**: Mocks scenarios where openFDA returns a `404 Not Found`, empty JSON results, or `500 Server Error`.
-- **Data Extraction**: Ensures `drug_interactions`, `warnings`, and `boxed_warning` are properly extracted from the deeply nested FDA label JSON dictionaries.
+### `test_openfda_client.py`
+Tests FDA label retrieval and text extraction.
+- 404, empty results, 500 server error scenarios.
+- Correct extraction of `drug_interactions`, `warnings`, `boxed_warning` from nested JSON.
+
+### `test_langgraph_nodes.py`
+Tests LangGraph nodes with the LLM mocked.
+- `fetch_context`: FDA text collection, truncation, class-level evidence extraction.
+- `check_interaction`: structured output parsing, direct vs. class_level match_type.
+- `verify_groundedness`: grounding conditions (presence, support, class attribution).
+- `format_grounded_answer` / `format_unverifiable_answer`: output shapes and `none_found` vs. `unverifiable` distinction.
 
 ---
 
 ## Integration Tests (`backend/tests/integration/`)
 
-The integration tests require the Docker PostgreSQL container to be running (`docker-compose up -d`). They ensure the backend can correctly talk to the database.
+Require the Docker containers from `infra/docker-compose.yml` to be running.
 
-### 1. `test_db_connection.py`
-- Runs a simple `SELECT 1` query to verify the SQLAlchemy async engine can reach the database.
-- Specifically verifies that the `pg_trgm` extension is enabled (required for future fuzzy text search on brand names), ensuring `init.sql` ran successfully.
+### `test_db_connection.py`
+- Runs `SELECT 1` to verify the SQLAlchemy async engine can connect.
+- Verifies `pg_trgm` extension is enabled (confirms `init.sql` ran).
 
-### 2. `test_models.py`
-- Verifies that the table creation script (`create_tables.py`) successfully generated the four expected tables: `drugs`, `drug_ingredients`, `fda_labels`, and `interaction_jobs`.
+### `test_models.py`
+- Verifies all five expected tables exist: `drugs`, `drug_ingredients`, `fda_labels`, `drug_classes`, `interaction_jobs`.
+
+### `test_resolve_endpoint.py`
+- End-to-end tests against the `/resolve` route using a real DB.
+- Tests DB hit paths (brand exact, generic exact, fuzzy) and `not_found` case.
+
+### `test_check_flow.py`
+- Tests the `/check` → RabbitMQ → worker → DB flow end-to-end.
+- Requires RabbitMQ and a running worker process (or a mock consumer).
+
+### `test_websocket.py`
+- Tests the WebSocket endpoint: fast-path (job already done), slow-path (wait for NOTIFY), and timeout behavior.
 
 ---
 
-## Empty / Pending Tests
-You will notice some empty test files (e.g., `test_check_flow.py`, `test_resolve_endpoint.py`, `test_websocket.py`, and `test_langgraph_nodes.py`). As mentioned in the [Pending Work](pending_work.md) documentation, these are placeholders aligned with the unimplemented FastAPI and LangGraph components. They are ready to be filled out as you begin building those layers.
+## Mocking Patterns
+
+The LangGraph nodes expose two factory functions (`_get_llm`, `_build_interaction_chain`, `_build_groundedness_chain`) specifically so they can be patched cleanly:
+
+```python
+# Mock the chain, not the LLM directly
+with patch("worker.langgraph_pipeline.nodes._build_interaction_chain") as mock_chain:
+    mock_chain.return_value.invoke.return_value = InteractionCheckResult(
+        interaction_found=True,
+        match_type="direct",
+        claim="...",
+        citation="..."
+    )
+    result = check_interaction(state)
+```

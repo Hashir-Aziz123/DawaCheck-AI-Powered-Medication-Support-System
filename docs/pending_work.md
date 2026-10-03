@@ -1,25 +1,39 @@
-# Pending Work & Placeholders
+# Pending Work
 
-While the core data resolution pipelines and database schema are fully functional, several application layers are currently empty placeholder files awaiting implementation.
+Most of the originally-planned components are now implemented. This file tracks remaining gaps and future improvements.
 
-## 1. FastAPI Application (`backend/app/`)
-The REST API structure is created but the files are empty.
-- **`main.py`**: Will house the FastAPI app instance and middleware setup.
-- **Routes (`backend/app/routes/`)**:
-  - `check.py`: Intended for endpoints that evaluate drug interactions.
-  - `resolve.py`: Intended to expose the `build_drug_record()` function as a synchronous API.
-  - `ws.py`: Intended for real-time WebSocket communication, potentially streaming agentic thoughts from LangGraph.
+## Implemented (no longer pending)
 
-## 2. LangGraph AI Workers (`backend/worker/`)
-The asynchronous job processing and AI-driven logic are not yet built.
-- **`consumer.py`**: Will act as the queue listener, picking up jobs (like those created in the `InteractionJob` database table).
-- **LangGraph Pipeline (`backend/worker/langgraph_pipeline/`)**:
-  - `graph.py`: Will define the nodes and edges of the state graph.
-  - `nodes.py`: Will contain the specific agentic functions.
-  - `prompts.py`: Will hold LLM instructions.
-  - `state.py`: Will define the `TypedDict` passing data between nodes.
+- FastAPI application (`backend/app/`) — all routes live: `/resolve`, `/check`, `/ws/jobs/{id}`, `/drugs`
+- LangGraph pipeline (`backend/worker/langgraph_pipeline/`) — graph, nodes, prompts, state all complete
+- RabbitMQ consumer (`backend/worker/consumer.py`) — running, processes jobs end-to-end
+- Postgres LISTEN/NOTIFY push (`core/db/listeners.py`) — real-time WebSocket job completion
+- Drug class resolution (`core/clients/rxclass_client.py`) — pharmacological classes fetched and stored
+- Fuzzy DB search — `pg_trgm` similarity search on brand/generic names
 
-## Next Steps for the Developer
-1. **API Development**: Implement `main.py` and the `resolve.py` route to connect the working `core.resolution` logic to the web.
-2. **Database Integration**: Update the resolution logic or route handlers to check the Postgres database before falling back to the external API queries.
-3. **Graph Design**: Design the LangGraph state machine to handle complex drug interaction queries that go beyond simple FDA label lookups.
+---
+
+## Open Items
+
+### 1. `/health` Endpoint
+The CI/CD health check (Stage 3 of CD) hits `/health` after deployment. This endpoint has not been added to `backend/app/main.py` yet. Simple implementation:
+```python
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+```
+
+### 2. CI/CD Workflow Files
+`.github/workflows/ci.yml` and `.github/workflows/deploy.yml` are empty placeholders. The CI/CD architecture is documented in [cicd.md](cicd.md) — the workflows need to be written to match it.
+
+### 3. `infra/docker-compose.prod.yml`
+Empty placeholder. Needs to define the full production stack: `backend`, `worker`, `postgres`, `rabbitmq` with production-appropriate settings (no exposed management ports, proper restart policies, secrets via env).
+
+### 4. Class-Level Evidence Extraction Quality
+The `_extract_class_evidence` function has a known limitation with long FDA labels. See [class_extraction_issue.md](class_extraction_issue.md) for details and proposed fixes.
+
+### 5. Drug Data Refresh
+The current write strategy (`ON CONFLICT DO NOTHING`) means FDA labels and drug class data fetched at first resolution are never updated. A background refresh job would re-fetch stale records when the FDA label data changes.
+
+### 6. Pagination on `/drugs`
+The `/drugs` endpoint returns all entries in one response. Currently fine (~65–90 drugs), but needs pagination if the dataset grows significantly.
